@@ -29,21 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.animation_timer = new System.Windows.Forms.Timer(this.components);
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.btnProfile = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnMore = new System.Windows.Forms.Button();
-            this.btnMedia = new System.Windows.Forms.Button();
-            this.btnSecurity = new System.Windows.Forms.Button();
-            this.btnDevices = new System.Windows.Forms.Button();
-            this.btnCalendar = new System.Windows.Forms.Button();
+            this.btnCareers = new System.Windows.Forms.Button();
+            this.btnFAQ = new System.Windows.Forms.Button();
+            this.btnForum = new System.Windows.Forms.Button();
+            this.btnScore = new System.Windows.Forms.Button();
+            this.btnCourses = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.roundedToggleButton1 = new Rounded.RoundedToggleButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.roundedToggleButton1 = new Rounded.RoundedToggleButton();
             this.panelContent.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -52,7 +53,11 @@
             // 
             // panelHeader
             // 
-            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(46)))));
+            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.panelHeader.IClose = global::Educational_Software.Properties.Resources._24_gray9;
+            this.panelHeader.IHelp = global::Educational_Software.Properties.Resources._24_gray6;
+            this.panelHeader.IMaximize = global::Educational_Software.Properties.Resources._24_gray10;
+            this.panelHeader.IMinimize = global::Educational_Software.Properties.Resources._24_gray11;
             this.panelHeader.Size = new System.Drawing.Size(1094, 46);
             // 
             // panelContent
@@ -67,196 +72,202 @@
             this.animation_timer.Interval = 2;
             this.animation_timer.Tag = "";
             // 
-            // button2
+            // btnStart
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button2.Image = global::Educational_Software.Properties.Resources.icons8_concert_day_24;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 270);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(250, 45);
-            this.button2.TabIndex = 17;
-            this.button2.Tag = " Φροντιδα κατοικίδιων";
-            this.button2.Text = " Φροντιδα κατοικίδιων";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnStart.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStart.FlatAppearance.BorderSize = 0;
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStart.Font = new System.Drawing.Font("Onyx", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnStart.Image = global::Educational_Software.Properties.Resources._24_gray5;
+            this.btnStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStart.Location = new System.Drawing.Point(0, 270);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnStart.Size = new System.Drawing.Size(250, 45);
+            this.btnStart.TabIndex = 17;
+            this.btnStart.Tag = "ΕΞΟΔΟΣ";
+            this.btnStart.Text = "ΕΞΟΔΟΣ";
+            this.btnStart.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            this.btnStart.MouseEnter += new System.EventHandler(this.btnStart_MouseEnter);
+            this.btnStart.MouseLeave += new System.EventHandler(this.btnStart_MouseLeave);
             // 
-            // button1
+            // btnProfile
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Image = global::Educational_Software.Properties.Resources.icons8_concert_day_24;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 225);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(250, 45);
-            this.button1.TabIndex = 16;
-            this.button1.Tag = " Υγεία και σώμα";
-            this.button1.Text = " Υγεία και σώμα";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnProfile.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProfile.FlatAppearance.BorderSize = 0;
+            this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfile.Font = new System.Drawing.Font("Onyx", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
+            this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProfile.Location = new System.Drawing.Point(0, 225);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnProfile.Size = new System.Drawing.Size(250, 45);
+            this.btnProfile.TabIndex = 16;
+            this.btnProfile.Tag = " ΠΡΟΦΙΛ";
+            this.btnProfile.Text = "ΠΡΟΦΙΛ";
+            this.btnProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnProfile.UseVisualStyleBackColor = true;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
+            this.btnProfile.MouseEnter += new System.EventHandler(this.btnProfile_MouseEnter);
+            this.btnProfile.MouseLeave += new System.EventHandler(this.btnProfile_MouseLeave);
             // 
             // btnAbout
             // 
             this.btnAbout.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnAbout.FlatAppearance.BorderSize = 0;
             this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAbout.Font = new System.Drawing.Font("Onyx", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbout.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnAbout.Image = global::Educational_Software.Properties.Resources._24_gray6;
             this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAbout.Location = new System.Drawing.Point(0, 409);
+            this.btnAbout.Location = new System.Drawing.Point(0, 454);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnAbout.Size = new System.Drawing.Size(250, 45);
             this.btnAbout.TabIndex = 10;
-            this.btnAbout.Tag = "Σχετικά με την εφαρμογή";
-            this.btnAbout.Text = "Σχετικά με την εφαρμογή";
+            this.btnAbout.Tag = "ΣΧΕΤΙΚΑ ΜΕ ΤΗΝ ΕΦΑΡΜΟΓΗ";
+            this.btnAbout.Text = "ΣΧΕΤΙΚΑ ΜΕ ΤΗΝ ΕΦΑΡΜΟΓΗ";
             this.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAbout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAbout.UseVisualStyleBackColor = true;
+            this.btnAbout.MouseEnter += new System.EventHandler(this.btnAbout_MouseEnter);
+            this.btnAbout.MouseLeave += new System.EventHandler(this.btnAbout_MouseLeave);
             // 
-            // btnExit
+            // btnCareers
             // 
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 454);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnExit.Size = new System.Drawing.Size(250, 45);
-            this.btnExit.TabIndex = 11;
-            this.btnExit.Tag = " Έξοδος";
-            this.btnExit.Text = " Έξοδος";
-            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnCareers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCareers.FlatAppearance.BorderSize = 0;
+            this.btnCareers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCareers.Font = new System.Drawing.Font("Onyx", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCareers.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnCareers.Image = global::Educational_Software.Properties.Resources._24_gray3;
+            this.btnCareers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCareers.Location = new System.Drawing.Point(0, 180);
+            this.btnCareers.Name = "btnCareers";
+            this.btnCareers.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnCareers.Size = new System.Drawing.Size(250, 45);
+            this.btnCareers.TabIndex = 9;
+            this.btnCareers.Tag = "ΚΑΡΙΕΡΕΣ";
+            this.btnCareers.Text = "ΚΑΡΙΕΡΕΣ";
+            this.btnCareers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCareers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCareers.UseVisualStyleBackColor = true;
+            this.btnCareers.Visible = false;
+            this.btnCareers.Click += new System.EventHandler(this.btnCareers_Click);
+            this.btnCareers.MouseEnter += new System.EventHandler(this.btnCareers_MouseEnter);
+            this.btnCareers.MouseLeave += new System.EventHandler(this.btnCareers_MouseLeave);
             // 
-            // btnMore
+            // btnFAQ
             // 
-            this.btnMore.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMore.FlatAppearance.BorderSize = 0;
-            this.btnMore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMore.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnMore.Image = global::Educational_Software.Properties.Resources.icons8_concert_day_24;
-            this.btnMore.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMore.Location = new System.Drawing.Point(0, 180);
-            this.btnMore.Name = "btnMore";
-            this.btnMore.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnMore.Size = new System.Drawing.Size(250, 45);
-            this.btnMore.TabIndex = 9;
-            this.btnMore.Tag = "More";
-            this.btnMore.Text = "More";
-            this.btnMore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMore.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMore.UseVisualStyleBackColor = true;
-            this.btnMore.Visible = false;
-            this.btnMore.Click += new System.EventHandler(this.btnMore_Click);
+            this.btnFAQ.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFAQ.FlatAppearance.BorderSize = 0;
+            this.btnFAQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFAQ.Font = new System.Drawing.Font("Onyx", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFAQ.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnFAQ.Image = global::Educational_Software.Properties.Resources._24_gray1;
+            this.btnFAQ.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFAQ.Location = new System.Drawing.Point(0, 135);
+            this.btnFAQ.Name = "btnFAQ";
+            this.btnFAQ.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnFAQ.Size = new System.Drawing.Size(250, 45);
+            this.btnFAQ.TabIndex = 8;
+            this.btnFAQ.Tag = "ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ";
+            this.btnFAQ.Text = "ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ";
+            this.btnFAQ.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFAQ.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnFAQ.UseVisualStyleBackColor = true;
+            this.btnFAQ.Visible = false;
+            this.btnFAQ.Click += new System.EventHandler(this.btnFAQ_Click);
+            this.btnFAQ.MouseEnter += new System.EventHandler(this.btnFAQ_MouseEnter);
+            this.btnFAQ.MouseLeave += new System.EventHandler(this.btnFAQ_MouseLeave);
             // 
-            // btnMedia
+            // btnForum
             // 
-            this.btnMedia.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMedia.FlatAppearance.BorderSize = 0;
-            this.btnMedia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMedia.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnMedia.Image = global::Educational_Software.Properties.Resources.icons8_concert_day_24;
-            this.btnMedia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMedia.Location = new System.Drawing.Point(0, 135);
-            this.btnMedia.Name = "btnMedia";
-            this.btnMedia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnMedia.Size = new System.Drawing.Size(250, 45);
-            this.btnMedia.TabIndex = 8;
-            this.btnMedia.Tag = "Media";
-            this.btnMedia.Text = "Media";
-            this.btnMedia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMedia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMedia.UseVisualStyleBackColor = true;
-            this.btnMedia.Visible = false;
-            this.btnMedia.Click += new System.EventHandler(this.btnMedia_Click);
+            this.btnForum.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnForum.FlatAppearance.BorderSize = 0;
+            this.btnForum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnForum.Font = new System.Drawing.Font("Onyx", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnForum.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnForum.Image = global::Educational_Software.Properties.Resources._24_gray13;
+            this.btnForum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnForum.Location = new System.Drawing.Point(0, 90);
+            this.btnForum.Name = "btnForum";
+            this.btnForum.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnForum.Size = new System.Drawing.Size(250, 45);
+            this.btnForum.TabIndex = 6;
+            this.btnForum.Tag = "ΦΟΡΟΥΜ";
+            this.btnForum.Text = "ΦΟΡΟΥΜ";
+            this.btnForum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnForum.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnForum.UseVisualStyleBackColor = true;
+            this.btnForum.Click += new System.EventHandler(this.btnForum_Click);
+            this.btnForum.MouseEnter += new System.EventHandler(this.btnForum_MouseEnter);
+            this.btnForum.MouseLeave += new System.EventHandler(this.btnForum_MouseLeave);
             // 
-            // btnSecurity
+            // btnScore
             // 
-            this.btnSecurity.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSecurity.FlatAppearance.BorderSize = 0;
-            this.btnSecurity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSecurity.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSecurity.Image = global::Educational_Software.Properties.Resources.icons8_concert_day_24;
-            this.btnSecurity.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSecurity.Location = new System.Drawing.Point(0, 90);
-            this.btnSecurity.Name = "btnSecurity";
-            this.btnSecurity.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSecurity.Size = new System.Drawing.Size(250, 45);
-            this.btnSecurity.TabIndex = 6;
-            this.btnSecurity.Tag = " Ασφάλεια";
-            this.btnSecurity.Text = " Ασφάλεια";
-            this.btnSecurity.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSecurity.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSecurity.UseVisualStyleBackColor = true;
-            this.btnSecurity.Click += new System.EventHandler(this.btnSecurity_Click);
+            this.btnScore.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnScore.FlatAppearance.BorderSize = 0;
+            this.btnScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnScore.Font = new System.Drawing.Font("Onyx", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnScore.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnScore.Image = global::Educational_Software.Properties.Resources._24_gray7;
+            this.btnScore.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnScore.Location = new System.Drawing.Point(0, 45);
+            this.btnScore.Name = "btnScore";
+            this.btnScore.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnScore.Size = new System.Drawing.Size(250, 45);
+            this.btnScore.TabIndex = 5;
+            this.btnScore.Tag = "ΠΡΟΕΠΙΣΚΟΠΗΣΗ";
+            this.btnScore.Text = " ΠΡΟΕΠΙΣΚΟΠΗΣΗ";
+            this.btnScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnScore.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnScore.UseVisualStyleBackColor = true;
+            this.btnScore.Click += new System.EventHandler(this.btnScore_Click);
+            this.btnScore.MouseEnter += new System.EventHandler(this.btnScore_MouseEnter);
+            this.btnScore.MouseLeave += new System.EventHandler(this.btnScore_MouseLeave);
             // 
-            // btnDevices
+            // btnCourses
             // 
-            this.btnDevices.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDevices.FlatAppearance.BorderSize = 0;
-            this.btnDevices.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDevices.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnDevices.Image = global::Educational_Software.Properties.Resources.icons8_concert_day_24;
-            this.btnDevices.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDevices.Location = new System.Drawing.Point(0, 45);
-            this.btnDevices.Name = "btnDevices";
-            this.btnDevices.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnDevices.Size = new System.Drawing.Size(250, 45);
-            this.btnDevices.TabIndex = 5;
-            this.btnDevices.Tag = " Διαχείρηση Σπιτιού";
-            this.btnDevices.Text = " Διαχείρηση Σπιτιού";
-            this.btnDevices.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDevices.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDevices.UseVisualStyleBackColor = true;
-            this.btnDevices.Click += new System.EventHandler(this.btnDevices_Click);
-            // 
-            // btnCalendar
-            // 
-            this.btnCalendar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCalendar.FlatAppearance.BorderSize = 0;
-            this.btnCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalendar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCalendar.Image = global::Educational_Software.Properties.Resources.icons8_concert_day_24;
-            this.btnCalendar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCalendar.Location = new System.Drawing.Point(0, 0);
-            this.btnCalendar.Name = "btnCalendar";
-            this.btnCalendar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnCalendar.Size = new System.Drawing.Size(250, 45);
-            this.btnCalendar.TabIndex = 3;
-            this.btnCalendar.Tag = " Πλάνο";
-            this.btnCalendar.Text = " Πλάνο";
-            this.btnCalendar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCalendar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCalendar.UseVisualStyleBackColor = true;
-            this.btnCalendar.Click += new System.EventHandler(this.btnCalendar_Click);
+            this.btnCourses.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCourses.FlatAppearance.BorderSize = 0;
+            this.btnCourses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCourses.Font = new System.Drawing.Font("Onyx", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCourses.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnCourses.Image = global::Educational_Software.Properties.Resources._24_gray2;
+            this.btnCourses.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCourses.Location = new System.Drawing.Point(0, 0);
+            this.btnCourses.Name = "btnCourses";
+            this.btnCourses.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnCourses.Size = new System.Drawing.Size(250, 45);
+            this.btnCourses.TabIndex = 3;
+            this.btnCourses.Tag = "ΕΝΟΤΗΤΕΣ";
+            this.btnCourses.Text = " ΕΝΟΤΗΤΕΣ";
+            this.btnCourses.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCourses.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCourses.UseVisualStyleBackColor = true;
+            this.btnCourses.Click += new System.EventHandler(this.btnCourses_Click);
+            this.btnCourses.MouseEnter += new System.EventHandler(this.btnCourses_MouseEnter);
+            this.btnCourses.MouseLeave += new System.EventHandler(this.btnCourses_MouseLeave);
             // 
             // panelSideMenu
             // 
-            this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelSideMenu.Controls.Add(this.button2);
-            this.panelSideMenu.Controls.Add(this.button1);
+            this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.panelSideMenu.Controls.Add(this.btnStart);
+            this.panelSideMenu.Controls.Add(this.btnProfile);
             this.panelSideMenu.Controls.Add(this.btnAbout);
-            this.panelSideMenu.Controls.Add(this.btnExit);
-            this.panelSideMenu.Controls.Add(this.btnMore);
-            this.panelSideMenu.Controls.Add(this.btnMedia);
-            this.panelSideMenu.Controls.Add(this.btnSecurity);
-            this.panelSideMenu.Controls.Add(this.btnDevices);
-            this.panelSideMenu.Controls.Add(this.btnCalendar);
+            this.panelSideMenu.Controls.Add(this.btnCareers);
+            this.panelSideMenu.Controls.Add(this.btnFAQ);
+            this.panelSideMenu.Controls.Add(this.btnForum);
+            this.panelSideMenu.Controls.Add(this.btnScore);
+            this.panelSideMenu.Controls.Add(this.btnCourses);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
@@ -265,7 +276,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.roundedToggleButton1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -274,29 +286,21 @@
             this.panel1.Size = new System.Drawing.Size(1094, 45);
             this.panel1.TabIndex = 9;
             // 
-            // label1
+            // label2
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
-            this.label1.Location = new System.Drawing.Point(515, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Level";
-            // 
-            // panelChildForm
-            // 
-            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelChildForm.Controls.Add(this.panelSideMenu);
-            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForm.Location = new System.Drawing.Point(0, 45);
-            this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(1094, 499);
-            this.panelChildForm.TabIndex = 10;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
+            this.label2.Location = new System.Drawing.Point(12, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(224, 22);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "ΕΚΠΑΙΔΕΥΤΙΚΟ  ΛΟΓΙΣΜΙΚΟ";
             // 
             // roundedToggleButton1
             // 
+            this.roundedToggleButton1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.roundedToggleButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.roundedToggleButton1.Fill = true;
             this.roundedToggleButton1.Location = new System.Drawing.Point(575, 12);
             this.roundedToggleButton1.MinimumSize = new System.Drawing.Size(45, 22);
@@ -308,7 +312,28 @@
             this.roundedToggleButton1.Size = new System.Drawing.Size(504, 22);
             this.roundedToggleButton1.TabIndex = 9;
             this.roundedToggleButton1.Text = "roundedToggleButton1";
-            this.roundedToggleButton1.UseVisualStyleBackColor = true;
+            this.roundedToggleButton1.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label1.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
+            this.label1.Location = new System.Drawing.Point(487, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 22);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ΕΠΙΠΕΔΟ";
+            // 
+            // panelChildForm
+            // 
+            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.panelChildForm.Controls.Add(this.panelSideMenu);
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Location = new System.Drawing.Point(0, 45);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(1094, 499);
+            this.panelChildForm.TabIndex = 10;
             // 
             // Form1
             // 
@@ -316,6 +341,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 596);
             this.Main = true;
+            this.MinimumSize = new System.Drawing.Size(1100, 596);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -330,20 +356,20 @@
         #endregion
 
         private System.Windows.Forms.Panel panelSideMenu;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btnProfile;
         private System.Windows.Forms.Button btnAbout;
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnMore;
-        private System.Windows.Forms.Button btnMedia;
-        private System.Windows.Forms.Button btnSecurity;
-        private System.Windows.Forms.Button btnDevices;
-        public System.Windows.Forms.Button btnCalendar;
+        private System.Windows.Forms.Button btnCareers;
+        private System.Windows.Forms.Button btnFAQ;
+        private System.Windows.Forms.Button btnForum;
+        private System.Windows.Forms.Button btnScore;
+        public System.Windows.Forms.Button btnCourses;
         private System.Windows.Forms.Timer animation_timer;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Label label1;
         private Rounded.RoundedToggleButton roundedToggleButton1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

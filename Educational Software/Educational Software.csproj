@@ -114,5 +114,263 @@
   <ItemGroup>
     <None Include="Resources\icons8-concert-day-24.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog\24-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog\50-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faq\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faq\24-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faq\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faq\50-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduation-cap\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduation-cap\24-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduation-cap\60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduation-cap\60-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internship\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internship\24-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internship\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internship\50-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-in\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-in\24-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-in\48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-in\48-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out\24-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out\48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out\48-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-mark\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-mark\24-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-mark\24-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-mark\48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-mark\48-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-mark\48-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ratings\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ratings\24-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ratings\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ratings\50-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register\24-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register\52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register\52-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-close\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-close\24-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-close\24-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-close\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-close\50-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-close\50-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-maximize\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-maximize\24-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-maximize\24-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-maximize\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-maximize\50-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-maximize\50-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-minimize\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-minimize\24-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-minimize\24-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-minimize\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-minimize\50-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-minimize\50-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog\24-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog\50-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faq\24-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faq\50-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduation-cap\24-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduation-cap\60-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internship\24-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internship\50-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-in\24-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-in\48-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out\24-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out\48-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile\24-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile\48-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-mark\24-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-mark\48-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ratings\24-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ratings\50-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register\24-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register\52-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-close\24-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-close\50-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-maximize\24-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-maximize\50-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-minimize\24-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win-minimize\50-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile\24-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile\48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile\48-gold.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
