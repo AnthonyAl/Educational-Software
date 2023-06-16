@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomControls\RoundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\RoundedToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Desktop\educational_soft\ShadowPanel\ShadowPanel.csproj">
+      <Project>{E4A93A7D-7C34-4542-BBED-1E70E7A65329}</Project>
+      <Name>ShadowPanel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Desktop\educational_soft\WindowsFormsFormFlat\WindowsFormsFormFlat.csproj">
+      <Project>{DAF0DAB1-C94B-41AC-BF22-C3E1B09D554D}</Project>
+      <Name>WindowsFormsFormFlat</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
