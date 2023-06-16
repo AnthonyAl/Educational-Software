@@ -43,7 +43,7 @@
             // shadowPanel1
             // 
             this.shadowPanel1.BorderColor = System.Drawing.Color.Empty;
-            this.shadowPanel1.Location = new System.Drawing.Point(73, 56);
+            this.shadowPanel1.Location = new System.Drawing.Point(146, 61);
             this.shadowPanel1.Name = "shadowPanel1";
             this.shadowPanel1.PanelColor = System.Drawing.Color.Empty;
             this.shadowPanel1.Size = new System.Drawing.Size(200, 100);
@@ -58,9 +58,9 @@
             this.roundedButton1.FlatAppearance.BorderSize = 0;
             this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedButton1.Location = new System.Drawing.Point(460, 116);
+            this.roundedButton1.Location = new System.Drawing.Point(514, 127);
             this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(150, 40);
+            this.roundedButton1.Size = new System.Drawing.Size(150, 84);
             this.roundedButton1.TabIndex = 1;
             this.roundedButton1.Text = "roundedButton1";
             this.roundedButton1.UseVisualStyleBackColor = false;
@@ -69,7 +69,7 @@
             // 
             this.roundedToggleButton1.AutoSize = true;
             this.roundedToggleButton1.Fill = true;
-            this.roundedToggleButton1.Location = new System.Drawing.Point(460, 297);
+            this.roundedToggleButton1.Location = new System.Drawing.Point(335, 274);
             this.roundedToggleButton1.MinimumSize = new System.Drawing.Size(45, 22);
             this.roundedToggleButton1.Name = "roundedToggleButton1";
             this.roundedToggleButton1.OffBackColor = System.Drawing.Color.Gray;

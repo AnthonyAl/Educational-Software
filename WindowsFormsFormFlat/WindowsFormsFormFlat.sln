@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsFormFlat", "WindowsFormsFormFlat.csproj", "{DAF0DAB1-C94B-41AC-BF22-C3E1B09D554D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsTestForms", "..\WindowsFormsTestForms\WindowsFormsTestForms.csproj", "{850818CF-ADE5-405C-9C41-45DE7264D558}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAF0DAB1-C94B-41AC-BF22-C3E1B09D554D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF0DAB1-C94B-41AC-BF22-C3E1B09D554D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF0DAB1-C94B-41AC-BF22-C3E1B09D554D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF0DAB1-C94B-41AC-BF22-C3E1B09D554D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{850818CF-ADE5-405C-9C41-45DE7264D558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{850818CF-ADE5-405C-9C41-45DE7264D558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{850818CF-ADE5-405C-9C41-45DE7264D558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{850818CF-ADE5-405C-9C41-45DE7264D558}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10207000-B4EB-42C5-A1E8-6C482A9FC10B}
+	EndGlobalSection
+EndGlobal

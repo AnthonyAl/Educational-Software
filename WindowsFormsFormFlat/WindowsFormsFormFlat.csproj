@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{941822F9-A081-4118-B319-FD9B46F22842}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>Educational_Software</RootNamespace>
-    <AssemblyName>Educational Software</AssemblyName>
+    <ProjectGuid>{DAF0DAB1-C94B-41AC-BF22-C3E1B09D554D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WindowsFormsFormFlat</RootNamespace>
+    <AssemblyName>WindowsFormsFormFlat</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,7 +32,11 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,22 +50,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomControls\RoundedButton.cs">
+    <Compile Include="Content.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CustomControls\RoundedToggleButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormFlat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormFlat.Designer.cs">
+      <DependentUpon>FormFlat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Head.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormFlat.resx">
+      <DependentUpon>FormFlat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Head.resx">
+      <DependentUpon>Head.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -71,6 +78,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -86,14 +94,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ShadowPanel\ShadowPanel.csproj">
-      <Project>{E4A93A7D-7C34-4542-BBED-1E70E7A65329}</Project>
-      <Name>ShadowPanel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WindowsFormsFormFlat\WindowsFormsFormFlat.csproj">
-      <Project>{DAF0DAB1-C94B-41AC-BF22-C3E1B09D554D}</Project>
-      <Name>WindowsFormsFormFlat</Name>
-    </ProjectReference>
+    <None Include="Resources\icons8-close-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-help-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-subtract-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-maximize-button-16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
