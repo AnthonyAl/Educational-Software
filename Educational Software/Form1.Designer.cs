@@ -41,8 +41,9 @@
             this.btnCalendar = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelChildForm = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panelChildForm = new System.Windows.Forms.Panel();
+            this.roundedToggleButton1 = new Rounded.RoundedToggleButton();
             this.panelContent.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -51,7 +52,7 @@
             // 
             // panelHeader
             // 
-            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(13)))), ((int)(((byte)(48)))));
+            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(46)))));
             this.panelHeader.Size = new System.Drawing.Size(1094, 46);
             // 
             // panelContent
@@ -265,6 +266,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panel1.Controls.Add(this.roundedToggleButton1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -272,8 +274,20 @@
             this.panel1.Size = new System.Drawing.Size(1094, 45);
             this.panel1.TabIndex = 9;
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
+            this.label1.Location = new System.Drawing.Point(515, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 22);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Level";
+            // 
             // panelChildForm
             // 
+            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelChildForm.Controls.Add(this.panelSideMenu);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(0, 45);
@@ -281,21 +295,24 @@
             this.panelChildForm.Size = new System.Drawing.Size(1094, 499);
             this.panelChildForm.TabIndex = 10;
             // 
-            // label1
+            // roundedToggleButton1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(888, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Level";
+            this.roundedToggleButton1.Fill = true;
+            this.roundedToggleButton1.Location = new System.Drawing.Point(575, 12);
+            this.roundedToggleButton1.MinimumSize = new System.Drawing.Size(45, 22);
+            this.roundedToggleButton1.Name = "roundedToggleButton1";
+            this.roundedToggleButton1.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(46)))));
+            this.roundedToggleButton1.OffToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
+            this.roundedToggleButton1.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
+            this.roundedToggleButton1.OnToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
+            this.roundedToggleButton1.Size = new System.Drawing.Size(504, 22);
+            this.roundedToggleButton1.TabIndex = 9;
+            this.roundedToggleButton1.Text = "roundedToggleButton1";
+            this.roundedToggleButton1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 596);
             this.Main = true;
@@ -305,7 +322,6 @@
             this.panelContent.ResumeLayout(false);
             this.panelSideMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panelChildForm.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -327,6 +343,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Label label1;
+        private Rounded.RoundedToggleButton roundedToggleButton1;
     }
 }
 
