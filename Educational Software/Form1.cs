@@ -36,7 +36,9 @@ namespace Educational_Software
             leftBorderBtn.Size = new Size(7, 45);
             panelSideMenu.Controls.Add(leftBorderBtn);
 
-            formCourses = new FormCourses();
+            formCourses = new FormCourses(this);
+
+            btnCourses.PerformClick();
         }
 
         private void ActivateButton(Button senderBtn, Color color, string id)

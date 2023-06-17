@@ -33,24 +33,24 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.shadowPanel4 = new ShadowPanel.ShadowPanel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.wrapLabel4 = new Educational_Software.CustomControls.WrapLabel();
-            this.roundedButton4 = new Rounded.RoundedButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.shadowPanel3 = new ShadowPanel.ShadowPanel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.wrapLabel3 = new Educational_Software.CustomControls.WrapLabel();
-            this.roundedButton3 = new Rounded.RoundedButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.shadowPanel2 = new ShadowPanel.ShadowPanel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.wrapLabel2 = new Educational_Software.CustomControls.WrapLabel();
-            this.roundedButton2 = new Rounded.RoundedButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.shadowPanel1 = new ShadowPanel.ShadowPanel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.wrapLabel4 = new Educational_Software.CustomControls.WrapLabel();
+            this.roundedButton4 = new Rounded.RoundedButton();
+            this.wrapLabel3 = new Educational_Software.CustomControls.WrapLabel();
+            this.roundedButton3 = new Rounded.RoundedButton();
+            this.wrapLabel2 = new Educational_Software.CustomControls.WrapLabel();
+            this.roundedButton2 = new Rounded.RoundedButton();
             this.wrapLabel1 = new Educational_Software.CustomControls.WrapLabel();
             this.roundedButton1 = new Rounded.RoundedButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.panel1.SuspendLayout();
             this.shadowPanel4.SuspendLayout();
@@ -83,8 +83,9 @@
             this.panel1.Controls.Add(this.shadowPanel2);
             this.panel1.Controls.Add(this.shadowPanel1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(859, 480);
+            this.panel1.Size = new System.Drawing.Size(1145, 591);
             this.panel1.TabIndex = 0;
             // 
             // shadowPanel4
@@ -96,31 +97,153 @@
             this.shadowPanel4.Controls.Add(this.wrapLabel4);
             this.shadowPanel4.Controls.Add(this.roundedButton4);
             this.shadowPanel4.Controls.Add(this.pictureBox4);
-            this.shadowPanel4.Location = new System.Drawing.Point(645, 33);
-            this.shadowPanel4.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
+            this.shadowPanel4.Location = new System.Drawing.Point(860, 41);
+            this.shadowPanel4.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
             this.shadowPanel4.Name = "shadowPanel4";
             this.shadowPanel4.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.shadowPanel4.Size = new System.Drawing.Size(184, 363);
+            this.shadowPanel4.Size = new System.Drawing.Size(245, 447);
             this.shadowPanel4.TabIndex = 13;
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(74, 261);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox8.Location = new System.Drawing.Point(99, 321);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox8.Size = new System.Drawing.Size(43, 39);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox8.TabIndex = 6;
             this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(44, 197);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(153, 119);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            // 
+            // shadowPanel3
+            // 
+            this.shadowPanel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.shadowPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.shadowPanel3.BorderColor = System.Drawing.Color.Empty;
+            this.shadowPanel3.Controls.Add(this.pictureBox7);
+            this.shadowPanel3.Controls.Add(this.wrapLabel3);
+            this.shadowPanel3.Controls.Add(this.roundedButton3);
+            this.shadowPanel3.Controls.Add(this.pictureBox3);
+            this.shadowPanel3.Location = new System.Drawing.Point(583, 41);
+            this.shadowPanel3.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
+            this.shadowPanel3.Name = "shadowPanel3";
+            this.shadowPanel3.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.shadowPanel3.Size = new System.Drawing.Size(245, 447);
+            this.shadowPanel3.TabIndex = 12;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(99, 321);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(43, 39);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox7.TabIndex = 5;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(44, 197);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(153, 119);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            // 
+            // shadowPanel2
+            // 
+            this.shadowPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.shadowPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.shadowPanel2.BorderColor = System.Drawing.Color.Empty;
+            this.shadowPanel2.Controls.Add(this.pictureBox6);
+            this.shadowPanel2.Controls.Add(this.wrapLabel2);
+            this.shadowPanel2.Controls.Add(this.roundedButton2);
+            this.shadowPanel2.Controls.Add(this.pictureBox2);
+            this.shadowPanel2.Location = new System.Drawing.Point(311, 41);
+            this.shadowPanel2.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
+            this.shadowPanel2.Name = "shadowPanel2";
+            this.shadowPanel2.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.shadowPanel2.Size = new System.Drawing.Size(245, 447);
+            this.shadowPanel2.TabIndex = 12;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(99, 319);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(43, 39);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(44, 197);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(153, 117);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // shadowPanel1
+            // 
+            this.shadowPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.shadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.shadowPanel1.BorderColor = System.Drawing.Color.Empty;
+            this.shadowPanel1.Controls.Add(this.pictureBox5);
+            this.shadowPanel1.Controls.Add(this.wrapLabel1);
+            this.shadowPanel1.Controls.Add(this.roundedButton1);
+            this.shadowPanel1.Controls.Add(this.pictureBox1);
+            this.shadowPanel1.Location = new System.Drawing.Point(41, 41);
+            this.shadowPanel1.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
+            this.shadowPanel1.Name = "shadowPanel1";
+            this.shadowPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.shadowPanel1.Size = new System.Drawing.Size(245, 447);
+            this.shadowPanel1.TabIndex = 12;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(99, 321);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(43, 39);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(44, 197);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(153, 119);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // wrapLabel4
             // 
             this.wrapLabel4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrapLabel4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.wrapLabel4.Location = new System.Drawing.Point(18, 9);
+            this.wrapLabel4.Location = new System.Drawing.Point(24, 11);
+            this.wrapLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wrapLabel4.Name = "wrapLabel4";
-            this.wrapLabel4.Size = new System.Drawing.Size(149, 72);
+            this.wrapLabel4.Size = new System.Drawing.Size(199, 96);
             this.wrapLabel4.TabIndex = 3;
             this.wrapLabel4.Text = "Εισαγωγη σε Ευφυη Συστηματα";
             this.wrapLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -136,58 +259,22 @@
             this.roundedButton4.FlatAppearance.BorderSize = 0;
             this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton4.ForeColor = System.Drawing.Color.White;
-            this.roundedButton4.Location = new System.Drawing.Point(33, 308);
-            this.roundedButton4.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButton4.Location = new System.Drawing.Point(44, 379);
+            this.roundedButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(115, 32);
+            this.roundedButton4.Size = new System.Drawing.Size(153, 39);
             this.roundedButton4.TabIndex = 2;
             this.roundedButton4.Text = "Έναρξη";
             this.roundedButton4.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(33, 160);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(115, 97);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            // 
-            // shadowPanel3
-            // 
-            this.shadowPanel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.shadowPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.shadowPanel3.BorderColor = System.Drawing.Color.Empty;
-            this.shadowPanel3.Controls.Add(this.pictureBox7);
-            this.shadowPanel3.Controls.Add(this.wrapLabel3);
-            this.shadowPanel3.Controls.Add(this.roundedButton3);
-            this.shadowPanel3.Controls.Add(this.pictureBox3);
-            this.shadowPanel3.Location = new System.Drawing.Point(437, 33);
-            this.shadowPanel3.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
-            this.shadowPanel3.Name = "shadowPanel3";
-            this.shadowPanel3.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.shadowPanel3.Size = new System.Drawing.Size(184, 363);
-            this.shadowPanel3.TabIndex = 12;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(74, 261);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox7.TabIndex = 5;
-            this.pictureBox7.TabStop = false;
             // 
             // wrapLabel3
             // 
             this.wrapLabel3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrapLabel3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.wrapLabel3.Location = new System.Drawing.Point(18, 9);
+            this.wrapLabel3.Location = new System.Drawing.Point(24, 11);
+            this.wrapLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wrapLabel3.Name = "wrapLabel3";
-            this.wrapLabel3.Size = new System.Drawing.Size(149, 72);
+            this.wrapLabel3.Size = new System.Drawing.Size(199, 96);
             this.wrapLabel3.TabIndex = 3;
             this.wrapLabel3.Text = "Προηγμένες γνωσεις Πληροφορικής";
             this.wrapLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -203,58 +290,22 @@
             this.roundedButton3.FlatAppearance.BorderSize = 0;
             this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedButton3.Location = new System.Drawing.Point(33, 308);
-            this.roundedButton3.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButton3.Location = new System.Drawing.Point(44, 379);
+            this.roundedButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(115, 32);
+            this.roundedButton3.Size = new System.Drawing.Size(153, 39);
             this.roundedButton3.TabIndex = 2;
             this.roundedButton3.Text = "Έναρξη";
             this.roundedButton3.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(33, 160);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(115, 97);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
-            // shadowPanel2
-            // 
-            this.shadowPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.shadowPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.shadowPanel2.BorderColor = System.Drawing.Color.Empty;
-            this.shadowPanel2.Controls.Add(this.pictureBox6);
-            this.shadowPanel2.Controls.Add(this.wrapLabel2);
-            this.shadowPanel2.Controls.Add(this.roundedButton2);
-            this.shadowPanel2.Controls.Add(this.pictureBox2);
-            this.shadowPanel2.Location = new System.Drawing.Point(233, 33);
-            this.shadowPanel2.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
-            this.shadowPanel2.Name = "shadowPanel2";
-            this.shadowPanel2.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.shadowPanel2.Size = new System.Drawing.Size(184, 363);
-            this.shadowPanel2.TabIndex = 12;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(74, 259);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
             // 
             // wrapLabel2
             // 
             this.wrapLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrapLabel2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.wrapLabel2.Location = new System.Drawing.Point(18, 9);
+            this.wrapLabel2.Location = new System.Drawing.Point(24, 11);
+            this.wrapLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wrapLabel2.Name = "wrapLabel2";
-            this.wrapLabel2.Size = new System.Drawing.Size(149, 72);
+            this.wrapLabel2.Size = new System.Drawing.Size(199, 96);
             this.wrapLabel2.TabIndex = 3;
             this.wrapLabel2.Text = "Εισαγωγη στην αναπτυξη εφαρμογων";
             this.wrapLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -270,58 +321,22 @@
             this.roundedButton2.FlatAppearance.BorderSize = 0;
             this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton2.ForeColor = System.Drawing.Color.White;
-            this.roundedButton2.Location = new System.Drawing.Point(33, 308);
-            this.roundedButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButton2.Location = new System.Drawing.Point(44, 379);
+            this.roundedButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(115, 32);
+            this.roundedButton2.Size = new System.Drawing.Size(153, 39);
             this.roundedButton2.TabIndex = 2;
             this.roundedButton2.Text = "Έναρξη";
             this.roundedButton2.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(33, 160);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(115, 95);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // shadowPanel1
-            // 
-            this.shadowPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.shadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.shadowPanel1.BorderColor = System.Drawing.Color.Empty;
-            this.shadowPanel1.Controls.Add(this.pictureBox5);
-            this.shadowPanel1.Controls.Add(this.wrapLabel1);
-            this.shadowPanel1.Controls.Add(this.roundedButton1);
-            this.shadowPanel1.Controls.Add(this.pictureBox1);
-            this.shadowPanel1.Location = new System.Drawing.Point(31, 33);
-            this.shadowPanel1.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
-            this.shadowPanel1.Name = "shadowPanel1";
-            this.shadowPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.shadowPanel1.Size = new System.Drawing.Size(184, 363);
-            this.shadowPanel1.TabIndex = 12;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(74, 261);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
             // 
             // wrapLabel1
             // 
             this.wrapLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrapLabel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.wrapLabel1.Location = new System.Drawing.Point(18, 9);
+            this.wrapLabel1.Location = new System.Drawing.Point(24, 11);
+            this.wrapLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wrapLabel1.Name = "wrapLabel1";
-            this.wrapLabel1.Size = new System.Drawing.Size(149, 72);
+            this.wrapLabel1.Size = new System.Drawing.Size(199, 96);
             this.wrapLabel1.TabIndex = 3;
             this.wrapLabel1.Text = "Θεμελιώδεις γνώσεις Πληροφορικής";
             this.wrapLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -337,32 +352,23 @@
             this.roundedButton1.FlatAppearance.BorderSize = 0;
             this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedButton1.Location = new System.Drawing.Point(33, 308);
-            this.roundedButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButton1.Location = new System.Drawing.Point(44, 379);
+            this.roundedButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(115, 32);
+            this.roundedButton1.Size = new System.Drawing.Size(153, 39);
             this.roundedButton1.TabIndex = 2;
             this.roundedButton1.Text = "Έναρξη";
             this.roundedButton1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(33, 160);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 97);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // FormCourses
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(859, 480);
+            this.ClientSize = new System.Drawing.Size(1145, 591);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(875, 519);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(1161, 628);
             this.Name = "FormCourses";
             this.Text = "FormCourses";
             this.Load += new System.EventHandler(this.FormCourses_Load);

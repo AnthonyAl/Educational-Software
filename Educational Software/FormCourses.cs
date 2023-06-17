@@ -9,9 +9,12 @@ namespace Educational_Software
 {
     public partial class FormCourses : Form
     {
-        public FormCourses()
+        private Form1 form1;
+
+        public FormCourses(Form1 form1)
         {
             InitializeComponent();
+            this.form1 = form1;
         }
 
         private void FormCourses_Load(object sender, EventArgs e)
@@ -23,6 +26,11 @@ namespace Educational_Software
             courseGroupNames.Add("Προηγμένες γνωσεις Πληροφορικής");
             courseGroupNames.Add("Εισαγωγη σε Ευφυη Συστηματα");
 
+        }
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            form1.openChildForm(new FormTeaching(1));
         }
     }
 }
