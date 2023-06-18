@@ -46,7 +46,7 @@ namespace Educational_Software
 
         private void Next_Click(object sender, EventArgs e)
         {
-            form1.openChildForm(new FormCourseStudy(courseId, form1, courseImage));
+            form1.openChildForm(new FormCourseStudy(courseId, form1, courseImage, labelTitle.Text));
         }
 
         private void Back_Click(object sender, EventArgs e)

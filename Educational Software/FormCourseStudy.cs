@@ -18,15 +18,17 @@ namespace Educational_Software
     {
         private int courseId;
         private Image courseImage;
+        private string courseName;
         private Form1 form1;
         private int lessonId = 1;
 
-        public FormCourseStudy(int courseId, Form1 form1, Image courseImage)
+        public FormCourseStudy(int courseId, Form1 form1, Image courseImage, string courseName)
         {
             InitializeComponent();
             this.courseId = courseId;
             this.form1 = form1;
             this.courseImage = courseImage;
+            this.courseName = courseName;
         }
 
         private void loadLesson()
@@ -38,7 +40,7 @@ namespace Educational_Software
 
                 if((lessons.Count) < lessonId)
                 {
-                    form1.openChildForm(new FormCourseOverview(courseId, form1, courseImage));
+                    form1.openChildForm(new FormCourseComplete(courseImage, courseName, form1));
                     return;
                 }
 
