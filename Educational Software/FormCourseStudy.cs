@@ -1,5 +1,6 @@
 ﻿using Educational_Software.Model;
 using Newtonsoft.Json;
+using Rounded;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,14 +17,16 @@ namespace Educational_Software
     public partial class FormCourseStudy : Form
     {
         private int courseId;
+        private Image courseImage;
         private Form1 form1;
         private int lessonId = 1;
 
-        public FormCourseStudy(int courseId, Form1 form1)
+        public FormCourseStudy(int courseId, Form1 form1, Image courseImage)
         {
             InitializeComponent();
             this.courseId = courseId;
             this.form1 = form1;
+            this.courseImage = courseImage;
         }
 
         private void loadLesson()
@@ -35,7 +38,7 @@ namespace Educational_Software
 
                 if((lessons.Count) < lessonId)
                 {
-                    form1.openChildForm(new FormCourseOverview(courseId, form1));
+                    form1.openChildForm(new FormCourseOverview(courseId, form1, courseImage));
                     return;
                 }
 
@@ -68,7 +71,7 @@ namespace Educational_Software
 
 
 
-                panelBody1.Select();
+                panelBodyDesc.Select();
             }
         }
 
@@ -76,7 +79,7 @@ namespace Educational_Software
         private void Prev_Click(object sender, EventArgs e)
         {
             if(lessonId==1)
-                form1.openChildForm(new FormCourseOverview(courseId, form1));
+                form1.openChildForm(new FormCourseOverview(courseId, form1, courseImage));
             else
             {
                 lessonId -= 1;
@@ -93,6 +96,18 @@ namespace Educational_Software
         {
             lessonId += 1;
             loadLesson();
+        }
+
+        private void Button_MouseEnter(object sender, EventArgs e)
+        {
+            ((RoundedButton)sender).BorderColor = Color.FromArgb(242, 139, 29);
+            ((RoundedButton)sender).ForeColor = Color.FromArgb(242, 139, 29);
+        }
+
+        private void Button_MouseLeave(object sender, EventArgs e)
+        {
+            ((RoundedButton)sender).BorderColor = Color.FromArgb(36, 45, 66);
+            ((RoundedButton)sender).ForeColor = Color.FromArgb(36, 45, 66);
         }
     }
 }

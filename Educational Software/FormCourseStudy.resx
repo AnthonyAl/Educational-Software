@@ -117,42 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="labelDesc.Text" xml:space="preserve">
-    <value>Η κατανόηση των θεμελιωδών αρχών είναι αναγκαία για κάθε επιστήμη. Γι' αυτό είναι απαραίτητο ο φοιτητής να έχει κατανοήσει τα θεμελιώδη μαθήματα, ώστε να αποκτήσει μία καλή βάση γνώσης και να είναι σε θέση να κατανοήσει πιο δύσκολα προβλήματα στο μέλλον. Πιο συγκεκριμένα, κάθε πληροφορικός πρέπει να έχει μία καλή κατανόηση μαθηματικών, γλωσσών προγραμματισμού καθώς και θεωρίας αλγορίθμων.  Σημειώνεται ότι τα μαθήματα που θα παρουσιαστούν σε αυτή την ενότητα διδάσκονται σε όλες τις σχολές Πληροφορικής και είναι απαραίτητο να γίνουν κατανοητά τα μαθησιακά αποτελέσματα που προσφέρουν να γίνουν κατανοητά πριν εμβαθύνουμε σε πιο δύσκολα ζητήματα στον τομέα της επιστήμης της Πληροφορικής.</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Η κατανόηση των θεμελιωδών αρχών είναι αναγκαία για κάθε επιστήμη. Γι' αυτό είναι απαραίτητο ο φοιτητής να έχει κατανοήσει τα θεμελιώδη μαθήματα, ώστε να αποκτήσει μία καλή βάση γνώσης και να είναι σε θέση να κατανοήσει πιο δύσκολα προβλήματα στο μέλλον. Πιο συγκεκριμένα, κάθε πληροφορικός πρέπει να έχει μία καλή κατανόηση μαθηματικών, γλωσσών προγραμματισμού καθώς και θεωρίας αλγορίθμων.  Σημειώνεται ότι τα μαθήματα που θα παρουσιαστούν σε αυτή την ενότητα διδάσκονται σε όλες τις σχολές Πληροφορικής και είναι απαραίτητο να γίνουν κατανοητά τα μαθησιακά αποτελέσματα που προσφέρουν να γίνουν κατανοητά πριν εμβαθύνουμε σε πιο δύσκολα ζητήματα στον τομέα της επιστήμης της Πληροφορικής.</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Η κατανόηση των θεμελιωδών αρχών είναι αναγκαία για κάθε επιστήμη. Γι' αυτό είναι απαραίτητο ο φοιτητής να έχει κατανοήσει τα θεμελιώδη μαθήματα, ώστε να αποκτήσει μία καλή βάση γνώσης και να είναι σε θέση να κατανοήσει πιο δύσκολα προβλήματα στο μέλλον. Πιο συγκεκριμένα, κάθε πληροφορικός πρέπει να έχει μία καλή κατανόηση μαθηματικών, γλωσσών προγραμματισμού καθώς και θεωρίας αλγορίθμων.  Σημειώνεται ότι τα μαθήματα που θα παρουσιαστούν σε αυτή την ενότητα διδάσκονται σε όλες τις σχολές Πληροφορικής και είναι απαραίτητο να γίνουν κατανοητά τα μαθησιακά αποτελέσματα που προσφέρουν να γίνουν κατανοητά πριν εμβαθύνουμε σε πιο δύσκολα ζητήματα στον τομέα της επιστήμης της Πληροφορικής.</value>
-  </data>
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
