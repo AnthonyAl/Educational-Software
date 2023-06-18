@@ -116,6 +116,9 @@
     <None Include="CourseMaterial\lessons3.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="CourseMaterial\lessons4.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -420,6 +423,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\courses\course4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CourseMaterial\images\imageAnalysis1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CourseMaterial\images\imageAnalysis2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CourseMaterial\images\nlp1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CourseMaterial\images\np2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

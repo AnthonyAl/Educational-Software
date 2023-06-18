@@ -9,5 +9,6 @@ namespace Educational_Software.Model
     internal class Paragraph
     {
         public string Text { get; set; } = string.Empty;
+        public string ImageName { get; set; } = string.Empty;
     }
 }
