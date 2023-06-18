@@ -30,14 +30,14 @@
         {
             this.labelTitle = new System.Windows.Forms.Label();
             this.labelDesc = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelHeader = new System.Windows.Forms.Panel();
+            this.panelBody = new System.Windows.Forms.Panel();
+            this.panelFooter = new System.Windows.Forms.Panel();
             this.Next = new Rounded.RoundedButton();
             this.Back = new Rounded.RoundedButton();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panelHeader.SuspendLayout();
+            this.panelBody.SuspendLayout();
+            this.panelFooter.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelTitle
@@ -59,42 +59,43 @@
             this.labelDesc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDesc.Name = "labelDesc";
             this.labelDesc.Padding = new System.Windows.Forms.Padding(96, 0, 64, 0);
-            this.labelDesc.Size = new System.Drawing.Size(600, 311);
+            this.labelDesc.Size = new System.Drawing.Size(600, 258);
             this.labelDesc.TabIndex = 1;
             this.labelDesc.Text = "label1";
             // 
-            // panel1
+            // panelHeader
             // 
-            this.panel1.Controls.Add(this.labelTitle);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(64, 0, 64, 0);
-            this.panel1.Size = new System.Drawing.Size(600, 60);
-            this.panel1.TabIndex = 2;
+            this.panelHeader.Controls.Add(this.labelTitle);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelHeader.Margin = new System.Windows.Forms.Padding(2);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Padding = new System.Windows.Forms.Padding(64, 0, 64, 0);
+            this.panelHeader.Size = new System.Drawing.Size(600, 60);
+            this.panelHeader.TabIndex = 2;
             // 
-            // panel2
+            // panelBody
             // 
-            this.panel2.Controls.Add(this.labelDesc);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 60);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(600, 311);
-            this.panel2.TabIndex = 3;
+            this.panelBody.Controls.Add(this.labelDesc);
+            this.panelBody.Controls.Add(this.panelFooter);
+            this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBody.Location = new System.Drawing.Point(0, 60);
+            this.panelBody.Margin = new System.Windows.Forms.Padding(2);
+            this.panelBody.Name = "panelBody";
+            this.panelBody.Size = new System.Drawing.Size(600, 311);
+            this.panelBody.TabIndex = 3;
             // 
-            // panel3
+            // panelFooter
             // 
-            this.panel3.Controls.Add(this.Next);
-            this.panel3.Controls.Add(this.Back);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 318);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(64, 0, 64, 0);
-            this.panel3.Size = new System.Drawing.Size(600, 53);
-            this.panel3.TabIndex = 3;
+            this.panelFooter.Controls.Add(this.Next);
+            this.panelFooter.Controls.Add(this.Back);
+            this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelFooter.Location = new System.Drawing.Point(0, 258);
+            this.panelFooter.Margin = new System.Windows.Forms.Padding(2);
+            this.panelFooter.Name = "panelFooter";
+            this.panelFooter.Padding = new System.Windows.Forms.Padding(64, 0, 64, 0);
+            this.panelFooter.Size = new System.Drawing.Size(600, 53);
+            this.panelFooter.TabIndex = 3;
             // 
             // Next
             // 
@@ -140,18 +141,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(600, 371);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelBody);
+            this.Controls.Add(this.panelHeader);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormCourseOverview";
             this.Text = "FormCourseOverview";
             this.Load += new System.EventHandler(this.FormTeaching_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
+            this.panelBody.ResumeLayout(false);
+            this.panelFooter.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -160,10 +160,10 @@
 
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Label labelDesc;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelHeader;
+        private System.Windows.Forms.Panel panelBody;
         private Rounded.RoundedButton Back;
         private Rounded.RoundedButton Next;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelFooter;
     }
 }

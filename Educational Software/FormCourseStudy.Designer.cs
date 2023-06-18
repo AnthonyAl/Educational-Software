@@ -30,276 +30,79 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCourseStudy));
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panelBody4 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panelBodySpace4 = new System.Windows.Forms.Panel();
-            this.panelBodyImage4 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panelBody3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panelBodySpace3 = new System.Windows.Forms.Panel();
-            this.panelBodyImage3 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panelBody2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panelBodySpace2 = new System.Windows.Forms.Panel();
-            this.panelBodyImage2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panelBody1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelBodySpace1 = new System.Windows.Forms.Panel();
-            this.panelBodyImage1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelBody = new System.Windows.Forms.Panel();
+            this.panelHeader = new System.Windows.Forms.Panel();
             this.labelTitle = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelFooter = new System.Windows.Forms.Panel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.panelBody1 = new System.Windows.Forms.Panel();
+            this.panelLabel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelBody2 = new System.Windows.Forms.Panel();
+            this.panelLabel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panelBody3 = new System.Windows.Forms.Panel();
+            this.panelLabel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panelBody4 = new System.Windows.Forms.Panel();
+            this.panelLabel4 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Next = new Rounded.RoundedButton();
             this.Prev = new Rounded.RoundedButton();
-            this.panel2.SuspendLayout();
-            this.panelBody4.SuspendLayout();
-            this.panelBodyImage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panelBody3.SuspendLayout();
-            this.panelBodyImage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panelBody2.SuspendLayout();
-            this.panelBodyImage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelBody5 = new System.Windows.Forms.Panel();
+            this.panelLabel5 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.panelBody.SuspendLayout();
+            this.panelHeader.SuspendLayout();
+            this.panelFooter.SuspendLayout();
             this.panelBody1.SuspendLayout();
-            this.panelBodyImage1.SuspendLayout();
+            this.panelLabel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panelBody2.SuspendLayout();
+            this.panelLabel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelBody3.SuspendLayout();
+            this.panelLabel3.SuspendLayout();
+            this.panelBody4.SuspendLayout();
+            this.panelLabel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panelBody5.SuspendLayout();
+            this.panelLabel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel2
+            // panelBody
             // 
-            this.panel2.AutoScroll = true;
-            this.panel2.Controls.Add(this.panelBodySpace4);
-            this.panel2.Controls.Add(this.panelBodyImage4);
-            this.panel2.Controls.Add(this.panelBody4);
-            this.panel2.Controls.Add(this.panelBodySpace3);
-            this.panel2.Controls.Add(this.panelBodyImage3);
-            this.panel2.Controls.Add(this.panelBody3);
-            this.panel2.Controls.Add(this.panelBodySpace2);
-            this.panel2.Controls.Add(this.panelBodyImage2);
-            this.panel2.Controls.Add(this.panelBody2);
-            this.panel2.Controls.Add(this.panelBodySpace1);
-            this.panel2.Controls.Add(this.panelBodyImage1);
-            this.panel2.Controls.Add(this.panelBody1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 48);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1063, 1013);
-            this.panel2.TabIndex = 5;
+            this.panelBody.AutoScroll = true;
+            this.panelBody.Controls.Add(this.panelBody5);
+            this.panelBody.Controls.Add(this.panelBody4);
+            this.panelBody.Controls.Add(this.panelBody3);
+            this.panelBody.Controls.Add(this.panelBody2);
+            this.panelBody.Controls.Add(this.panelBody1);
+            this.panelBody.Controls.Add(this.panelFooter);
+            this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBody.Location = new System.Drawing.Point(0, 60);
+            this.panelBody.Margin = new System.Windows.Forms.Padding(2);
+            this.panelBody.Name = "panelBody";
+            this.panelBody.Size = new System.Drawing.Size(1063, 1001);
+            this.panelBody.TabIndex = 5;
             // 
-            // panelBody4
+            // panelHeader
             // 
-            this.panelBody4.Controls.Add(this.label4);
-            this.panelBody4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBody4.Location = new System.Drawing.Point(0, 338);
-            this.panelBody4.Name = "panelBody4";
-            this.panelBody4.Size = new System.Drawing.Size(850, 102);
-            this.panelBody4.TabIndex = 11;
-            // 
-            // label4
-            // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Onyx", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(0, 0);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
-            this.label4.Size = new System.Drawing.Size(850, 102);
-            this.label4.TabIndex = 1;
-            this.label4.Text = resources.GetString("label4.Text");
-            // 
-            // panelBodySpace4
-            // 
-            this.panelBodySpace4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBodySpace4.Location = new System.Drawing.Point(0, 486);
-            this.panelBodySpace4.Name = "panelBodySpace4";
-            this.panelBodySpace4.Size = new System.Drawing.Size(850, 10);
-            this.panelBodySpace4.TabIndex = 12;
-            // 
-            // panelBodyImage4
-            // 
-            this.panelBodyImage4.Controls.Add(this.pictureBox4);
-            this.panelBodyImage4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBodyImage4.Location = new System.Drawing.Point(0, 420);
-            this.panelBodyImage4.Name = "panelBodyImage4";
-            this.panelBodyImage4.Size = new System.Drawing.Size(850, 82);
-            this.panelBodyImage4.TabIndex = 10;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Image = global::Educational_Software.Properties.Resources.course4;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(850, 82);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
-            // panelBody3
-            // 
-            this.panelBody3.Controls.Add(this.label3);
-            this.panelBody3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBody3.Location = new System.Drawing.Point(0, 267);
-            this.panelBody3.Name = "panelBody3";
-            this.panelBody3.Size = new System.Drawing.Size(850, 42);
-            this.panelBody3.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Onyx", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
-            this.label3.Size = new System.Drawing.Size(850, 42);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "label1";
-            // 
-            // panelBodySpace3
-            // 
-            this.panelBodySpace3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBodySpace3.Location = new System.Drawing.Point(0, 334);
-            this.panelBodySpace3.Name = "panelBodySpace3";
-            this.panelBodySpace3.Size = new System.Drawing.Size(850, 5);
-            this.panelBodySpace3.TabIndex = 9;
-            // 
-            // panelBodyImage3
-            // 
-            this.panelBodyImage3.Controls.Add(this.pictureBox3);
-            this.panelBodyImage3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBodyImage3.Location = new System.Drawing.Point(0, 301);
-            this.panelBodyImage3.Name = "panelBodyImage3";
-            this.panelBodyImage3.Size = new System.Drawing.Size(850, 42);
-            this.panelBodyImage3.TabIndex = 7;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(850, 42);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // panelBody2
-            // 
-            this.panelBody2.Controls.Add(this.label2);
-            this.panelBody2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBody2.Location = new System.Drawing.Point(0, 203);
-            this.panelBody2.Name = "panelBody2";
-            this.panelBody2.Size = new System.Drawing.Size(850, 53);
-            this.panelBody2.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Onyx", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(850, 53);
-            this.label2.TabIndex = 1;
-            this.label2.Text = resources.GetString("label2.Text");
-            // 
-            // panelBodySpace2
-            // 
-            this.panelBodySpace2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBodySpace2.Location = new System.Drawing.Point(0, 265);
-            this.panelBodySpace2.Name = "panelBodySpace2";
-            this.panelBodySpace2.Size = new System.Drawing.Size(850, 3);
-            this.panelBodySpace2.TabIndex = 6;
-            // 
-            // panelBodyImage2
-            // 
-            this.panelBodyImage2.Controls.Add(this.pictureBox2);
-            this.panelBodyImage2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBodyImage2.Location = new System.Drawing.Point(0, 246);
-            this.panelBodyImage2.Name = "panelBodyImage2";
-            this.panelBodyImage2.Size = new System.Drawing.Size(850, 24);
-            this.panelBodyImage2.TabIndex = 4;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::Educational_Software.Properties.Resources.course3;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(850, 24);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // panelBody1
-            // 
-            this.panelBody1.Controls.Add(this.label1);
-            this.panelBody1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBody1.Location = new System.Drawing.Point(0, 0);
-            this.panelBody1.Name = "panelBody1";
-            this.panelBody1.Size = new System.Drawing.Size(1063, 158);
-            this.panelBody1.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Onyx", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(850, 126);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            // 
-            // panelBodySpace1
-            // 
-            this.panelBodySpace1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBodySpace1.Location = new System.Drawing.Point(0, 241);
-            this.panelBodySpace1.Name = "panelBodySpace1";
-            this.panelBodySpace1.Size = new System.Drawing.Size(1063, 13);
-            this.panelBodySpace1.TabIndex = 4;
-            // 
-            // panelBodyImage1
-            // 
-            this.panelBodyImage1.Controls.Add(this.pictureBox1);
-            this.panelBodyImage1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBodyImage1.Location = new System.Drawing.Point(0, 158);
-            this.panelBodyImage1.Name = "panelBodyImage1";
-            this.panelBodyImage1.Size = new System.Drawing.Size(1063, 83);
-            this.panelBodyImage1.TabIndex = 3;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(850, 66);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.labelTitle);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(64, 0, 64, 0);
-            this.panel1.Size = new System.Drawing.Size(1063, 48);
-            this.panel1.TabIndex = 4;
+            this.panelHeader.Controls.Add(this.labelTitle);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelHeader.Margin = new System.Windows.Forms.Padding(2);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Padding = new System.Windows.Forms.Padding(64, 0, 64, 0);
+            this.panelHeader.Size = new System.Drawing.Size(1063, 60);
+            this.panelHeader.TabIndex = 4;
             // 
             // labelTitle
             // 
@@ -312,23 +115,195 @@
             this.labelTitle.TabIndex = 0;
             this.labelTitle.Text = "label1";
             // 
-            // panel3
+            // panelFooter
             // 
-            this.panel3.Controls.Add(this.Next);
-            this.panel3.Controls.Add(this.Prev);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 1018);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(64, 0, 64, 0);
-            this.panel3.Size = new System.Drawing.Size(1063, 43);
-            this.panel3.TabIndex = 6;
+            this.panelFooter.Controls.Add(this.Next);
+            this.panelFooter.Controls.Add(this.Prev);
+            this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelFooter.Location = new System.Drawing.Point(0, 1070);
+            this.panelFooter.Margin = new System.Windows.Forms.Padding(2);
+            this.panelFooter.Name = "panelFooter";
+            this.panelFooter.Padding = new System.Windows.Forms.Padding(64, 0, 64, 0);
+            this.panelFooter.Size = new System.Drawing.Size(1046, 53);
+            this.panelFooter.TabIndex = 6;
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // panelBody1
+            // 
+            this.panelBody1.Controls.Add(this.panelLabel1);
+            this.panelBody1.Controls.Add(this.pictureBox1);
+            this.panelBody1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBody1.Location = new System.Drawing.Point(0, 0);
+            this.panelBody1.Name = "panelBody1";
+            this.panelBody1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 24);
+            this.panelBody1.Size = new System.Drawing.Size(1046, 214);
+            this.panelBody1.TabIndex = 13;
+            // 
+            // panelLabel1
+            // 
+            this.panelLabel1.Controls.Add(this.label1);
+            this.panelLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelLabel1.Location = new System.Drawing.Point(0, 0);
+            this.panelLabel1.Name = "panelLabel1";
+            this.panelLabel1.Size = new System.Drawing.Size(825, 190);
+            this.panelLabel1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Onyx", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
+            this.label1.Size = new System.Drawing.Size(825, 190);
+            this.label1.TabIndex = 1;
+            this.label1.Text = resources.GetString("label1.Text");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Image = global::Educational_Software.Properties.Resources.course4;
+            this.pictureBox1.Location = new System.Drawing.Point(825, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(221, 190);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panelBody2
+            // 
+            this.panelBody2.Controls.Add(this.panelLabel2);
+            this.panelBody2.Controls.Add(this.pictureBox2);
+            this.panelBody2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBody2.Location = new System.Drawing.Point(0, 214);
+            this.panelBody2.Name = "panelBody2";
+            this.panelBody2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 24);
+            this.panelBody2.Size = new System.Drawing.Size(1046, 214);
+            this.panelBody2.TabIndex = 14;
+            // 
+            // panelLabel2
+            // 
+            this.panelLabel2.Controls.Add(this.label2);
+            this.panelLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelLabel2.Location = new System.Drawing.Point(0, 0);
+            this.panelLabel2.Name = "panelLabel2";
+            this.panelLabel2.Size = new System.Drawing.Size(825, 190);
+            this.panelLabel2.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Onyx", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
+            this.label2.Size = new System.Drawing.Size(825, 190);
+            this.label2.TabIndex = 1;
+            this.label2.Text = resources.GetString("label2.Text");
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox2.Image = global::Educational_Software.Properties.Resources.course4;
+            this.pictureBox2.Location = new System.Drawing.Point(825, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(221, 190);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panelBody3
+            // 
+            this.panelBody3.Controls.Add(this.panelLabel3);
+            this.panelBody3.Controls.Add(this.pictureBox3);
+            this.panelBody3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBody3.Location = new System.Drawing.Point(0, 428);
+            this.panelBody3.Name = "panelBody3";
+            this.panelBody3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 24);
+            this.panelBody3.Size = new System.Drawing.Size(1046, 214);
+            this.panelBody3.TabIndex = 15;
+            // 
+            // panelLabel3
+            // 
+            this.panelLabel3.Controls.Add(this.label3);
+            this.panelLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelLabel3.Location = new System.Drawing.Point(0, 0);
+            this.panelLabel3.Name = "panelLabel3";
+            this.panelLabel3.Size = new System.Drawing.Size(825, 190);
+            this.panelLabel3.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Onyx", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
+            this.label3.Size = new System.Drawing.Size(825, 190);
+            this.label3.TabIndex = 1;
+            this.label3.Text = resources.GetString("label3.Text");
+            // 
+            // panelBody4
+            // 
+            this.panelBody4.Controls.Add(this.panelLabel4);
+            this.panelBody4.Controls.Add(this.pictureBox4);
+            this.panelBody4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBody4.Location = new System.Drawing.Point(0, 642);
+            this.panelBody4.Name = "panelBody4";
+            this.panelBody4.Padding = new System.Windows.Forms.Padding(0, 0, 0, 24);
+            this.panelBody4.Size = new System.Drawing.Size(1046, 214);
+            this.panelBody4.TabIndex = 16;
+            // 
+            // panelLabel4
+            // 
+            this.panelLabel4.Controls.Add(this.label4);
+            this.panelLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelLabel4.Location = new System.Drawing.Point(0, 0);
+            this.panelLabel4.Name = "panelLabel4";
+            this.panelLabel4.Size = new System.Drawing.Size(825, 190);
+            this.panelLabel4.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Onyx", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
+            this.label4.Size = new System.Drawing.Size(825, 190);
+            this.label4.TabIndex = 1;
+            this.label4.Text = resources.GetString("label4.Text");
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox4.Image = global::Educational_Software.Properties.Resources.course4;
+            this.pictureBox4.Location = new System.Drawing.Point(825, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(221, 190);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 7;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox3.Image = global::Educational_Software.Properties.Resources.course4;
+            this.pictureBox3.Location = new System.Drawing.Point(825, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(221, 190);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
             // 
             // Next
             // 
@@ -340,7 +315,7 @@
             this.Next.FlatAppearance.BorderSize = 0;
             this.Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Next.ForeColor = System.Drawing.Color.White;
-            this.Next.Location = new System.Drawing.Point(937, 0);
+            this.Next.Location = new System.Drawing.Point(920, 10);
             this.Next.Margin = new System.Windows.Forms.Padding(2);
             this.Next.Name = "Next";
             this.Next.Size = new System.Drawing.Size(115, 32);
@@ -358,7 +333,7 @@
             this.Prev.FlatAppearance.BorderSize = 0;
             this.Prev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Prev.ForeColor = System.Drawing.Color.White;
-            this.Prev.Location = new System.Drawing.Point(11, 0);
+            this.Prev.Location = new System.Drawing.Point(11, 10);
             this.Prev.Margin = new System.Windows.Forms.Padding(2);
             this.Prev.Name = "Prev";
             this.Prev.Size = new System.Drawing.Size(115, 32);
@@ -367,65 +342,110 @@
             this.Prev.UseVisualStyleBackColor = false;
             this.Prev.Click += new System.EventHandler(this.Prev_Click);
             // 
+            // panelBody5
+            // 
+            this.panelBody5.Controls.Add(this.panelLabel5);
+            this.panelBody5.Controls.Add(this.pictureBox5);
+            this.panelBody5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBody5.Location = new System.Drawing.Point(0, 856);
+            this.panelBody5.Name = "panelBody5";
+            this.panelBody5.Padding = new System.Windows.Forms.Padding(0, 0, 0, 24);
+            this.panelBody5.Size = new System.Drawing.Size(1046, 214);
+            this.panelBody5.TabIndex = 17;
+            // 
+            // panelLabel5
+            // 
+            this.panelLabel5.Controls.Add(this.label5);
+            this.panelLabel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelLabel5.Location = new System.Drawing.Point(0, 0);
+            this.panelLabel5.Name = "panelLabel5";
+            this.panelLabel5.Size = new System.Drawing.Size(825, 190);
+            this.panelLabel5.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Font = new System.Drawing.Font("Onyx", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
+            this.label5.Size = new System.Drawing.Size(825, 190);
+            this.label5.TabIndex = 1;
+            this.label5.Text = resources.GetString("label5.Text");
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox5.Image = global::Educational_Software.Properties.Resources.course4;
+            this.pictureBox5.Location = new System.Drawing.Point(825, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(221, 190);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 7;
+            this.pictureBox5.TabStop = false;
+            // 
             // FormCourseStudy
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(1063, 1061);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelBody);
+            this.Controls.Add(this.panelHeader);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Name = "FormCourseStudy";
             this.Text = "FormCourseStudy";
-            this.panel2.ResumeLayout(false);
-            this.panelBody4.ResumeLayout(false);
-            this.panelBodyImage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panelBody3.ResumeLayout(false);
-            this.panelBodyImage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panelBody2.ResumeLayout(false);
-            this.panelBodyImage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelBody.ResumeLayout(false);
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
+            this.panelFooter.ResumeLayout(false);
             this.panelBody1.ResumeLayout(false);
-            this.panelBodyImage1.ResumeLayout(false);
+            this.panelLabel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
+            this.panelBody2.ResumeLayout(false);
+            this.panelLabel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelBody3.ResumeLayout(false);
+            this.panelLabel3.ResumeLayout(false);
+            this.panelBody4.ResumeLayout(false);
+            this.panelLabel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panelBody5.ResumeLayout(false);
+            this.panelLabel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelBody;
         private Rounded.RoundedButton Next;
         private Rounded.RoundedButton Prev;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Label labelTitle;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelFooter;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Panel panelBody1;
-        private System.Windows.Forms.Panel panelBodyImage1;
-        private System.Windows.Forms.Panel panelBodySpace1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panelBody2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panelBodySpace2;
-        private System.Windows.Forms.Panel panelBodyImage2;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panelLabel1;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelBody4;
+        private System.Windows.Forms.Panel panelLabel4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panelBodySpace4;
-        private System.Windows.Forms.Panel panelBodyImage4;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panelBody3;
+        private System.Windows.Forms.Panel panelLabel3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panelBodySpace3;
-        private System.Windows.Forms.Panel panelBodyImage3;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panelBody2;
+        private System.Windows.Forms.Panel panelLabel2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panelBody5;
+        private System.Windows.Forms.Panel panelLabel5;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
