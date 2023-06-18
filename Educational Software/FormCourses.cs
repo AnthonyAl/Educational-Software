@@ -30,7 +30,7 @@ namespace Educational_Software
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            form1.openChildForm(new FormTeaching(1));
+            form1.openChildForm(new FormCourseOverview(1, form1));
         }
     }
 }

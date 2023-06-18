@@ -13,14 +13,16 @@ using System.Windows.Forms;
 
 namespace Educational_Software
 {
-    public partial class FormTeaching : Form
+    public partial class FormCourseOverview : Form
     {
         private int courseId;
+        private Form1 form1;
 
-        public FormTeaching(int courseId)
+        public FormCourseOverview(int courseId, Form1 form1)
         {
             InitializeComponent();
             this.courseId = courseId;
+            this.form1 = form1;
         }
 
         private void FormTeaching_Load(object sender, EventArgs e)
@@ -36,6 +38,16 @@ namespace Educational_Software
                 labelDesc.Text = course.Introduction;
 
             }
+        }
+
+        private void Next_Click(object sender, EventArgs e)
+        {
+            form1.openChildForm(new FormCourseStudy(courseId, form1));
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            form1.openChildForm(new FormCourses(form1));
         }
     }
 }

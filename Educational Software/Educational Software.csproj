@@ -64,17 +64,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCourseOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCourseOverview.designer.cs">
+      <DependentUpon>FormCourseOverview.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCourses.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCourses.Designer.cs">
       <DependentUpon>FormCourses.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormTeaching.cs">
+    <Compile Include="FormCourseStudy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTeaching.Designer.cs">
-      <DependentUpon>FormTeaching.cs</DependentUpon>
+    <Compile Include="FormCourseStudy.designer.cs">
+      <DependentUpon>FormCourseStudy.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Course.cs" />
     <Compile Include="Model\Goal.cs" />
@@ -85,11 +91,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCourseOverview.resx">
+      <DependentUpon>FormCourseOverview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCourses.resx">
       <DependentUpon>FormCourses.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormTeaching.resx">
-      <DependentUpon>FormTeaching.cs</DependentUpon>
+    <EmbeddedResource Include="FormCourseStudy.resx">
+      <DependentUpon>FormCourseStudy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -400,6 +409,17 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\courses\course1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\courses\course2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\courses\course3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\courses\course4.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
