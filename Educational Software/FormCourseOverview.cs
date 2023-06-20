@@ -67,8 +67,8 @@ namespace Educational_Software
 
         private void Button_MouseLeave(object sender, EventArgs e)
         {
-            ((RoundedButton)sender).BorderColor = Color.FromArgb(36, 45, 66);
-            ((RoundedButton)sender).ForeColor = Color.FromArgb(36, 45, 66);
+            ((RoundedButton)sender).BorderColor = Color.FromArgb(90, 116, 176);
+            ((RoundedButton)sender).ForeColor = Color.FromArgb(90, 116, 176);
         }
     }
 }

@@ -56,12 +56,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelFooter = new System.Windows.Forms.Panel();
             this.shadowPanel1 = new ShadowPanel.ShadowPanel();
-            this.Prev = new Rounded.RoundedButton();
             this.shadowPanelNext = new ShadowPanel.ShadowPanel();
-            this.Next = new Rounded.RoundedButton();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.labelTitle = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.Prev = new Rounded.RoundedButton();
+            this.Next = new Rounded.RoundedButton();
             this.panelBody.SuspendLayout();
             this.panelBodyDesc.SuspendLayout();
             this.panelLabelDesc.SuspendLayout();
@@ -115,7 +115,7 @@
             this.panelBodyDesc.Name = "panelBodyDesc";
             this.panelBodyDesc.Padding = new System.Windows.Forms.Padding(0, 0, 32, 24);
             this.panelBodyDesc.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.panelBodyDesc.Size = new System.Drawing.Size(1046, 214);
+            this.panelBodyDesc.Size = new System.Drawing.Size(1042, 214);
             this.panelBodyDesc.TabIndex = 18;
             this.panelBodyDesc.Visible = false;
             // 
@@ -125,7 +125,7 @@
             this.panelLabelDesc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLabelDesc.Location = new System.Drawing.Point(0, 0);
             this.panelLabelDesc.Name = "panelLabelDesc";
-            this.panelLabelDesc.Size = new System.Drawing.Size(691, 190);
+            this.panelLabelDesc.Size = new System.Drawing.Size(687, 190);
             this.panelLabelDesc.TabIndex = 6;
             // 
             // labelDesc
@@ -137,7 +137,7 @@
             this.labelDesc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDesc.Name = "labelDesc";
             this.labelDesc.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
-            this.labelDesc.Size = new System.Drawing.Size(691, 190);
+            this.labelDesc.Size = new System.Drawing.Size(687, 190);
             this.labelDesc.TabIndex = 1;
             this.labelDesc.Text = "Description\r\n";
             // 
@@ -145,7 +145,7 @@
             // 
             this.pictureBoxDesc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.pictureBoxDesc.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBoxDesc.Location = new System.Drawing.Point(691, 0);
+            this.pictureBoxDesc.Location = new System.Drawing.Point(687, 0);
             this.pictureBoxDesc.Name = "pictureBoxDesc";
             this.pictureBoxDesc.Size = new System.Drawing.Size(323, 190);
             this.pictureBoxDesc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -162,7 +162,7 @@
             this.panelBody5.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.panelBody5.Name = "panelBody5";
             this.panelBody5.Padding = new System.Windows.Forms.Padding(0, 0, 32, 24);
-            this.panelBody5.Size = new System.Drawing.Size(1046, 214);
+            this.panelBody5.Size = new System.Drawing.Size(1042, 214);
             this.panelBody5.TabIndex = 17;
             this.panelBody5.Visible = false;
             // 
@@ -172,7 +172,7 @@
             this.panelLabel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLabel5.Location = new System.Drawing.Point(0, 0);
             this.panelLabel5.Name = "panelLabel5";
-            this.panelLabel5.Size = new System.Drawing.Size(691, 190);
+            this.panelLabel5.Size = new System.Drawing.Size(687, 190);
             this.panelLabel5.TabIndex = 6;
             // 
             // label5
@@ -183,14 +183,14 @@
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
-            this.label5.Size = new System.Drawing.Size(691, 190);
+            this.label5.Size = new System.Drawing.Size(687, 190);
             this.label5.TabIndex = 1;
             this.label5.Text = "label\r\n";
             // 
             // pictureBox5
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox5.Location = new System.Drawing.Point(691, 0);
+            this.pictureBox5.Location = new System.Drawing.Point(687, 0);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(323, 190);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -208,7 +208,7 @@
             this.panelBody4.Name = "panelBody4";
             this.panelBody4.Padding = new System.Windows.Forms.Padding(0, 0, 32, 24);
             this.panelBody4.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.panelBody4.Size = new System.Drawing.Size(1046, 214);
+            this.panelBody4.Size = new System.Drawing.Size(1042, 214);
             this.panelBody4.TabIndex = 16;
             this.panelBody4.Visible = false;
             // 
@@ -218,7 +218,7 @@
             this.panelLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLabel4.Location = new System.Drawing.Point(0, 0);
             this.panelLabel4.Name = "panelLabel4";
-            this.panelLabel4.Size = new System.Drawing.Size(691, 190);
+            this.panelLabel4.Size = new System.Drawing.Size(687, 190);
             this.panelLabel4.TabIndex = 6;
             // 
             // label4
@@ -230,7 +230,7 @@
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
-            this.label4.Size = new System.Drawing.Size(691, 190);
+            this.label4.Size = new System.Drawing.Size(687, 190);
             this.label4.TabIndex = 1;
             this.label4.Text = "label\r\n";
             // 
@@ -238,7 +238,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox4.Location = new System.Drawing.Point(691, 0);
+            this.pictureBox4.Location = new System.Drawing.Point(687, 0);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(323, 190);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -254,7 +254,7 @@
             this.panelBody3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.panelBody3.Name = "panelBody3";
             this.panelBody3.Padding = new System.Windows.Forms.Padding(0, 0, 32, 24);
-            this.panelBody3.Size = new System.Drawing.Size(1046, 214);
+            this.panelBody3.Size = new System.Drawing.Size(1042, 214);
             this.panelBody3.TabIndex = 15;
             this.panelBody3.Visible = false;
             // 
@@ -264,7 +264,7 @@
             this.panelLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLabel3.Location = new System.Drawing.Point(0, 0);
             this.panelLabel3.Name = "panelLabel3";
-            this.panelLabel3.Size = new System.Drawing.Size(691, 190);
+            this.panelLabel3.Size = new System.Drawing.Size(687, 190);
             this.panelLabel3.TabIndex = 6;
             // 
             // label3
@@ -275,14 +275,14 @@
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
-            this.label3.Size = new System.Drawing.Size(691, 190);
+            this.label3.Size = new System.Drawing.Size(687, 190);
             this.label3.TabIndex = 1;
             this.label3.Text = "label\r\n";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox3.Location = new System.Drawing.Point(691, 0);
+            this.pictureBox3.Location = new System.Drawing.Point(687, 0);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(323, 190);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -300,7 +300,7 @@
             this.panelBody2.Name = "panelBody2";
             this.panelBody2.Padding = new System.Windows.Forms.Padding(0, 0, 32, 24);
             this.panelBody2.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.panelBody2.Size = new System.Drawing.Size(1046, 214);
+            this.panelBody2.Size = new System.Drawing.Size(1042, 214);
             this.panelBody2.TabIndex = 14;
             this.panelBody2.Visible = false;
             // 
@@ -310,7 +310,7 @@
             this.panelLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLabel2.Location = new System.Drawing.Point(0, 0);
             this.panelLabel2.Name = "panelLabel2";
-            this.panelLabel2.Size = new System.Drawing.Size(691, 190);
+            this.panelLabel2.Size = new System.Drawing.Size(687, 190);
             this.panelLabel2.TabIndex = 6;
             // 
             // label2
@@ -322,7 +322,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(691, 190);
+            this.label2.Size = new System.Drawing.Size(687, 190);
             this.label2.TabIndex = 1;
             this.label2.Text = "label\r\n";
             // 
@@ -330,7 +330,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox2.Location = new System.Drawing.Point(691, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(687, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(323, 190);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -346,7 +346,7 @@
             this.panelBody1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.panelBody1.Name = "panelBody1";
             this.panelBody1.Padding = new System.Windows.Forms.Padding(0, 0, 32, 24);
-            this.panelBody1.Size = new System.Drawing.Size(1046, 214);
+            this.panelBody1.Size = new System.Drawing.Size(1042, 214);
             this.panelBody1.TabIndex = 13;
             this.panelBody1.Visible = false;
             // 
@@ -356,7 +356,7 @@
             this.panelLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLabel1.Location = new System.Drawing.Point(0, 0);
             this.panelLabel1.Name = "panelLabel1";
-            this.panelLabel1.Size = new System.Drawing.Size(691, 190);
+            this.panelLabel1.Size = new System.Drawing.Size(687, 190);
             this.panelLabel1.TabIndex = 6;
             // 
             // label1
@@ -367,14 +367,14 @@
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(691, 190);
+            this.label1.Size = new System.Drawing.Size(687, 190);
             this.label1.TabIndex = 1;
             this.label1.Text = "label\r\n";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Location = new System.Drawing.Point(691, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(687, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(323, 190);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -390,7 +390,7 @@
             this.panelFooter.Margin = new System.Windows.Forms.Padding(2);
             this.panelFooter.Name = "panelFooter";
             this.panelFooter.Padding = new System.Windows.Forms.Padding(64, 0, 64, 0);
-            this.panelFooter.Size = new System.Drawing.Size(1046, 53);
+            this.panelFooter.Size = new System.Drawing.Size(1042, 53);
             this.panelFooter.TabIndex = 6;
             // 
             // shadowPanel1
@@ -404,64 +404,16 @@
             this.shadowPanel1.Size = new System.Drawing.Size(128, 38);
             this.shadowPanel1.TabIndex = 7;
             // 
-            // Prev
-            // 
-            this.Prev.BackColor = System.Drawing.Color.Transparent;
-            this.Prev.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(45)))), ((int)(((byte)(66)))));
-            this.Prev.BorderRadius = 2;
-            this.Prev.BorderSize = 2;
-            this.Prev.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Prev.FlatAppearance.BorderSize = 0;
-            this.Prev.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Prev.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Prev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Prev.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Prev.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(45)))), ((int)(((byte)(66)))));
-            this.Prev.Location = new System.Drawing.Point(0, 0);
-            this.Prev.Margin = new System.Windows.Forms.Padding(2);
-            this.Prev.Name = "Prev";
-            this.Prev.Size = new System.Drawing.Size(128, 38);
-            this.Prev.TabIndex = 4;
-            this.Prev.Text = "←  Προηγούμενο";
-            this.Prev.UseVisualStyleBackColor = false;
-            this.Prev.Click += new System.EventHandler(this.Prev_Click);
-            this.Prev.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
-            this.Prev.MouseLeave += new System.EventHandler(this.Button_MouseLeave);
-            // 
             // shadowPanelNext
             // 
             this.shadowPanelNext.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.shadowPanelNext.BorderColor = System.Drawing.Color.Empty;
             this.shadowPanelNext.Controls.Add(this.Next);
-            this.shadowPanelNext.Location = new System.Drawing.Point(915, 4);
+            this.shadowPanelNext.Location = new System.Drawing.Point(911, 4);
             this.shadowPanelNext.Name = "shadowPanelNext";
             this.shadowPanelNext.PanelColor = System.Drawing.Color.Empty;
             this.shadowPanelNext.Size = new System.Drawing.Size(128, 38);
             this.shadowPanelNext.TabIndex = 6;
-            // 
-            // Next
-            // 
-            this.Next.BackColor = System.Drawing.Color.Transparent;
-            this.Next.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(45)))), ((int)(((byte)(66)))));
-            this.Next.BorderRadius = 2;
-            this.Next.BorderSize = 2;
-            this.Next.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Next.FlatAppearance.BorderSize = 0;
-            this.Next.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Next.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Next.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Next.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(45)))), ((int)(((byte)(66)))));
-            this.Next.Location = new System.Drawing.Point(0, 0);
-            this.Next.Margin = new System.Windows.Forms.Padding(2);
-            this.Next.Name = "Next";
-            this.Next.Size = new System.Drawing.Size(128, 38);
-            this.Next.TabIndex = 4;
-            this.Next.Text = "Επόμενο  →";
-            this.Next.UseVisualStyleBackColor = false;
-            this.Next.Click += new System.EventHandler(this.Next_Click);
-            this.Next.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
-            this.Next.MouseLeave += new System.EventHandler(this.Button_MouseLeave);
             // 
             // panelHeader
             // 
@@ -481,7 +433,7 @@
             this.labelTitle.Location = new System.Drawing.Point(58, 9);
             this.labelTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(104, 36);
+            this.labelTitle.Size = new System.Drawing.Size(129, 45);
             this.labelTitle.TabIndex = 0;
             this.labelTitle.Text = "Τίτλος";
             // 
@@ -490,6 +442,54 @@
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // Prev
+            // 
+            this.Prev.BackColor = System.Drawing.Color.Transparent;
+            this.Prev.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(116)))), ((int)(((byte)(176)))));
+            this.Prev.BorderRadius = 2;
+            this.Prev.BorderSize = 2;
+            this.Prev.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Prev.FlatAppearance.BorderSize = 0;
+            this.Prev.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Prev.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Prev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Prev.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Prev.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(116)))), ((int)(((byte)(176)))));
+            this.Prev.Location = new System.Drawing.Point(0, 0);
+            this.Prev.Margin = new System.Windows.Forms.Padding(2);
+            this.Prev.Name = "Prev";
+            this.Prev.Size = new System.Drawing.Size(128, 38);
+            this.Prev.TabIndex = 4;
+            this.Prev.Text = "←  Προηγούμενο";
+            this.Prev.UseVisualStyleBackColor = false;
+            this.Prev.Click += new System.EventHandler(this.Prev_Click);
+            this.Prev.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
+            this.Prev.MouseLeave += new System.EventHandler(this.Button_MouseLeave);
+            // 
+            // Next
+            // 
+            this.Next.BackColor = System.Drawing.Color.Transparent;
+            this.Next.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(116)))), ((int)(((byte)(176)))));
+            this.Next.BorderRadius = 2;
+            this.Next.BorderSize = 2;
+            this.Next.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Next.FlatAppearance.BorderSize = 0;
+            this.Next.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Next.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Next.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Next.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(116)))), ((int)(((byte)(176)))));
+            this.Next.Location = new System.Drawing.Point(0, 0);
+            this.Next.Margin = new System.Windows.Forms.Padding(2);
+            this.Next.Name = "Next";
+            this.Next.Size = new System.Drawing.Size(128, 38);
+            this.Next.TabIndex = 4;
+            this.Next.Text = "Επόμενο  →";
+            this.Next.UseVisualStyleBackColor = false;
+            this.Next.Click += new System.EventHandler(this.Next_Click);
+            this.Next.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
+            this.Next.MouseLeave += new System.EventHandler(this.Button_MouseLeave);
             // 
             // FormCourseStudy
             // 
