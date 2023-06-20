@@ -90,6 +90,7 @@ namespace Educational_Software
                         {
                             checkBoxes[i].Text = questions[index].Choices[i].Text;
                             checkBoxes[i].Show();
+                            checkBoxes[i].Enabled = true;
                         }
                     }
 
@@ -106,7 +107,9 @@ namespace Educational_Software
 
                     labelImageChoose.Text = "";
 
-                    
+                    comboBoxImage.Items.Clear();
+                    comboBoxImage.Enabled = true;
+
                     foreach (Paragraph paragraph in questions[index].Choices)
                     {
                         comboBoxImage.Items.Add(paragraph.Text);
@@ -243,6 +246,8 @@ namespace Educational_Software
                         labelImageChoose.Text = " ΛΑΘΟΣ!";
                         labelImageChoose.ForeColor = Color.Red;
                     }
+
+                    comboBoxImage.Enabled = false;
 
                     break;
 

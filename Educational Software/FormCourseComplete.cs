@@ -19,6 +19,8 @@ namespace Educational_Software
         string courseTitle;
         Form1 form1;
 
+        private Random random = new Random();
+
         public FormCourseComplete(Image courseImage, string courseTitle, Form1 form1)
         {
             InitializeComponent();
@@ -42,17 +44,44 @@ namespace Educational_Software
         private void roundedButton1_Click(object sender, EventArgs e)
         {
 
+            // create a quiz
+
             // create question list
-            List<Question> questions;
+            List<Question> questions = new List<Question>();
+
+            List<Question> allQuestions;
+            List<Question> selectedQuestions;
 
             using (StreamReader cour = new StreamReader("CourseMaterial/questions4.json"))
             {
                 string jsonc = cour.ReadToEnd();
-                questions = JsonConvert.DeserializeObject<List<Question>>(jsonc);
-
-                
-
+                allQuestions = JsonConvert.DeserializeObject<List<Question>>(jsonc);             
             }
+
+
+            int numberOfLessons = 3;
+
+            for(int i= 1; i <= numberOfLessons; i++)
+            {
+                selectedQuestions = allQuestions.Where(q => q.LessonCode == i).ToList();
+                selectedQuestions = selectedQuestions.OrderBy(q => random.Next()).ToList(); // source: https://stackoverflow.com/questions/273313/randomize-a-listt
+                selectedQuestions = selectedQuestions.Take(2).ToList();
+                questions = questions.Concat(selectedQuestions).ToList();
+            }
+
+
+            // load rev questions
+            using (StreamReader cour = new StreamReader("CourseMaterial/questions4rev.json"))
+            {
+                string jsonc = cour.ReadToEnd();
+                List<Question>  revQuestions = JsonConvert.DeserializeObject<List<Question>>(jsonc);
+                questions = questions.Concat(revQuestions).ToList();
+            }
+
+
+
+            // suffle all questions
+            //questions = questions.OrderBy(q => random.Next()).ToList();
 
             form1.openChildForm(new FormTest(questions));
         }

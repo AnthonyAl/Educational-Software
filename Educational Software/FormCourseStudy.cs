@@ -52,6 +52,17 @@ namespace Educational_Software
                 PictureBox[] pictureBoxes = {pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5};
                 Panel[] panels = { panelBody1, panelBody2, panelBody3, panelBody4, panelBody5 };
 
+                // label5/panel5 is for the Goals
+                panelBody5.Show();
+                StringBuilder sb = new StringBuilder();
+                sb.Append("Μαθησιακά Αποτελέσματα του μαθήματος:\n");
+                foreach(Goal goal in lesson.Goals) {
+                    sb.Append(" > ");
+                    sb.Append(goal.Text);
+                    sb.Append('\n');
+                }
+                label5.Text = sb.ToString();
+
                 for (int i= lesson.Paragraphs.Count-1; i>=0; i--)
                 {
                     panels[i].Show();
@@ -64,14 +75,11 @@ namespace Educational_Software
                     else
                     {
                         pictureBoxes[i].Hide();
-                    }
+                    }                   
                 }
 
                 labelDesc.Text = lesson.Description;
                 panelBodyDesc.Visible = true;
-
-
-
 
                 panelBodyDesc.Select();
             }
