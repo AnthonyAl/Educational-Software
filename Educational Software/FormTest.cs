@@ -142,6 +142,7 @@ namespace Educational_Software
                             labels[i].Show();
                             comboBoxes[i].Show();
                             comboBoxes[i].Enabled = true;
+                            comboBoxes[i].Items.Clear();
                             foreach (Paragraph paragraph in questions[index].Choices)
                             {
                                 comboBoxes[i].Items.Add(paragraph.Text);
