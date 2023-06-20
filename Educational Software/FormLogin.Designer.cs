@@ -231,6 +231,7 @@
             this.roundedButtonCreateAccount.TabIndex = 7;
             this.roundedButtonCreateAccount.Text = "Νέος στην εφαρμογή μας;   Δημιούργησε λογαριασμό";
             this.roundedButtonCreateAccount.UseVisualStyleBackColor = false;
+            this.roundedButtonCreateAccount.Click += new System.EventHandler(this.roundedButtonCreateAccount_Click);
             // 
             // roundedButtonLogin
             // 
@@ -250,6 +251,7 @@
             this.roundedButtonLogin.TabIndex = 3;
             this.roundedButtonLogin.Text = "ΣΥΝΔΕΣΗ";
             this.roundedButtonLogin.UseVisualStyleBackColor = false;
+            this.roundedButtonLogin.Click += new System.EventHandler(this.roundedButtonLogin_Click);
             // 
             // FormLogin
             // 

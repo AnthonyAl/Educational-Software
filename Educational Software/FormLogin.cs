@@ -94,5 +94,17 @@ namespace Educational_Software
                         labelPassword.Location = new Point(labelPassword.Location.X, textBoxPassword.Location.Y);
                 }
         }
+
+        private void roundedButtonCreateAccount_Click(object sender, EventArgs e)
+        {
+            new FormRegister().Show();
+            this.Hide();
+        }
+
+        private void roundedButtonLogin_Click(object sender, EventArgs e)
+        {
+            new Form1().Show();
+            this.Hide();
+        }
     }
 }

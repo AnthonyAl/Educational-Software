@@ -28,12 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegister));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.comboBox10 = new System.Windows.Forms.ComboBox();
@@ -89,7 +85,20 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.shadowPanel1 = new ShadowPanel.ShadowPanel();
+            this.shadowPanelBody = new ShadowPanel.ShadowUpperPanel();
+            this.labelPassword = new System.Windows.Forms.Label();
+            this.labelRegisterTitle = new System.Windows.Forms.Label();
+            this.labelUsername = new System.Windows.Forms.Label();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
+            this.labelUnderline1 = new System.Windows.Forms.Label();
+            this.labelUnderline2 = new System.Windows.Forms.Label();
+            this.shadowPanelSubmitButton = new ShadowPanel.ShadowPanel();
+            this.labelConfirmPassword = new System.Windows.Forms.Label();
+            this.textBoxConfirmPassword = new System.Windows.Forms.TextBox();
+            this.labelUnderline3 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.roundedButtonSubmit = new Rounded.RoundedButton();
             this.panelContent.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -110,6 +119,8 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.shadowPanelBody.SuspendLayout();
+            this.shadowPanelSubmitButton.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -119,74 +130,13 @@
             this.panelHeader.IHelp = global::Educational_Software.Properties.Resources._24_gray6;
             this.panelHeader.IMaximize = global::Educational_Software.Properties.Resources._24_gray10;
             this.panelHeader.IMinimize = global::Educational_Software.Properties.Resources._24_gray11;
-            this.panelHeader.Size = new System.Drawing.Size(676, 46);
+            this.panelHeader.Size = new System.Drawing.Size(715, 46);
             // 
             // panelContent
             // 
             this.panelContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.panelContent.Controls.Add(this.shadowPanel1);
-            this.panelContent.Controls.Add(this.label1);
-            this.panelContent.Controls.Add(this.textBox1);
-            this.panelContent.Controls.Add(this.label2);
-            this.panelContent.Controls.Add(this.textBox2);
-            this.panelContent.Controls.Add(this.label3);
-            this.panelContent.Controls.Add(this.textBox3);
-            this.panelContent.Controls.Add(this.panel1);
-            this.panelContent.Size = new System.Drawing.Size(676, 422);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(158, 60);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(76, 20);
-            this.textBox2.TabIndex = 7;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(95, 63);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Password";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(158, 24);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(76, 20);
-            this.textBox1.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(93, 31);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Username";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(158, 102);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(76, 20);
-            this.textBox3.TabIndex = 9;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(47, 84);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Repeat Password";
+            this.panelContent.Controls.Add(this.shadowPanelBody);
+            this.panelContent.Size = new System.Drawing.Size(715, 453);
             // 
             // panel1
             // 
@@ -209,10 +159,10 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(62, 162);
+            this.panel1.Location = new System.Drawing.Point(40, 217);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(304, 281);
+            this.panel1.Size = new System.Drawing.Size(553, 100);
             this.panel1.TabIndex = 10;
             // 
             // panel11
@@ -223,7 +173,7 @@
             this.panel11.Location = new System.Drawing.Point(0, 374);
             this.panel11.Margin = new System.Windows.Forms.Padding(2);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(287, 22);
+            this.panel11.Size = new System.Drawing.Size(536, 22);
             this.panel11.TabIndex = 17;
             // 
             // comboBox10
@@ -268,7 +218,7 @@
             this.panel12.Location = new System.Drawing.Point(0, 352);
             this.panel12.Margin = new System.Windows.Forms.Padding(2);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(287, 22);
+            this.panel12.Size = new System.Drawing.Size(536, 22);
             this.panel12.TabIndex = 16;
             // 
             // comboBox11
@@ -313,7 +263,7 @@
             this.panel13.Location = new System.Drawing.Point(0, 330);
             this.panel13.Margin = new System.Windows.Forms.Padding(2);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(287, 22);
+            this.panel13.Size = new System.Drawing.Size(536, 22);
             this.panel13.TabIndex = 15;
             // 
             // comboBox12
@@ -358,7 +308,7 @@
             this.panel14.Location = new System.Drawing.Point(0, 308);
             this.panel14.Margin = new System.Windows.Forms.Padding(2);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(287, 22);
+            this.panel14.Size = new System.Drawing.Size(536, 22);
             this.panel14.TabIndex = 14;
             // 
             // comboBox13
@@ -403,7 +353,7 @@
             this.panel15.Location = new System.Drawing.Point(0, 286);
             this.panel15.Margin = new System.Windows.Forms.Padding(2);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(287, 22);
+            this.panel15.Size = new System.Drawing.Size(536, 22);
             this.panel15.TabIndex = 13;
             // 
             // comboBox14
@@ -448,7 +398,7 @@
             this.panel16.Location = new System.Drawing.Point(0, 264);
             this.panel16.Margin = new System.Windows.Forms.Padding(2);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(287, 22);
+            this.panel16.Size = new System.Drawing.Size(536, 22);
             this.panel16.TabIndex = 12;
             // 
             // comboBox15
@@ -493,7 +443,7 @@
             this.panel17.Location = new System.Drawing.Point(0, 242);
             this.panel17.Margin = new System.Windows.Forms.Padding(2);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(287, 22);
+            this.panel17.Size = new System.Drawing.Size(536, 22);
             this.panel17.TabIndex = 11;
             // 
             // comboBox16
@@ -538,7 +488,7 @@
             this.panel18.Location = new System.Drawing.Point(0, 220);
             this.panel18.Margin = new System.Windows.Forms.Padding(2);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(287, 22);
+            this.panel18.Size = new System.Drawing.Size(536, 22);
             this.panel18.TabIndex = 10;
             // 
             // comboBox17
@@ -583,7 +533,7 @@
             this.panel19.Location = new System.Drawing.Point(0, 198);
             this.panel19.Margin = new System.Windows.Forms.Padding(2);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(287, 22);
+            this.panel19.Size = new System.Drawing.Size(536, 22);
             this.panel19.TabIndex = 9;
             // 
             // comboBox18
@@ -628,7 +578,7 @@
             this.panel8.Location = new System.Drawing.Point(0, 176);
             this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(287, 22);
+            this.panel8.Size = new System.Drawing.Size(536, 22);
             this.panel8.TabIndex = 8;
             // 
             // comboBox7
@@ -673,7 +623,7 @@
             this.panel9.Location = new System.Drawing.Point(0, 154);
             this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(287, 22);
+            this.panel9.Size = new System.Drawing.Size(536, 22);
             this.panel9.TabIndex = 7;
             // 
             // comboBox8
@@ -718,7 +668,7 @@
             this.panel10.Location = new System.Drawing.Point(0, 132);
             this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(287, 22);
+            this.panel10.Size = new System.Drawing.Size(536, 22);
             this.panel10.TabIndex = 6;
             // 
             // comboBox9
@@ -763,7 +713,7 @@
             this.panel5.Location = new System.Drawing.Point(0, 110);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(287, 22);
+            this.panel5.Size = new System.Drawing.Size(536, 22);
             this.panel5.TabIndex = 5;
             // 
             // comboBox4
@@ -808,7 +758,7 @@
             this.panel6.Location = new System.Drawing.Point(0, 88);
             this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(287, 22);
+            this.panel6.Size = new System.Drawing.Size(536, 22);
             this.panel6.TabIndex = 4;
             // 
             // comboBox5
@@ -853,7 +803,7 @@
             this.panel7.Location = new System.Drawing.Point(0, 66);
             this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(287, 22);
+            this.panel7.Size = new System.Drawing.Size(536, 22);
             this.panel7.TabIndex = 3;
             // 
             // comboBox6
@@ -898,7 +848,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 44);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(287, 22);
+            this.panel4.Size = new System.Drawing.Size(536, 22);
             this.panel4.TabIndex = 2;
             // 
             // comboBox3
@@ -943,7 +893,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 22);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(287, 22);
+            this.panel3.Size = new System.Drawing.Size(536, 22);
             this.panel3.TabIndex = 1;
             // 
             // comboBox2
@@ -988,7 +938,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(287, 22);
+            this.panel2.Size = new System.Drawing.Size(536, 22);
             this.panel2.TabIndex = 0;
             // 
             // comboBox1
@@ -1025,25 +975,217 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "label4";
             // 
-            // shadowPanel1
+            // shadowPanelBody
             // 
-            this.shadowPanel1.BorderColor = System.Drawing.Color.Empty;
-            this.shadowPanel1.Location = new System.Drawing.Point(399, 31);
-            this.shadowPanel1.Name = "shadowPanel1";
-            this.shadowPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.shadowPanel1.Size = new System.Drawing.Size(200, 100);
-            this.shadowPanel1.TabIndex = 11;
+            this.shadowPanelBody.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shadowPanelBody.BorderColor = System.Drawing.Color.Empty;
+            this.shadowPanelBody.Controls.Add(this.labelConfirmPassword);
+            this.shadowPanelBody.Controls.Add(this.textBoxConfirmPassword);
+            this.shadowPanelBody.Controls.Add(this.labelUnderline3);
+            this.shadowPanelBody.Controls.Add(this.shadowPanelSubmitButton);
+            this.shadowPanelBody.Controls.Add(this.labelPassword);
+            this.shadowPanelBody.Controls.Add(this.labelRegisterTitle);
+            this.shadowPanelBody.Controls.Add(this.labelUsername);
+            this.shadowPanelBody.Controls.Add(this.textBoxPassword);
+            this.shadowPanelBody.Controls.Add(this.textBoxUsername);
+            this.shadowPanelBody.Controls.Add(this.labelUnderline1);
+            this.shadowPanelBody.Controls.Add(this.labelUnderline2);
+            this.shadowPanelBody.Controls.Add(this.panel1);
+            this.shadowPanelBody.Location = new System.Drawing.Point(37, 25);
+            this.shadowPanelBody.Name = "shadowPanelBody";
+            this.shadowPanelBody.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
+            this.shadowPanelBody.Size = new System.Drawing.Size(641, 401);
+            this.shadowPanelBody.TabIndex = 11;
+            // 
+            // labelPassword
+            // 
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
+            this.labelPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.labelPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelPassword.Location = new System.Drawing.Point(36, 169);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(71, 15);
+            this.labelPassword.TabIndex = 13;
+            this.labelPassword.Text = "Password";
+            this.labelPassword.Click += new System.EventHandler(this.labelPassword_Click);
+            // 
+            // labelRegisterTitle
+            // 
+            this.labelRegisterTitle.AutoSize = true;
+            this.labelRegisterTitle.BackColor = System.Drawing.Color.Transparent;
+            this.labelRegisterTitle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.labelRegisterTitle.Font = new System.Drawing.Font("Onyx", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRegisterTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(81)))), ((int)(((byte)(84)))));
+            this.labelRegisterTitle.Location = new System.Drawing.Point(37, 23);
+            this.labelRegisterTitle.Name = "labelRegisterTitle";
+            this.labelRegisterTitle.Size = new System.Drawing.Size(154, 36);
+            this.labelRegisterTitle.TabIndex = 15;
+            this.labelRegisterTitle.Text = "ΕΓΓΡΑΦΗ";
+            // 
+            // labelUsername
+            // 
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
+            this.labelUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.labelUsername.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelUsername.Location = new System.Drawing.Point(36, 97);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(74, 15);
+            this.labelUsername.TabIndex = 11;
+            this.labelUsername.Text = "Username";
+            this.labelUsername.Click += new System.EventHandler(this.labelUsername_Click);
+            // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
+            this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassword.ForeColor = System.Drawing.Color.Gainsboro;
+            this.textBoxPassword.Location = new System.Drawing.Point(40, 169);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(266, 16);
+            this.textBoxPassword.TabIndex = 14;
+            this.textBoxPassword.Click += new System.EventHandler(this.textBoxPassword_Click);
+            this.textBoxPassword.Leave += new System.EventHandler(this.textBoxPassword_Leave);
+            // 
+            // textBoxUsername
+            // 
+            this.textBoxUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
+            this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxUsername.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsername.ForeColor = System.Drawing.Color.Gainsboro;
+            this.textBoxUsername.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBoxUsername.Location = new System.Drawing.Point(40, 97);
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(553, 16);
+            this.textBoxUsername.TabIndex = 12;
+            this.textBoxUsername.Click += new System.EventHandler(this.textBoxUsername_Click);
+            this.textBoxUsername.Leave += new System.EventHandler(this.textBoxUsername_Leave);
+            // 
+            // labelUnderline1
+            // 
+            this.labelUnderline1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelUnderline1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
+            this.labelUnderline1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUnderline1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelUnderline1.Location = new System.Drawing.Point(40, 103);
+            this.labelUnderline1.Name = "labelUnderline1";
+            this.labelUnderline1.Size = new System.Drawing.Size(553, 23);
+            this.labelUnderline1.TabIndex = 18;
+            this.labelUnderline1.Text = resources.GetString("labelUnderline1.Text");
+            // 
+            // labelUnderline2
+            // 
+            this.labelUnderline2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelUnderline2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
+            this.labelUnderline2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUnderline2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelUnderline2.Location = new System.Drawing.Point(40, 175);
+            this.labelUnderline2.Name = "labelUnderline2";
+            this.labelUnderline2.Size = new System.Drawing.Size(266, 23);
+            this.labelUnderline2.TabIndex = 19;
+            this.labelUnderline2.Text = resources.GetString("labelUnderline2.Text");
+            // 
+            // shadowPanelSubmitButton
+            // 
+            this.shadowPanelSubmitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.shadowPanelSubmitButton.BorderColor = System.Drawing.Color.Empty;
+            this.shadowPanelSubmitButton.Controls.Add(this.roundedButtonSubmit);
+            this.shadowPanelSubmitButton.Location = new System.Drawing.Point(476, 340);
+            this.shadowPanelSubmitButton.Name = "shadowPanelSubmitButton";
+            this.shadowPanelSubmitButton.Padding = new System.Windows.Forms.Padding(0, 0, 6, 6);
+            this.shadowPanelSubmitButton.PanelColor = System.Drawing.Color.Empty;
+            this.shadowPanelSubmitButton.Size = new System.Drawing.Size(117, 48);
+            this.shadowPanelSubmitButton.TabIndex = 20;
+            // 
+            // labelConfirmPassword
+            // 
+            this.labelConfirmPassword.AutoSize = true;
+            this.labelConfirmPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
+            this.labelConfirmPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.labelConfirmPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConfirmPassword.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelConfirmPassword.Location = new System.Drawing.Point(323, 169);
+            this.labelConfirmPassword.Name = "labelConfirmPassword";
+            this.labelConfirmPassword.Size = new System.Drawing.Size(126, 15);
+            this.labelConfirmPassword.TabIndex = 21;
+            this.labelConfirmPassword.Text = "Confirm Password";
+            this.labelConfirmPassword.Click += new System.EventHandler(this.labelConfirmPassword_Click);
+            // 
+            // textBoxConfirmPassword
+            // 
+            this.textBoxConfirmPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxConfirmPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
+            this.textBoxConfirmPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxConfirmPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxConfirmPassword.ForeColor = System.Drawing.Color.Gainsboro;
+            this.textBoxConfirmPassword.Location = new System.Drawing.Point(327, 169);
+            this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
+            this.textBoxConfirmPassword.Size = new System.Drawing.Size(266, 16);
+            this.textBoxConfirmPassword.TabIndex = 22;
+            this.textBoxConfirmPassword.Click += new System.EventHandler(this.textBoxConfirmPassword_Click);
+            this.textBoxConfirmPassword.Leave += new System.EventHandler(this.textBoxConfirmPassword_Leave);
+            // 
+            // labelUnderline3
+            // 
+            this.labelUnderline3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelUnderline3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
+            this.labelUnderline3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUnderline3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelUnderline3.Location = new System.Drawing.Point(327, 175);
+            this.labelUnderline3.Name = "labelUnderline3";
+            this.labelUnderline3.Size = new System.Drawing.Size(266, 23);
+            this.labelUnderline3.TabIndex = 23;
+            this.labelUnderline3.Text = resources.GetString("labelUnderline3.Text");
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // roundedButtonSubmit
+            // 
+            this.roundedButtonSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(166)))), ((int)(((byte)(154)))));
+            this.roundedButtonSubmit.BorderColor = System.Drawing.Color.Black;
+            this.roundedButtonSubmit.BorderRadius = 4;
+            this.roundedButtonSubmit.BorderSize = 0;
+            this.roundedButtonSubmit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roundedButtonSubmit.FlatAppearance.BorderSize = 0;
+            this.roundedButtonSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButtonSubmit.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButtonSubmit.ForeColor = System.Drawing.Color.White;
+            this.roundedButtonSubmit.Location = new System.Drawing.Point(0, 0);
+            this.roundedButtonSubmit.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButtonSubmit.Name = "roundedButtonSubmit";
+            this.roundedButtonSubmit.Size = new System.Drawing.Size(111, 42);
+            this.roundedButtonSubmit.TabIndex = 3;
+            this.roundedButtonSubmit.Text = "ΥΠΟΒΟΛΗ";
+            this.roundedButtonSubmit.UseVisualStyleBackColor = false;
+            this.roundedButtonSubmit.Click += new System.EventHandler(this.roundedButtonSubmit_Click);
             // 
             // FormRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 474);
+            this.ClientSize = new System.Drawing.Size(721, 505);
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MinimumSize = new System.Drawing.Size(721, 485);
             this.Name = "FormRegister";
             this.Text = "FormRegister";
             this.panelContent.ResumeLayout(false);
-            this.panelContent.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
@@ -1081,18 +1223,14 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.shadowPanelBody.ResumeLayout(false);
+            this.shadowPanelBody.PerformLayout();
+            this.shadowPanelSubmitButton.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ComboBox comboBox2;
@@ -1148,6 +1286,19 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label6;
-        private ShadowPanel.ShadowPanel shadowPanel1;
+        private ShadowPanel.ShadowUpperPanel shadowPanelBody;
+        private System.Windows.Forms.Label labelPassword;
+        private System.Windows.Forms.Label labelRegisterTitle;
+        private System.Windows.Forms.Label labelUsername;
+        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.TextBox textBoxUsername;
+        private System.Windows.Forms.Label labelUnderline1;
+        private System.Windows.Forms.Label labelUnderline2;
+        private System.Windows.Forms.Label labelConfirmPassword;
+        private System.Windows.Forms.TextBox textBoxConfirmPassword;
+        private System.Windows.Forms.Label labelUnderline3;
+        private ShadowPanel.ShadowPanel shadowPanelSubmitButton;
+        private Rounded.RoundedButton roundedButtonSubmit;
+        private System.Windows.Forms.Timer timer1;
     }
 }
