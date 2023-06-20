@@ -33,24 +33,24 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.shadowPanel4 = new ShadowPanel.ShadowPanel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.wrapLabel4 = new Educational_Software.CustomControls.WrapLabel();
+            this.roundedButton4 = new Rounded.RoundedButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.shadowPanel3 = new ShadowPanel.ShadowPanel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.wrapLabel3 = new Educational_Software.CustomControls.WrapLabel();
+            this.roundedButton3 = new Rounded.RoundedButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.shadowPanel2 = new ShadowPanel.ShadowPanel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.wrapLabel2 = new Educational_Software.CustomControls.WrapLabel();
+            this.roundedButton2 = new Rounded.RoundedButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.shadowPanel1 = new ShadowPanel.ShadowPanel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.wrapLabel4 = new Educational_Software.CustomControls.WrapLabel();
-            this.roundedButton4 = new Rounded.RoundedButton();
-            this.wrapLabel3 = new Educational_Software.CustomControls.WrapLabel();
-            this.roundedButton3 = new Rounded.RoundedButton();
-            this.wrapLabel2 = new Educational_Software.CustomControls.WrapLabel();
-            this.roundedButton2 = new Rounded.RoundedButton();
             this.wrapLabel1 = new Educational_Software.CustomControls.WrapLabel();
             this.roundedButton1 = new Rounded.RoundedButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.panel1.SuspendLayout();
             this.shadowPanel4.SuspendLayout();
@@ -83,7 +83,7 @@
             this.panel1.Controls.Add(this.shadowPanel2);
             this.panel1.Controls.Add(this.shadowPanel1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1145, 591);
             this.panel1.TabIndex = 0;
@@ -114,6 +114,38 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox8.TabIndex = 6;
             this.pictureBox8.TabStop = false;
+            // 
+            // wrapLabel4
+            // 
+            this.wrapLabel4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wrapLabel4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.wrapLabel4.Location = new System.Drawing.Point(24, 11);
+            this.wrapLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.wrapLabel4.Name = "wrapLabel4";
+            this.wrapLabel4.Size = new System.Drawing.Size(199, 96);
+            this.wrapLabel4.TabIndex = 3;
+            this.wrapLabel4.Text = "Εισαγωγη σε Ευφυη Συστηματα";
+            this.wrapLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // roundedButton4
+            // 
+            this.roundedButton4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.roundedButton4.BorderColor = System.Drawing.Color.Black;
+            this.roundedButton4.BorderRadius = 2;
+            this.roundedButton4.BorderSize = 0;
+            this.roundedButton4.FlatAppearance.BorderSize = 0;
+            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton4.ForeColor = System.Drawing.Color.White;
+            this.roundedButton4.Location = new System.Drawing.Point(44, 379);
+            this.roundedButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedButton4.Name = "roundedButton4";
+            this.roundedButton4.Size = new System.Drawing.Size(153, 39);
+            this.roundedButton4.TabIndex = 2;
+            this.roundedButton4.Text = "Έναρξη";
+            this.roundedButton4.UseVisualStyleBackColor = false;
+            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
             // 
             // pictureBox4
             // 
@@ -153,6 +185,38 @@
             this.pictureBox7.TabIndex = 5;
             this.pictureBox7.TabStop = false;
             // 
+            // wrapLabel3
+            // 
+            this.wrapLabel3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wrapLabel3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.wrapLabel3.Location = new System.Drawing.Point(24, 11);
+            this.wrapLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.wrapLabel3.Name = "wrapLabel3";
+            this.wrapLabel3.Size = new System.Drawing.Size(199, 96);
+            this.wrapLabel3.TabIndex = 3;
+            this.wrapLabel3.Text = "Προηγμένες γνωσεις Πληροφορικής";
+            this.wrapLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // roundedButton3
+            // 
+            this.roundedButton3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.roundedButton3.BorderColor = System.Drawing.Color.Black;
+            this.roundedButton3.BorderRadius = 2;
+            this.roundedButton3.BorderSize = 0;
+            this.roundedButton3.FlatAppearance.BorderSize = 0;
+            this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton3.ForeColor = System.Drawing.Color.White;
+            this.roundedButton3.Location = new System.Drawing.Point(44, 379);
+            this.roundedButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedButton3.Name = "roundedButton3";
+            this.roundedButton3.Size = new System.Drawing.Size(153, 39);
+            this.roundedButton3.TabIndex = 2;
+            this.roundedButton3.Text = "Έναρξη";
+            this.roundedButton3.UseVisualStyleBackColor = false;
+            this.roundedButton3.Click += new System.EventHandler(this.roundedButton3_Click);
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Educational_Software.Properties.Resources.course3;
@@ -190,6 +254,38 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
+            // 
+            // wrapLabel2
+            // 
+            this.wrapLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wrapLabel2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.wrapLabel2.Location = new System.Drawing.Point(24, 11);
+            this.wrapLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.wrapLabel2.Name = "wrapLabel2";
+            this.wrapLabel2.Size = new System.Drawing.Size(199, 96);
+            this.wrapLabel2.TabIndex = 3;
+            this.wrapLabel2.Text = "Εισαγωγη στην αναπτυξη εφαρμογων";
+            this.wrapLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // roundedButton2
+            // 
+            this.roundedButton2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.roundedButton2.BorderColor = System.Drawing.Color.Black;
+            this.roundedButton2.BorderRadius = 2;
+            this.roundedButton2.BorderSize = 0;
+            this.roundedButton2.FlatAppearance.BorderSize = 0;
+            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton2.ForeColor = System.Drawing.Color.White;
+            this.roundedButton2.Location = new System.Drawing.Point(44, 379);
+            this.roundedButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedButton2.Name = "roundedButton2";
+            this.roundedButton2.Size = new System.Drawing.Size(153, 39);
+            this.roundedButton2.TabIndex = 2;
+            this.roundedButton2.Text = "Έναρξη";
+            this.roundedButton2.UseVisualStyleBackColor = false;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // pictureBox2
             // 
@@ -229,111 +325,6 @@
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Educational_Software.Properties.Resources.course1;
-            this.pictureBox1.Location = new System.Drawing.Point(44, 197);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(153, 119);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // wrapLabel4
-            // 
-            this.wrapLabel4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wrapLabel4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.wrapLabel4.Location = new System.Drawing.Point(24, 11);
-            this.wrapLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.wrapLabel4.Name = "wrapLabel4";
-            this.wrapLabel4.Size = new System.Drawing.Size(199, 96);
-            this.wrapLabel4.TabIndex = 3;
-            this.wrapLabel4.Text = "Εισαγωγη σε Ευφυη Συστηματα";
-            this.wrapLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // roundedButton4
-            // 
-            this.roundedButton4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.roundedButton4.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton4.BorderRadius = 2;
-            this.roundedButton4.BorderSize = 0;
-            this.roundedButton4.FlatAppearance.BorderSize = 0;
-            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton4.ForeColor = System.Drawing.Color.White;
-            this.roundedButton4.Location = new System.Drawing.Point(44, 379);
-            this.roundedButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(153, 39);
-            this.roundedButton4.TabIndex = 2;
-            this.roundedButton4.Text = "Έναρξη";
-            this.roundedButton4.UseVisualStyleBackColor = false;
-            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
-            // 
-            // wrapLabel3
-            // 
-            this.wrapLabel3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wrapLabel3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.wrapLabel3.Location = new System.Drawing.Point(24, 11);
-            this.wrapLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.wrapLabel3.Name = "wrapLabel3";
-            this.wrapLabel3.Size = new System.Drawing.Size(199, 96);
-            this.wrapLabel3.TabIndex = 3;
-            this.wrapLabel3.Text = "Προηγμένες γνωσεις Πληροφορικής";
-            this.wrapLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // roundedButton3
-            // 
-            this.roundedButton3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.roundedButton3.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton3.BorderRadius = 2;
-            this.roundedButton3.BorderSize = 0;
-            this.roundedButton3.FlatAppearance.BorderSize = 0;
-            this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedButton3.Location = new System.Drawing.Point(44, 379);
-            this.roundedButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(153, 39);
-            this.roundedButton3.TabIndex = 2;
-            this.roundedButton3.Text = "Έναρξη";
-            this.roundedButton3.UseVisualStyleBackColor = false;
-            // 
-            // wrapLabel2
-            // 
-            this.wrapLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wrapLabel2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.wrapLabel2.Location = new System.Drawing.Point(24, 11);
-            this.wrapLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.wrapLabel2.Name = "wrapLabel2";
-            this.wrapLabel2.Size = new System.Drawing.Size(199, 96);
-            this.wrapLabel2.TabIndex = 3;
-            this.wrapLabel2.Text = "Εισαγωγη στην αναπτυξη εφαρμογων";
-            this.wrapLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // roundedButton2
-            // 
-            this.roundedButton2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.roundedButton2.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton2.BorderRadius = 2;
-            this.roundedButton2.BorderSize = 0;
-            this.roundedButton2.FlatAppearance.BorderSize = 0;
-            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton2.ForeColor = System.Drawing.Color.White;
-            this.roundedButton2.Location = new System.Drawing.Point(44, 379);
-            this.roundedButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(153, 39);
-            this.roundedButton2.TabIndex = 2;
-            this.roundedButton2.Text = "Έναρξη";
-            this.roundedButton2.UseVisualStyleBackColor = false;
-            // 
             // wrapLabel1
             // 
             this.wrapLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -365,6 +356,17 @@
             this.roundedButton1.Text = "Έναρξη";
             this.roundedButton1.UseVisualStyleBackColor = false;
             this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Educational_Software.Properties.Resources.course1;
+            this.pictureBox1.Location = new System.Drawing.Point(44, 197);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(153, 119);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // FormCourses
             // 

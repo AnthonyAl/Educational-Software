@@ -141,6 +141,7 @@ namespace Educational_Software
                             labels[i].Text = questions[index].Rows[i].Text;
                             labels[i].Show();
                             comboBoxes[i].Show();
+                            comboBoxes[i].Enabled = true;
                             foreach (Paragraph paragraph in questions[index].Choices)
                             {
                                 comboBoxes[i].Items.Add(paragraph.Text);
@@ -272,6 +273,8 @@ namespace Educational_Software
                             labelmatchshows[i].Text = " ΛΑΘΟΣ!";
                             labelmatchshows[i].ForeColor = Color.Red;
                         }
+
+                        comboBoxes[i].Enabled = false;
                     }
 
                     break;

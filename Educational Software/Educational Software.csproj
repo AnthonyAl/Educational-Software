@@ -58,6 +58,7 @@
     <Compile Include="CustomControls\RoundedToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Dao\UserDao.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +113,7 @@
     <Compile Include="Model\Paragraph.cs" />
     <Compile Include="Model\Question.cs" />
     <Compile Include="Model\Quiz.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
