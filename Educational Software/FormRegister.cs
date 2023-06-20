@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsFormFlat;
 
 namespace Educational_Software
 {
-    public partial class FormRegister : Form
+    public partial class FormRegister : FormFlat
     {
         public FormRegister()
         {

@@ -42,9 +42,9 @@
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.roundedToggleButton1 = new Rounded.RoundedToggleButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.roundedToggleButton1 = new Rounded.RoundedToggleButton();
             this.panelContent.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -297,6 +297,23 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "ΕΚΠΑΙΔΕΥΤΙΚΟ  ΛΟΓΙΣΜΙΚΟ";
             // 
+            // roundedToggleButton1
+            // 
+            this.roundedToggleButton1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.roundedToggleButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.roundedToggleButton1.Fill = true;
+            this.roundedToggleButton1.Location = new System.Drawing.Point(575, 12);
+            this.roundedToggleButton1.MinimumSize = new System.Drawing.Size(45, 22);
+            this.roundedToggleButton1.Name = "roundedToggleButton1";
+            this.roundedToggleButton1.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.roundedToggleButton1.OffToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
+            this.roundedToggleButton1.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
+            this.roundedToggleButton1.OnToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
+            this.roundedToggleButton1.Size = new System.Drawing.Size(504, 22);
+            this.roundedToggleButton1.TabIndex = 9;
+            this.roundedToggleButton1.Text = "roundedToggleButton1";
+            this.roundedToggleButton1.UseVisualStyleBackColor = false;
+            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -318,26 +335,9 @@
             this.panelChildForm.Size = new System.Drawing.Size(1094, 499);
             this.panelChildForm.TabIndex = 10;
             // 
-            // roundedToggleButton1
-            // 
-            this.roundedToggleButton1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.roundedToggleButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.roundedToggleButton1.Fill = true;
-            this.roundedToggleButton1.Location = new System.Drawing.Point(575, 12);
-            this.roundedToggleButton1.MinimumSize = new System.Drawing.Size(45, 22);
-            this.roundedToggleButton1.Name = "roundedToggleButton1";
-            this.roundedToggleButton1.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(46)))));
-            this.roundedToggleButton1.OffToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
-            this.roundedToggleButton1.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
-            this.roundedToggleButton1.OnToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
-            this.roundedToggleButton1.Size = new System.Drawing.Size(504, 22);
-            this.roundedToggleButton1.TabIndex = 9;
-            this.roundedToggleButton1.Text = "roundedToggleButton1";
-            this.roundedToggleButton1.UseVisualStyleBackColor = false;
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 596);
             this.Main = true;
