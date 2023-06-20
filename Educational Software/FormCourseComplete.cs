@@ -44,14 +44,14 @@ namespace Educational_Software
         private void roundedButton1_Click(object sender, EventArgs e)
         {
             //test
-            //List<Question> allQuestions1;
-            //using (StreamReader cour = new StreamReader("CourseMaterial/questionsDEMO.json"))
-            //{
-            //    string jsonc = cour.ReadToEnd();
-            //    allQuestions1 = JsonConvert.DeserializeObject<List<Question>>(jsonc);
-            //}
-            //form1.openChildForm(new FormTest(allQuestions1));
-            //return;
+            List<Question> allQuestions1;
+            using (StreamReader cour = new StreamReader("CourseMaterial/questionsDEMO.json"))
+            {
+                string jsonc = cour.ReadToEnd();
+                allQuestions1 = JsonConvert.DeserializeObject<List<Question>>(jsonc);
+            }
+            form1.openChildForm(new FormTest(allQuestions1));
+            return;
 
             // create a quiz
 
@@ -90,7 +90,7 @@ namespace Educational_Software
 
 
             // suffle all questions
-            //questions = questions.OrderBy(q => random.Next()).ToList();
+            questions = questions.OrderBy(q => random.Next()).ToList();
 
             form1.openChildForm(new FormTest(questions));
         }

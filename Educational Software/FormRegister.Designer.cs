@@ -86,6 +86,11 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.shadowPanelBody = new ShadowPanel.ShadowUpperPanel();
+            this.labelConfirmPassword = new System.Windows.Forms.Label();
+            this.textBoxConfirmPassword = new System.Windows.Forms.TextBox();
+            this.labelUnderline3 = new System.Windows.Forms.Label();
+            this.shadowPanelSubmitButton = new ShadowPanel.ShadowPanel();
+            this.roundedButtonSubmit = new Rounded.RoundedButton();
             this.labelPassword = new System.Windows.Forms.Label();
             this.labelRegisterTitle = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
@@ -93,12 +98,7 @@
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.labelUnderline1 = new System.Windows.Forms.Label();
             this.labelUnderline2 = new System.Windows.Forms.Label();
-            this.shadowPanelSubmitButton = new ShadowPanel.ShadowPanel();
-            this.labelConfirmPassword = new System.Windows.Forms.Label();
-            this.textBoxConfirmPassword = new System.Windows.Forms.TextBox();
-            this.labelUnderline3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.roundedButtonSubmit = new Rounded.RoundedButton();
             this.panelContent.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -998,6 +998,80 @@
             this.shadowPanelBody.Size = new System.Drawing.Size(641, 401);
             this.shadowPanelBody.TabIndex = 11;
             // 
+            // labelConfirmPassword
+            // 
+            this.labelConfirmPassword.AutoSize = true;
+            this.labelConfirmPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
+            this.labelConfirmPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.labelConfirmPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConfirmPassword.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelConfirmPassword.Location = new System.Drawing.Point(323, 169);
+            this.labelConfirmPassword.Name = "labelConfirmPassword";
+            this.labelConfirmPassword.Size = new System.Drawing.Size(126, 15);
+            this.labelConfirmPassword.TabIndex = 21;
+            this.labelConfirmPassword.Text = "Confirm Password";
+            this.labelConfirmPassword.Click += new System.EventHandler(this.labelConfirmPassword_Click);
+            // 
+            // textBoxConfirmPassword
+            // 
+            this.textBoxConfirmPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxConfirmPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
+            this.textBoxConfirmPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxConfirmPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxConfirmPassword.ForeColor = System.Drawing.Color.Gainsboro;
+            this.textBoxConfirmPassword.Location = new System.Drawing.Point(327, 169);
+            this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
+            this.textBoxConfirmPassword.Size = new System.Drawing.Size(266, 16);
+            this.textBoxConfirmPassword.TabIndex = 22;
+            this.textBoxConfirmPassword.Click += new System.EventHandler(this.textBoxConfirmPassword_Click);
+            this.textBoxConfirmPassword.Leave += new System.EventHandler(this.textBoxConfirmPassword_Leave);
+            // 
+            // labelUnderline3
+            // 
+            this.labelUnderline3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelUnderline3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
+            this.labelUnderline3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUnderline3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelUnderline3.Location = new System.Drawing.Point(327, 175);
+            this.labelUnderline3.Name = "labelUnderline3";
+            this.labelUnderline3.Size = new System.Drawing.Size(266, 23);
+            this.labelUnderline3.TabIndex = 23;
+            this.labelUnderline3.Text = resources.GetString("labelUnderline3.Text");
+            // 
+            // shadowPanelSubmitButton
+            // 
+            this.shadowPanelSubmitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.shadowPanelSubmitButton.BorderColor = System.Drawing.Color.Empty;
+            this.shadowPanelSubmitButton.Controls.Add(this.roundedButtonSubmit);
+            this.shadowPanelSubmitButton.Location = new System.Drawing.Point(476, 340);
+            this.shadowPanelSubmitButton.Name = "shadowPanelSubmitButton";
+            this.shadowPanelSubmitButton.Padding = new System.Windows.Forms.Padding(0, 0, 6, 6);
+            this.shadowPanelSubmitButton.PanelColor = System.Drawing.Color.Empty;
+            this.shadowPanelSubmitButton.Size = new System.Drawing.Size(117, 48);
+            this.shadowPanelSubmitButton.TabIndex = 20;
+            // 
+            // roundedButtonSubmit
+            // 
+            this.roundedButtonSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(166)))), ((int)(((byte)(154)))));
+            this.roundedButtonSubmit.BorderColor = System.Drawing.Color.Black;
+            this.roundedButtonSubmit.BorderRadius = 4;
+            this.roundedButtonSubmit.BorderSize = 0;
+            this.roundedButtonSubmit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roundedButtonSubmit.FlatAppearance.BorderSize = 0;
+            this.roundedButtonSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButtonSubmit.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButtonSubmit.ForeColor = System.Drawing.Color.White;
+            this.roundedButtonSubmit.Location = new System.Drawing.Point(0, 0);
+            this.roundedButtonSubmit.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButtonSubmit.Name = "roundedButtonSubmit";
+            this.roundedButtonSubmit.Size = new System.Drawing.Size(111, 42);
+            this.roundedButtonSubmit.TabIndex = 3;
+            this.roundedButtonSubmit.Text = "ΥΠΟΒΟΛΗ";
+            this.roundedButtonSubmit.UseVisualStyleBackColor = false;
+            this.roundedButtonSubmit.Click += new System.EventHandler(this.roundedButtonSubmit_Click);
+            // 
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
@@ -1096,85 +1170,11 @@
             this.labelUnderline2.TabIndex = 19;
             this.labelUnderline2.Text = resources.GetString("labelUnderline2.Text");
             // 
-            // shadowPanelSubmitButton
-            // 
-            this.shadowPanelSubmitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.shadowPanelSubmitButton.BorderColor = System.Drawing.Color.Empty;
-            this.shadowPanelSubmitButton.Controls.Add(this.roundedButtonSubmit);
-            this.shadowPanelSubmitButton.Location = new System.Drawing.Point(476, 340);
-            this.shadowPanelSubmitButton.Name = "shadowPanelSubmitButton";
-            this.shadowPanelSubmitButton.Padding = new System.Windows.Forms.Padding(0, 0, 6, 6);
-            this.shadowPanelSubmitButton.PanelColor = System.Drawing.Color.Empty;
-            this.shadowPanelSubmitButton.Size = new System.Drawing.Size(117, 48);
-            this.shadowPanelSubmitButton.TabIndex = 20;
-            // 
-            // labelConfirmPassword
-            // 
-            this.labelConfirmPassword.AutoSize = true;
-            this.labelConfirmPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
-            this.labelConfirmPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.labelConfirmPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelConfirmPassword.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelConfirmPassword.Location = new System.Drawing.Point(323, 169);
-            this.labelConfirmPassword.Name = "labelConfirmPassword";
-            this.labelConfirmPassword.Size = new System.Drawing.Size(126, 15);
-            this.labelConfirmPassword.TabIndex = 21;
-            this.labelConfirmPassword.Text = "Confirm Password";
-            this.labelConfirmPassword.Click += new System.EventHandler(this.labelConfirmPassword_Click);
-            // 
-            // textBoxConfirmPassword
-            // 
-            this.textBoxConfirmPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxConfirmPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
-            this.textBoxConfirmPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxConfirmPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxConfirmPassword.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBoxConfirmPassword.Location = new System.Drawing.Point(327, 169);
-            this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
-            this.textBoxConfirmPassword.Size = new System.Drawing.Size(266, 16);
-            this.textBoxConfirmPassword.TabIndex = 22;
-            this.textBoxConfirmPassword.Click += new System.EventHandler(this.textBoxConfirmPassword_Click);
-            this.textBoxConfirmPassword.Leave += new System.EventHandler(this.textBoxConfirmPassword_Leave);
-            // 
-            // labelUnderline3
-            // 
-            this.labelUnderline3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelUnderline3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
-            this.labelUnderline3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUnderline3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelUnderline3.Location = new System.Drawing.Point(327, 175);
-            this.labelUnderline3.Name = "labelUnderline3";
-            this.labelUnderline3.Size = new System.Drawing.Size(266, 23);
-            this.labelUnderline3.TabIndex = 23;
-            this.labelUnderline3.Text = resources.GetString("labelUnderline3.Text");
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // roundedButtonSubmit
-            // 
-            this.roundedButtonSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(166)))), ((int)(((byte)(154)))));
-            this.roundedButtonSubmit.BorderColor = System.Drawing.Color.Black;
-            this.roundedButtonSubmit.BorderRadius = 4;
-            this.roundedButtonSubmit.BorderSize = 0;
-            this.roundedButtonSubmit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.roundedButtonSubmit.FlatAppearance.BorderSize = 0;
-            this.roundedButtonSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButtonSubmit.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButtonSubmit.ForeColor = System.Drawing.Color.White;
-            this.roundedButtonSubmit.Location = new System.Drawing.Point(0, 0);
-            this.roundedButtonSubmit.Margin = new System.Windows.Forms.Padding(2);
-            this.roundedButtonSubmit.Name = "roundedButtonSubmit";
-            this.roundedButtonSubmit.Size = new System.Drawing.Size(111, 42);
-            this.roundedButtonSubmit.TabIndex = 3;
-            this.roundedButtonSubmit.Text = "ΥΠΟΒΟΛΗ";
-            this.roundedButtonSubmit.UseVisualStyleBackColor = false;
-            this.roundedButtonSubmit.Click += new System.EventHandler(this.roundedButtonSubmit_Click);
             // 
             // FormRegister
             // 
