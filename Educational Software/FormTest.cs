@@ -22,10 +22,17 @@ namespace Educational_Software
 
         private bool check = true;
 
-        public FormTest(List<Question> questions)
+        Image courseImage;
+        string courseTitle;
+        Form1 form1;
+
+        public FormTest(List<Question> questions, Image courseImage, string courseTitle, Form1 form1)
         {
             InitializeComponent();
             this.questions = questions;
+            this.courseImage = courseImage;
+            this.courseTitle = courseTitle;
+            this.form1 = form1;
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)

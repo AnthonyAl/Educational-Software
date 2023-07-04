@@ -113,6 +113,18 @@
     <Compile Include="FormTest.Designer.cs">
       <DependentUpon>FormTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTestCareer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTestCareer.Designer.cs">
+      <DependentUpon>FormTestCareer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTestComplete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTestComplete.Designer.cs">
+      <DependentUpon>FormTestComplete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Course.cs" />
     <Compile Include="Model\Goal.cs" />
     <Compile Include="Model\Lesson.cs" />
@@ -148,6 +160,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTest.resx">
       <DependentUpon>FormTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTestCareer.resx">
+      <DependentUpon>FormTestCareer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTestComplete.resx">
+      <DependentUpon>FormTestComplete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

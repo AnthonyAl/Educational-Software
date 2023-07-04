@@ -51,7 +51,7 @@ namespace Educational_Software
                 allQuestions1 = JsonConvert.DeserializeObject<List<Question>>(jsonc);
             }
             form1.panelSideMenu.Visible = false;
-            form1.openChildForm(new FormTest(allQuestions1));
+            form1.openChildForm(new FormTest(allQuestions1, courseImage, courseTitle, form1));
             return;
 
             // create a quiz
@@ -93,7 +93,7 @@ namespace Educational_Software
             // suffle all questions
             questions = questions.OrderBy(q => random.Next()).ToList();
 
-            form1.openChildForm(new FormTest(questions));
+            form1.openChildForm(new FormTest(questions, courseImage, courseTitle, form1));
         }
     }
 }
