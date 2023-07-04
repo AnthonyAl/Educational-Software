@@ -73,6 +73,16 @@ namespace Educational_Software.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _24_gold {
+            get {
+                object obj = ResourceManager.GetObject("_24_gold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _24_gold1 {
             get {
                 object obj = ResourceManager.GetObject("_24_gold1", resourceCulture);
@@ -196,6 +206,16 @@ namespace Educational_Software.Properties {
         internal static System.Drawing.Bitmap _24_gold9 {
             get {
                 object obj = ResourceManager.GetObject("_24_gold9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _24_gray {
+            get {
+                object obj = ResourceManager.GetObject("_24_gray", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -406,6 +426,16 @@ namespace Educational_Software.Properties {
         internal static System.Drawing.Bitmap _2412 {
             get {
                 object obj = ResourceManager.GetObject("_2412", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2413 {
+            get {
+                object obj = ResourceManager.GetObject("_2413", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -703,6 +733,16 @@ namespace Educational_Software.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _50_gold7 {
+            get {
+                object obj = ResourceManager.GetObject("_50_gold7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _50_gray {
             get {
                 object obj = ResourceManager.GetObject("_50_gray", resourceCulture);
@@ -766,6 +806,16 @@ namespace Educational_Software.Properties {
         internal static System.Drawing.Bitmap _50_gray6 {
             get {
                 object obj = ResourceManager.GetObject("_50_gray6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _50_gray7 {
+            get {
+                object obj = ResourceManager.GetObject("_50_gray7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -856,6 +906,16 @@ namespace Educational_Software.Properties {
         internal static System.Drawing.Bitmap _506 {
             get {
                 object obj = ResourceManager.GetObject("_506", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _507 {
+            get {
+                object obj = ResourceManager.GetObject("_507", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

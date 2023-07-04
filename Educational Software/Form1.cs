@@ -23,6 +23,7 @@ namespace Educational_Software
 
         // loaded forms
         private FormCourses formCourses = null;
+        private FormCareers formCareers = null;
 
 
         public Form1()
@@ -37,6 +38,7 @@ namespace Educational_Software
             panelSideMenu.Controls.Add(leftBorderBtn);
 
             formCourses = new FormCourses(this);
+            formCareers = new FormCareers(this);
 
             btnCourses.PerformClick();
         }
@@ -117,6 +119,12 @@ namespace Educational_Software
         private void btnCareers_Click(object sender, EventArgs e)
         {
             ActivateButton((Button)sender, Color.FromArgb(242, 139, 29), "3");
+            openChildForm(formCareers);
+        }
+
+        private void btnCareerTest_Click(object sender, EventArgs e)
+        {
+            ActivateButton((Button)sender, Color.FromArgb(242, 139, 29), "");
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
@@ -153,6 +161,11 @@ namespace Educational_Software
         private void btnCareers_MouseEnter(object sender, EventArgs e)
         {
             ((Button)sender).Image = (Image)rm.GetObject("_24_gold" + "3");
+        }
+
+        private void btnCareerTest_MouseEnter(object sender, EventArgs e)
+        {
+            ((Button)sender).Image = (Image)rm.GetObject("_24_gold" + "");
         }
 
         private void btnProfile_MouseEnter(object sender, EventArgs e)
@@ -198,6 +211,12 @@ namespace Educational_Software
         {
             if (currentSelectedId != "3")
                 ((Button)sender).Image = (Image)rm.GetObject("_24_gray" + "3");
+        }
+
+        private void btnCareerTest_MouseLeave(object sender, EventArgs e)
+        {
+            if (currentSelectedId != "")
+                ((Button)sender).Image = (Image)rm.GetObject("_24_gray" + "");
         }
 
         private void btnProfile_MouseLeave(object sender, EventArgs e)

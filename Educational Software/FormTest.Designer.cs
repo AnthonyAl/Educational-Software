@@ -55,19 +55,25 @@
             this.comboBoxMatch1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panelCheckBoxes = new System.Windows.Forms.Panel();
-            this.labelcheck6 = new System.Windows.Forms.Label();
-            this.labelcheck5 = new System.Windows.Forms.Label();
-            this.labelcheck4 = new System.Windows.Forms.Label();
-            this.labelcheck3 = new System.Windows.Forms.Label();
-            this.labelcheck2 = new System.Windows.Forms.Label();
-            this.labelcheck1 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.shadowCheckPanel6 = new ShadowPanel.ShadowUpperPanel();
+            this.labelcheck6 = new System.Windows.Forms.Label();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.shadowCheckPanel5 = new ShadowPanel.ShadowUpperPanel();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.labelcheck5 = new System.Windows.Forms.Label();
+            this.shadowCheckPanel4 = new ShadowPanel.ShadowUpperPanel();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.labelcheck4 = new System.Windows.Forms.Label();
+            this.shadowCheckPanel3 = new ShadowPanel.ShadowUpperPanel();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.labelcheck3 = new System.Windows.Forms.Label();
+            this.shadowCheckPanel2 = new ShadowPanel.ShadowUpperPanel();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.labelcheck2 = new System.Windows.Forms.Label();
+            this.shadowCheckPanel1 = new ShadowPanel.ShadowUpperPanel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.labelcheck1 = new System.Windows.Forms.Label();
             this.panelRadioButtons = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.shadowRadioPanel6 = new ShadowPanel.ShadowUpperPanel();
@@ -97,12 +103,6 @@
             this.labelSentence = new System.Windows.Forms.Label();
             this.shadowPanel2 = new ShadowPanel.ShadowPanel();
             this.roundedButton1 = new Rounded.RoundedButton();
-            this.shadowCheckPanel1 = new ShadowPanel.ShadowUpperPanel();
-            this.shadowCheckPanel2 = new ShadowPanel.ShadowUpperPanel();
-            this.shadowCheckPanel3 = new ShadowPanel.ShadowUpperPanel();
-            this.shadowCheckPanel4 = new ShadowPanel.ShadowUpperPanel();
-            this.shadowCheckPanel5 = new ShadowPanel.ShadowUpperPanel();
-            this.shadowCheckPanel6 = new ShadowPanel.ShadowUpperPanel();
             this.shadowPanel1.SuspendLayout();
             this.panelComboBoxes.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -113,6 +113,12 @@
             this.panel2.SuspendLayout();
             this.panelCheckBoxes.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.shadowCheckPanel6.SuspendLayout();
+            this.shadowCheckPanel5.SuspendLayout();
+            this.shadowCheckPanel4.SuspendLayout();
+            this.shadowCheckPanel3.SuspendLayout();
+            this.shadowCheckPanel2.SuspendLayout();
+            this.shadowCheckPanel1.SuspendLayout();
             this.panelRadioButtons.SuspendLayout();
             this.panel10.SuspendLayout();
             this.shadowRadioPanel6.SuspendLayout();
@@ -125,12 +131,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQuestion)).BeginInit();
             this.panelSentence.SuspendLayout();
             this.shadowPanel2.SuspendLayout();
-            this.shadowCheckPanel1.SuspendLayout();
-            this.shadowCheckPanel2.SuspendLayout();
-            this.shadowCheckPanel3.SuspendLayout();
-            this.shadowCheckPanel4.SuspendLayout();
-            this.shadowCheckPanel5.SuspendLayout();
-            this.shadowCheckPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // shadowPanel1
@@ -503,90 +503,6 @@
             this.panelCheckBoxes.Size = new System.Drawing.Size(614, 296);
             this.panelCheckBoxes.TabIndex = 26;
             // 
-            // labelcheck6
-            // 
-            this.labelcheck6.AutoSize = true;
-            this.labelcheck6.BackColor = System.Drawing.Color.Transparent;
-            this.labelcheck6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelcheck6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelcheck6.Location = new System.Drawing.Point(14, 11);
-            this.labelcheck6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelcheck6.Name = "labelcheck6";
-            this.labelcheck6.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.labelcheck6.Size = new System.Drawing.Size(54, 22);
-            this.labelcheck6.TabIndex = 5;
-            this.labelcheck6.Text = "label13";
-            // 
-            // labelcheck5
-            // 
-            this.labelcheck5.AutoSize = true;
-            this.labelcheck5.BackColor = System.Drawing.Color.Transparent;
-            this.labelcheck5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelcheck5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelcheck5.Location = new System.Drawing.Point(14, 11);
-            this.labelcheck5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelcheck5.Name = "labelcheck5";
-            this.labelcheck5.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.labelcheck5.Size = new System.Drawing.Size(54, 22);
-            this.labelcheck5.TabIndex = 4;
-            this.labelcheck5.Text = "label12";
-            // 
-            // labelcheck4
-            // 
-            this.labelcheck4.AutoSize = true;
-            this.labelcheck4.BackColor = System.Drawing.Color.Transparent;
-            this.labelcheck4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelcheck4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelcheck4.Location = new System.Drawing.Point(14, 11);
-            this.labelcheck4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelcheck4.Name = "labelcheck4";
-            this.labelcheck4.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.labelcheck4.Size = new System.Drawing.Size(54, 22);
-            this.labelcheck4.TabIndex = 3;
-            this.labelcheck4.Text = "label11";
-            // 
-            // labelcheck3
-            // 
-            this.labelcheck3.AutoSize = true;
-            this.labelcheck3.BackColor = System.Drawing.Color.Transparent;
-            this.labelcheck3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelcheck3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelcheck3.Location = new System.Drawing.Point(14, 11);
-            this.labelcheck3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelcheck3.Name = "labelcheck3";
-            this.labelcheck3.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.labelcheck3.Size = new System.Drawing.Size(54, 22);
-            this.labelcheck3.TabIndex = 2;
-            this.labelcheck3.Text = "label10";
-            // 
-            // labelcheck2
-            // 
-            this.labelcheck2.AutoSize = true;
-            this.labelcheck2.BackColor = System.Drawing.Color.Transparent;
-            this.labelcheck2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelcheck2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelcheck2.Location = new System.Drawing.Point(14, 11);
-            this.labelcheck2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelcheck2.Name = "labelcheck2";
-            this.labelcheck2.Padding = new System.Windows.Forms.Padding(0, 3, 0, 2);
-            this.labelcheck2.Size = new System.Drawing.Size(46, 23);
-            this.labelcheck2.TabIndex = 1;
-            this.labelcheck2.Text = "label9";
-            // 
-            // labelcheck1
-            // 
-            this.labelcheck1.AutoSize = true;
-            this.labelcheck1.BackColor = System.Drawing.Color.Transparent;
-            this.labelcheck1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.labelcheck1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelcheck1.Location = new System.Drawing.Point(14, 11);
-            this.labelcheck1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelcheck1.Name = "labelcheck1";
-            this.labelcheck1.Padding = new System.Windows.Forms.Padding(0, 2, 0, 1);
-            this.labelcheck1.Size = new System.Drawing.Size(46, 21);
-            this.labelcheck1.TabIndex = 0;
-            this.labelcheck1.Text = "label8";
-            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.shadowCheckPanel6);
@@ -603,6 +519,32 @@
             this.panel7.Size = new System.Drawing.Size(614, 296);
             this.panel7.TabIndex = 26;
             // 
+            // shadowCheckPanel6
+            // 
+            this.shadowCheckPanel6.BorderColor = System.Drawing.Color.Empty;
+            this.shadowCheckPanel6.Controls.Add(this.labelcheck6);
+            this.shadowCheckPanel6.Controls.Add(this.checkBox6);
+            this.shadowCheckPanel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.shadowCheckPanel6.Location = new System.Drawing.Point(0, 220);
+            this.shadowCheckPanel6.Name = "shadowCheckPanel6";
+            this.shadowCheckPanel6.PanelColor = System.Drawing.Color.Empty;
+            this.shadowCheckPanel6.Size = new System.Drawing.Size(614, 44);
+            this.shadowCheckPanel6.TabIndex = 7;
+            // 
+            // labelcheck6
+            // 
+            this.labelcheck6.AutoSize = true;
+            this.labelcheck6.BackColor = System.Drawing.Color.Transparent;
+            this.labelcheck6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.labelcheck6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelcheck6.Location = new System.Drawing.Point(14, 11);
+            this.labelcheck6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelcheck6.Name = "labelcheck6";
+            this.labelcheck6.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.labelcheck6.Size = new System.Drawing.Size(54, 22);
+            this.labelcheck6.TabIndex = 5;
+            this.labelcheck6.Text = "label13";
+            // 
             // checkBox6
             // 
             this.checkBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -616,6 +558,18 @@
             this.checkBox6.TabIndex = 5;
             this.checkBox6.Text = "checkBox6";
             this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // shadowCheckPanel5
+            // 
+            this.shadowCheckPanel5.BorderColor = System.Drawing.Color.Empty;
+            this.shadowCheckPanel5.Controls.Add(this.checkBox5);
+            this.shadowCheckPanel5.Controls.Add(this.labelcheck5);
+            this.shadowCheckPanel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.shadowCheckPanel5.Location = new System.Drawing.Point(0, 176);
+            this.shadowCheckPanel5.Name = "shadowCheckPanel5";
+            this.shadowCheckPanel5.PanelColor = System.Drawing.Color.Empty;
+            this.shadowCheckPanel5.Size = new System.Drawing.Size(614, 44);
+            this.shadowCheckPanel5.TabIndex = 7;
             // 
             // checkBox5
             // 
@@ -631,6 +585,32 @@
             this.checkBox5.Text = "checkBox5";
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
+            // labelcheck5
+            // 
+            this.labelcheck5.AutoSize = true;
+            this.labelcheck5.BackColor = System.Drawing.Color.Transparent;
+            this.labelcheck5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.labelcheck5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelcheck5.Location = new System.Drawing.Point(14, 11);
+            this.labelcheck5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelcheck5.Name = "labelcheck5";
+            this.labelcheck5.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.labelcheck5.Size = new System.Drawing.Size(54, 22);
+            this.labelcheck5.TabIndex = 4;
+            this.labelcheck5.Text = "label12";
+            // 
+            // shadowCheckPanel4
+            // 
+            this.shadowCheckPanel4.BorderColor = System.Drawing.Color.Empty;
+            this.shadowCheckPanel4.Controls.Add(this.checkBox4);
+            this.shadowCheckPanel4.Controls.Add(this.labelcheck4);
+            this.shadowCheckPanel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.shadowCheckPanel4.Location = new System.Drawing.Point(0, 132);
+            this.shadowCheckPanel4.Name = "shadowCheckPanel4";
+            this.shadowCheckPanel4.PanelColor = System.Drawing.Color.Empty;
+            this.shadowCheckPanel4.Size = new System.Drawing.Size(614, 44);
+            this.shadowCheckPanel4.TabIndex = 7;
+            // 
             // checkBox4
             // 
             this.checkBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -644,6 +624,32 @@
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "checkBox4";
             this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // labelcheck4
+            // 
+            this.labelcheck4.AutoSize = true;
+            this.labelcheck4.BackColor = System.Drawing.Color.Transparent;
+            this.labelcheck4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.labelcheck4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelcheck4.Location = new System.Drawing.Point(14, 11);
+            this.labelcheck4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelcheck4.Name = "labelcheck4";
+            this.labelcheck4.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.labelcheck4.Size = new System.Drawing.Size(54, 22);
+            this.labelcheck4.TabIndex = 3;
+            this.labelcheck4.Text = "label11";
+            // 
+            // shadowCheckPanel3
+            // 
+            this.shadowCheckPanel3.BorderColor = System.Drawing.Color.Empty;
+            this.shadowCheckPanel3.Controls.Add(this.checkBox3);
+            this.shadowCheckPanel3.Controls.Add(this.labelcheck3);
+            this.shadowCheckPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.shadowCheckPanel3.Location = new System.Drawing.Point(0, 88);
+            this.shadowCheckPanel3.Name = "shadowCheckPanel3";
+            this.shadowCheckPanel3.PanelColor = System.Drawing.Color.Empty;
+            this.shadowCheckPanel3.Size = new System.Drawing.Size(614, 44);
+            this.shadowCheckPanel3.TabIndex = 7;
             // 
             // checkBox3
             // 
@@ -660,6 +666,32 @@
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
+            // labelcheck3
+            // 
+            this.labelcheck3.AutoSize = true;
+            this.labelcheck3.BackColor = System.Drawing.Color.Transparent;
+            this.labelcheck3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.labelcheck3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelcheck3.Location = new System.Drawing.Point(14, 11);
+            this.labelcheck3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelcheck3.Name = "labelcheck3";
+            this.labelcheck3.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.labelcheck3.Size = new System.Drawing.Size(54, 22);
+            this.labelcheck3.TabIndex = 2;
+            this.labelcheck3.Text = "label10";
+            // 
+            // shadowCheckPanel2
+            // 
+            this.shadowCheckPanel2.BorderColor = System.Drawing.Color.Empty;
+            this.shadowCheckPanel2.Controls.Add(this.checkBox2);
+            this.shadowCheckPanel2.Controls.Add(this.labelcheck2);
+            this.shadowCheckPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.shadowCheckPanel2.Location = new System.Drawing.Point(0, 44);
+            this.shadowCheckPanel2.Name = "shadowCheckPanel2";
+            this.shadowCheckPanel2.PanelColor = System.Drawing.Color.Empty;
+            this.shadowCheckPanel2.Size = new System.Drawing.Size(614, 44);
+            this.shadowCheckPanel2.TabIndex = 7;
+            // 
             // checkBox2
             // 
             this.checkBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -674,6 +706,32 @@
             this.checkBox2.Text = "checkBox2";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
+            // labelcheck2
+            // 
+            this.labelcheck2.AutoSize = true;
+            this.labelcheck2.BackColor = System.Drawing.Color.Transparent;
+            this.labelcheck2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.labelcheck2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelcheck2.Location = new System.Drawing.Point(14, 11);
+            this.labelcheck2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelcheck2.Name = "labelcheck2";
+            this.labelcheck2.Padding = new System.Windows.Forms.Padding(0, 3, 0, 2);
+            this.labelcheck2.Size = new System.Drawing.Size(46, 23);
+            this.labelcheck2.TabIndex = 1;
+            this.labelcheck2.Text = "label9";
+            // 
+            // shadowCheckPanel1
+            // 
+            this.shadowCheckPanel1.BorderColor = System.Drawing.Color.Empty;
+            this.shadowCheckPanel1.Controls.Add(this.checkBox1);
+            this.shadowCheckPanel1.Controls.Add(this.labelcheck1);
+            this.shadowCheckPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.shadowCheckPanel1.Location = new System.Drawing.Point(0, 0);
+            this.shadowCheckPanel1.Name = "shadowCheckPanel1";
+            this.shadowCheckPanel1.PanelColor = System.Drawing.Color.Empty;
+            this.shadowCheckPanel1.Size = new System.Drawing.Size(614, 44);
+            this.shadowCheckPanel1.TabIndex = 6;
+            // 
             // checkBox1
             // 
             this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -687,6 +745,20 @@
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "checkBox1";
             this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // labelcheck1
+            // 
+            this.labelcheck1.AutoSize = true;
+            this.labelcheck1.BackColor = System.Drawing.Color.Transparent;
+            this.labelcheck1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.labelcheck1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelcheck1.Location = new System.Drawing.Point(14, 11);
+            this.labelcheck1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelcheck1.Name = "labelcheck1";
+            this.labelcheck1.Padding = new System.Windows.Forms.Padding(0, 2, 0, 1);
+            this.labelcheck1.Size = new System.Drawing.Size(46, 21);
+            this.labelcheck1.TabIndex = 0;
+            this.labelcheck1.Text = "label8";
             // 
             // panelRadioButtons
             // 
@@ -1090,78 +1162,6 @@
             this.roundedButton1.UseVisualStyleBackColor = false;
             this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
-            // shadowCheckPanel1
-            // 
-            this.shadowCheckPanel1.BorderColor = System.Drawing.Color.Empty;
-            this.shadowCheckPanel1.Controls.Add(this.checkBox1);
-            this.shadowCheckPanel1.Controls.Add(this.labelcheck1);
-            this.shadowCheckPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowCheckPanel1.Location = new System.Drawing.Point(0, 0);
-            this.shadowCheckPanel1.Name = "shadowCheckPanel1";
-            this.shadowCheckPanel1.PanelColor = System.Drawing.Color.Empty;
-            this.shadowCheckPanel1.Size = new System.Drawing.Size(614, 44);
-            this.shadowCheckPanel1.TabIndex = 6;
-            // 
-            // shadowCheckPanel2
-            // 
-            this.shadowCheckPanel2.BorderColor = System.Drawing.Color.Empty;
-            this.shadowCheckPanel2.Controls.Add(this.checkBox2);
-            this.shadowCheckPanel2.Controls.Add(this.labelcheck2);
-            this.shadowCheckPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowCheckPanel2.Location = new System.Drawing.Point(0, 44);
-            this.shadowCheckPanel2.Name = "shadowCheckPanel2";
-            this.shadowCheckPanel2.PanelColor = System.Drawing.Color.Empty;
-            this.shadowCheckPanel2.Size = new System.Drawing.Size(614, 44);
-            this.shadowCheckPanel2.TabIndex = 7;
-            // 
-            // shadowCheckPanel3
-            // 
-            this.shadowCheckPanel3.BorderColor = System.Drawing.Color.Empty;
-            this.shadowCheckPanel3.Controls.Add(this.checkBox3);
-            this.shadowCheckPanel3.Controls.Add(this.labelcheck3);
-            this.shadowCheckPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowCheckPanel3.Location = new System.Drawing.Point(0, 88);
-            this.shadowCheckPanel3.Name = "shadowCheckPanel3";
-            this.shadowCheckPanel3.PanelColor = System.Drawing.Color.Empty;
-            this.shadowCheckPanel3.Size = new System.Drawing.Size(614, 44);
-            this.shadowCheckPanel3.TabIndex = 7;
-            // 
-            // shadowCheckPanel4
-            // 
-            this.shadowCheckPanel4.BorderColor = System.Drawing.Color.Empty;
-            this.shadowCheckPanel4.Controls.Add(this.checkBox4);
-            this.shadowCheckPanel4.Controls.Add(this.labelcheck4);
-            this.shadowCheckPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowCheckPanel4.Location = new System.Drawing.Point(0, 132);
-            this.shadowCheckPanel4.Name = "shadowCheckPanel4";
-            this.shadowCheckPanel4.PanelColor = System.Drawing.Color.Empty;
-            this.shadowCheckPanel4.Size = new System.Drawing.Size(614, 44);
-            this.shadowCheckPanel4.TabIndex = 7;
-            // 
-            // shadowCheckPanel5
-            // 
-            this.shadowCheckPanel5.BorderColor = System.Drawing.Color.Empty;
-            this.shadowCheckPanel5.Controls.Add(this.checkBox5);
-            this.shadowCheckPanel5.Controls.Add(this.labelcheck5);
-            this.shadowCheckPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowCheckPanel5.Location = new System.Drawing.Point(0, 176);
-            this.shadowCheckPanel5.Name = "shadowCheckPanel5";
-            this.shadowCheckPanel5.PanelColor = System.Drawing.Color.Empty;
-            this.shadowCheckPanel5.Size = new System.Drawing.Size(614, 44);
-            this.shadowCheckPanel5.TabIndex = 7;
-            // 
-            // shadowCheckPanel6
-            // 
-            this.shadowCheckPanel6.BorderColor = System.Drawing.Color.Empty;
-            this.shadowCheckPanel6.Controls.Add(this.labelcheck6);
-            this.shadowCheckPanel6.Controls.Add(this.checkBox6);
-            this.shadowCheckPanel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowCheckPanel6.Location = new System.Drawing.Point(0, 220);
-            this.shadowCheckPanel6.Name = "shadowCheckPanel6";
-            this.shadowCheckPanel6.PanelColor = System.Drawing.Color.Empty;
-            this.shadowCheckPanel6.Size = new System.Drawing.Size(614, 44);
-            this.shadowCheckPanel6.TabIndex = 7;
-            // 
             // FormTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1191,6 +1191,18 @@
             this.panel2.PerformLayout();
             this.panelCheckBoxes.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            this.shadowCheckPanel6.ResumeLayout(false);
+            this.shadowCheckPanel6.PerformLayout();
+            this.shadowCheckPanel5.ResumeLayout(false);
+            this.shadowCheckPanel5.PerformLayout();
+            this.shadowCheckPanel4.ResumeLayout(false);
+            this.shadowCheckPanel4.PerformLayout();
+            this.shadowCheckPanel3.ResumeLayout(false);
+            this.shadowCheckPanel3.PerformLayout();
+            this.shadowCheckPanel2.ResumeLayout(false);
+            this.shadowCheckPanel2.PerformLayout();
+            this.shadowCheckPanel1.ResumeLayout(false);
+            this.shadowCheckPanel1.PerformLayout();
             this.panelRadioButtons.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.shadowRadioPanel6.ResumeLayout(false);
@@ -1210,18 +1222,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQuestion)).EndInit();
             this.panelSentence.ResumeLayout(false);
             this.shadowPanel2.ResumeLayout(false);
-            this.shadowCheckPanel1.ResumeLayout(false);
-            this.shadowCheckPanel1.PerformLayout();
-            this.shadowCheckPanel2.ResumeLayout(false);
-            this.shadowCheckPanel2.PerformLayout();
-            this.shadowCheckPanel3.ResumeLayout(false);
-            this.shadowCheckPanel3.PerformLayout();
-            this.shadowCheckPanel4.ResumeLayout(false);
-            this.shadowCheckPanel4.PerformLayout();
-            this.shadowCheckPanel5.ResumeLayout(false);
-            this.shadowCheckPanel5.PerformLayout();
-            this.shadowCheckPanel6.ResumeLayout(false);
-            this.shadowCheckPanel6.PerformLayout();
             this.ResumeLayout(false);
 
         }

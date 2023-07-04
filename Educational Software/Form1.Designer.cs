@@ -45,6 +45,7 @@
             this.roundedToggleButton1 = new Rounded.RoundedToggleButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.btnCareerTest = new System.Windows.Forms.Button();
             this.panelContent.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -65,7 +66,7 @@
             this.panelContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(59)))));
             this.panelContent.Controls.Add(this.panelChildForm);
             this.panelContent.Controls.Add(this.panel1);
-            this.panelContent.Size = new System.Drawing.Size(1094, 544);
+            this.panelContent.Size = new System.Drawing.Size(1094, 585);
             // 
             // animation_timer
             // 
@@ -81,7 +82,7 @@
             this.btnStart.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnStart.Image = global::Educational_Software.Properties.Resources._24_gray5;
             this.btnStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStart.Location = new System.Drawing.Point(0, 270);
+            this.btnStart.Location = new System.Drawing.Point(0, 315);
             this.btnStart.Name = "btnStart";
             this.btnStart.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnStart.Size = new System.Drawing.Size(250, 45);
@@ -104,7 +105,7 @@
             this.btnProfile.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfile.Location = new System.Drawing.Point(0, 225);
+            this.btnProfile.Location = new System.Drawing.Point(0, 270);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnProfile.Size = new System.Drawing.Size(250, 45);
@@ -127,7 +128,7 @@
             this.btnAbout.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnAbout.Image = global::Educational_Software.Properties.Resources._24_gray6;
             this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAbout.Location = new System.Drawing.Point(0, 454);
+            this.btnAbout.Location = new System.Drawing.Point(0, 495);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnAbout.Size = new System.Drawing.Size(250, 45);
@@ -159,7 +160,6 @@
             this.btnCareers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCareers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCareers.UseVisualStyleBackColor = true;
-            this.btnCareers.Visible = false;
             this.btnCareers.Click += new System.EventHandler(this.btnCareers_Click);
             this.btnCareers.MouseEnter += new System.EventHandler(this.btnCareers_MouseEnter);
             this.btnCareers.MouseLeave += new System.EventHandler(this.btnCareers_MouseLeave);
@@ -263,6 +263,7 @@
             this.panelSideMenu.Controls.Add(this.btnStart);
             this.panelSideMenu.Controls.Add(this.btnProfile);
             this.panelSideMenu.Controls.Add(this.btnAbout);
+            this.panelSideMenu.Controls.Add(this.btnCareerTest);
             this.panelSideMenu.Controls.Add(this.btnCareers);
             this.panelSideMenu.Controls.Add(this.btnFAQ);
             this.panelSideMenu.Controls.Add(this.btnForum);
@@ -271,7 +272,7 @@
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(250, 499);
+            this.panelSideMenu.Size = new System.Drawing.Size(250, 540);
             this.panelSideMenu.TabIndex = 8;
             // 
             // panel1
@@ -332,16 +333,39 @@
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(0, 45);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(1094, 499);
+            this.panelChildForm.Size = new System.Drawing.Size(1094, 540);
             this.panelChildForm.TabIndex = 10;
+            // 
+            // btnCareerTest
+            // 
+            this.btnCareerTest.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCareerTest.FlatAppearance.BorderSize = 0;
+            this.btnCareerTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCareerTest.Font = new System.Drawing.Font("Onyx", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCareerTest.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnCareerTest.Image = global::Educational_Software.Properties.Resources._24_gray;
+            this.btnCareerTest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCareerTest.Location = new System.Drawing.Point(0, 225);
+            this.btnCareerTest.Name = "btnCareerTest";
+            this.btnCareerTest.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnCareerTest.Size = new System.Drawing.Size(250, 45);
+            this.btnCareerTest.TabIndex = 18;
+            this.btnCareerTest.Tag = "ΤΕΣΤ ΚΑΡΙΕΡΑΣ";
+            this.btnCareerTest.Text = "ΤΕΣΤ ΚΑΡΙΕΡΑΣ";
+            this.btnCareerTest.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCareerTest.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCareerTest.UseVisualStyleBackColor = true;
+            this.btnCareerTest.Click += new System.EventHandler(this.btnCareerTest_Click);
+            this.btnCareerTest.MouseEnter += new System.EventHandler(this.btnCareerTest_MouseEnter);
+            this.btnCareerTest.MouseLeave += new System.EventHandler(this.btnCareerTest_MouseLeave);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1100, 596);
+            this.ClientSize = new System.Drawing.Size(1100, 637);
             this.Main = true;
-            this.MinimumSize = new System.Drawing.Size(1100, 596);
+            this.MinimumSize = new System.Drawing.Size(1100, 637);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -369,6 +393,7 @@
         private Rounded.RoundedToggleButton roundedToggleButton1;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Panel panelSideMenu;
+        private System.Windows.Forms.Button btnCareerTest;
     }
 }
 
