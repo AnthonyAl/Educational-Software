@@ -86,20 +86,21 @@
             this.shadowPanel4.Controls.Add(this.wrapLabel4);
             this.shadowPanel4.Controls.Add(this.roundedButton4);
             this.shadowPanel4.Controls.Add(this.pictureBox4);
-            this.shadowPanel4.Location = new System.Drawing.Point(643, 44);
-            this.shadowPanel4.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
+            this.shadowPanel4.Location = new System.Drawing.Point(857, 54);
+            this.shadowPanel4.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
             this.shadowPanel4.Name = "shadowPanel4";
             this.shadowPanel4.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.shadowPanel4.Size = new System.Drawing.Size(184, 231);
+            this.shadowPanel4.Size = new System.Drawing.Size(245, 284);
             this.shadowPanel4.TabIndex = 17;
             // 
             // wrapLabel4
             // 
             this.wrapLabel4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrapLabel4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.wrapLabel4.Location = new System.Drawing.Point(18, 9);
+            this.wrapLabel4.Location = new System.Drawing.Point(24, 11);
+            this.wrapLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wrapLabel4.Name = "wrapLabel4";
-            this.wrapLabel4.Size = new System.Drawing.Size(149, 24);
+            this.wrapLabel4.Size = new System.Drawing.Size(199, 32);
             this.wrapLabel4.TabIndex = 3;
             this.wrapLabel4.Text = "ML Engineer";
             this.wrapLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -115,21 +116,22 @@
             this.roundedButton4.FlatAppearance.BorderSize = 0;
             this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton4.ForeColor = System.Drawing.Color.White;
-            this.roundedButton4.Location = new System.Drawing.Point(33, 176);
-            this.roundedButton4.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButton4.Location = new System.Drawing.Point(44, 217);
+            this.roundedButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(115, 32);
+            this.roundedButton4.Size = new System.Drawing.Size(153, 39);
             this.roundedButton4.TabIndex = 2;
             this.roundedButton4.Text = "Έναρξη";
             this.roundedButton4.UseVisualStyleBackColor = false;
+            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Educational_Software.Properties.Resources.course4;
-            this.pictureBox4.Location = new System.Drawing.Point(33, 65);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Location = new System.Drawing.Point(44, 80);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(115, 97);
+            this.pictureBox4.Size = new System.Drawing.Size(153, 119);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
@@ -142,20 +144,21 @@
             this.shadowPanel3.Controls.Add(this.wrapLabel3);
             this.shadowPanel3.Controls.Add(this.roundedButton3);
             this.shadowPanel3.Controls.Add(this.pictureBox3);
-            this.shadowPanel3.Location = new System.Drawing.Point(435, 44);
-            this.shadowPanel3.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
+            this.shadowPanel3.Location = new System.Drawing.Point(580, 54);
+            this.shadowPanel3.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
             this.shadowPanel3.Name = "shadowPanel3";
             this.shadowPanel3.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.shadowPanel3.Size = new System.Drawing.Size(184, 231);
+            this.shadowPanel3.Size = new System.Drawing.Size(245, 284);
             this.shadowPanel3.TabIndex = 14;
             // 
             // wrapLabel3
             // 
             this.wrapLabel3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrapLabel3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.wrapLabel3.Location = new System.Drawing.Point(18, 9);
+            this.wrapLabel3.Location = new System.Drawing.Point(24, 11);
+            this.wrapLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wrapLabel3.Name = "wrapLabel3";
-            this.wrapLabel3.Size = new System.Drawing.Size(149, 48);
+            this.wrapLabel3.Size = new System.Drawing.Size(199, 64);
             this.wrapLabel3.TabIndex = 3;
             this.wrapLabel3.Text = "Software Engineer";
             this.wrapLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -171,10 +174,10 @@
             this.roundedButton3.FlatAppearance.BorderSize = 0;
             this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedButton3.Location = new System.Drawing.Point(33, 176);
-            this.roundedButton3.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButton3.Location = new System.Drawing.Point(44, 217);
+            this.roundedButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(115, 32);
+            this.roundedButton3.Size = new System.Drawing.Size(153, 39);
             this.roundedButton3.TabIndex = 2;
             this.roundedButton3.Text = "Έναρξη";
             this.roundedButton3.UseVisualStyleBackColor = false;
@@ -182,10 +185,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Educational_Software.Properties.Resources.course3;
-            this.pictureBox3.Location = new System.Drawing.Point(33, 65);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(44, 80);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(115, 97);
+            this.pictureBox3.Size = new System.Drawing.Size(153, 119);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
@@ -198,20 +201,21 @@
             this.shadowPanel2.Controls.Add(this.wrapLabel2);
             this.shadowPanel2.Controls.Add(this.roundedButton2);
             this.shadowPanel2.Controls.Add(this.pictureBox2);
-            this.shadowPanel2.Location = new System.Drawing.Point(231, 44);
-            this.shadowPanel2.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
+            this.shadowPanel2.Location = new System.Drawing.Point(308, 54);
+            this.shadowPanel2.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
             this.shadowPanel2.Name = "shadowPanel2";
             this.shadowPanel2.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.shadowPanel2.Size = new System.Drawing.Size(184, 231);
+            this.shadowPanel2.Size = new System.Drawing.Size(245, 284);
             this.shadowPanel2.TabIndex = 15;
             // 
             // wrapLabel2
             // 
             this.wrapLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrapLabel2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.wrapLabel2.Location = new System.Drawing.Point(18, 9);
+            this.wrapLabel2.Location = new System.Drawing.Point(24, 11);
+            this.wrapLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wrapLabel2.Name = "wrapLabel2";
-            this.wrapLabel2.Size = new System.Drawing.Size(149, 24);
+            this.wrapLabel2.Size = new System.Drawing.Size(199, 32);
             this.wrapLabel2.TabIndex = 3;
             this.wrapLabel2.Text = "UX Designer";
             this.wrapLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -227,10 +231,10 @@
             this.roundedButton2.FlatAppearance.BorderSize = 0;
             this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton2.ForeColor = System.Drawing.Color.White;
-            this.roundedButton2.Location = new System.Drawing.Point(33, 176);
-            this.roundedButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButton2.Location = new System.Drawing.Point(44, 217);
+            this.roundedButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(115, 32);
+            this.roundedButton2.Size = new System.Drawing.Size(153, 39);
             this.roundedButton2.TabIndex = 2;
             this.roundedButton2.Text = "Έναρξη";
             this.roundedButton2.UseVisualStyleBackColor = false;
@@ -238,10 +242,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Educational_Software.Properties.Resources.course2;
-            this.pictureBox2.Location = new System.Drawing.Point(33, 65);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(44, 80);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(115, 95);
+            this.pictureBox2.Size = new System.Drawing.Size(153, 117);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -254,20 +258,21 @@
             this.shadowPanel1.Controls.Add(this.wrapLabel1);
             this.shadowPanel1.Controls.Add(this.roundedButton1);
             this.shadowPanel1.Controls.Add(this.pictureBox1);
-            this.shadowPanel1.Location = new System.Drawing.Point(29, 44);
-            this.shadowPanel1.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
+            this.shadowPanel1.Location = new System.Drawing.Point(39, 54);
+            this.shadowPanel1.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
             this.shadowPanel1.Name = "shadowPanel1";
             this.shadowPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.shadowPanel1.Size = new System.Drawing.Size(184, 231);
+            this.shadowPanel1.Size = new System.Drawing.Size(245, 284);
             this.shadowPanel1.TabIndex = 16;
             // 
             // wrapLabel1
             // 
             this.wrapLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrapLabel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.wrapLabel1.Location = new System.Drawing.Point(18, 9);
+            this.wrapLabel1.Location = new System.Drawing.Point(24, 11);
+            this.wrapLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wrapLabel1.Name = "wrapLabel1";
-            this.wrapLabel1.Size = new System.Drawing.Size(149, 48);
+            this.wrapLabel1.Size = new System.Drawing.Size(199, 64);
             this.wrapLabel1.TabIndex = 3;
             this.wrapLabel1.Text = "Game Developer";
             this.wrapLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -283,10 +288,10 @@
             this.roundedButton1.FlatAppearance.BorderSize = 0;
             this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedButton1.Location = new System.Drawing.Point(33, 176);
-            this.roundedButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButton1.Location = new System.Drawing.Point(44, 217);
+            this.roundedButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(115, 32);
+            this.roundedButton1.Size = new System.Drawing.Size(153, 39);
             this.roundedButton1.TabIndex = 2;
             this.roundedButton1.Text = "Έναρξη";
             this.roundedButton1.UseVisualStyleBackColor = false;
@@ -294,10 +299,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Educational_Software.Properties.Resources.course1;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 65);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(44, 80);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 97);
+            this.pictureBox1.Size = new System.Drawing.Size(153, 119);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -310,20 +315,21 @@
             this.shadowPanel5.Controls.Add(this.wrapLabel5);
             this.shadowPanel5.Controls.Add(this.roundedButton5);
             this.shadowPanel5.Controls.Add(this.pictureBox5);
-            this.shadowPanel5.Location = new System.Drawing.Point(645, 291);
-            this.shadowPanel5.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
+            this.shadowPanel5.Location = new System.Drawing.Point(860, 358);
+            this.shadowPanel5.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
             this.shadowPanel5.Name = "shadowPanel5";
             this.shadowPanel5.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.shadowPanel5.Size = new System.Drawing.Size(184, 231);
+            this.shadowPanel5.Size = new System.Drawing.Size(245, 284);
             this.shadowPanel5.TabIndex = 21;
             // 
             // wrapLabel5
             // 
             this.wrapLabel5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrapLabel5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.wrapLabel5.Location = new System.Drawing.Point(18, 9);
+            this.wrapLabel5.Location = new System.Drawing.Point(24, 11);
+            this.wrapLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wrapLabel5.Name = "wrapLabel5";
-            this.wrapLabel5.Size = new System.Drawing.Size(149, 48);
+            this.wrapLabel5.Size = new System.Drawing.Size(199, 64);
             this.wrapLabel5.TabIndex = 3;
             this.wrapLabel5.Text = "Front-end developer";
             this.wrapLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -339,10 +345,10 @@
             this.roundedButton5.FlatAppearance.BorderSize = 0;
             this.roundedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton5.ForeColor = System.Drawing.Color.White;
-            this.roundedButton5.Location = new System.Drawing.Point(33, 176);
-            this.roundedButton5.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButton5.Location = new System.Drawing.Point(44, 217);
+            this.roundedButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedButton5.Name = "roundedButton5";
-            this.roundedButton5.Size = new System.Drawing.Size(115, 32);
+            this.roundedButton5.Size = new System.Drawing.Size(153, 39);
             this.roundedButton5.TabIndex = 2;
             this.roundedButton5.Text = "Έναρξη";
             this.roundedButton5.UseVisualStyleBackColor = false;
@@ -350,10 +356,10 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Educational_Software.Properties.Resources.course4;
-            this.pictureBox5.Location = new System.Drawing.Point(33, 65);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Location = new System.Drawing.Point(44, 80);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(115, 97);
+            this.pictureBox5.Size = new System.Drawing.Size(153, 119);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
@@ -366,20 +372,21 @@
             this.shadowPanel6.Controls.Add(this.wrapLabel6);
             this.shadowPanel6.Controls.Add(this.roundedButton6);
             this.shadowPanel6.Controls.Add(this.pictureBox6);
-            this.shadowPanel6.Location = new System.Drawing.Point(437, 291);
-            this.shadowPanel6.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
+            this.shadowPanel6.Location = new System.Drawing.Point(583, 358);
+            this.shadowPanel6.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
             this.shadowPanel6.Name = "shadowPanel6";
             this.shadowPanel6.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.shadowPanel6.Size = new System.Drawing.Size(184, 231);
+            this.shadowPanel6.Size = new System.Drawing.Size(245, 284);
             this.shadowPanel6.TabIndex = 18;
             // 
             // wrapLabel6
             // 
             this.wrapLabel6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrapLabel6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.wrapLabel6.Location = new System.Drawing.Point(18, 9);
+            this.wrapLabel6.Location = new System.Drawing.Point(24, 11);
+            this.wrapLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wrapLabel6.Name = "wrapLabel6";
-            this.wrapLabel6.Size = new System.Drawing.Size(149, 48);
+            this.wrapLabel6.Size = new System.Drawing.Size(199, 64);
             this.wrapLabel6.TabIndex = 3;
             this.wrapLabel6.Text = "Back-end developer";
             this.wrapLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -395,10 +402,10 @@
             this.roundedButton6.FlatAppearance.BorderSize = 0;
             this.roundedButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton6.ForeColor = System.Drawing.Color.White;
-            this.roundedButton6.Location = new System.Drawing.Point(33, 176);
-            this.roundedButton6.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButton6.Location = new System.Drawing.Point(44, 217);
+            this.roundedButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedButton6.Name = "roundedButton6";
-            this.roundedButton6.Size = new System.Drawing.Size(115, 32);
+            this.roundedButton6.Size = new System.Drawing.Size(153, 39);
             this.roundedButton6.TabIndex = 2;
             this.roundedButton6.Text = "Έναρξη";
             this.roundedButton6.UseVisualStyleBackColor = false;
@@ -406,10 +413,10 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Educational_Software.Properties.Resources.course3;
-            this.pictureBox6.Location = new System.Drawing.Point(33, 65);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Location = new System.Drawing.Point(44, 80);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(115, 97);
+            this.pictureBox6.Size = new System.Drawing.Size(153, 119);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 1;
             this.pictureBox6.TabStop = false;
@@ -422,20 +429,21 @@
             this.shadowPanel7.Controls.Add(this.wrapLabel7);
             this.shadowPanel7.Controls.Add(this.roundedButton7);
             this.shadowPanel7.Controls.Add(this.pictureBox7);
-            this.shadowPanel7.Location = new System.Drawing.Point(233, 291);
-            this.shadowPanel7.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
+            this.shadowPanel7.Location = new System.Drawing.Point(311, 358);
+            this.shadowPanel7.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
             this.shadowPanel7.Name = "shadowPanel7";
             this.shadowPanel7.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.shadowPanel7.Size = new System.Drawing.Size(184, 231);
+            this.shadowPanel7.Size = new System.Drawing.Size(245, 284);
             this.shadowPanel7.TabIndex = 19;
             // 
             // wrapLabel7
             // 
             this.wrapLabel7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrapLabel7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.wrapLabel7.Location = new System.Drawing.Point(18, 9);
+            this.wrapLabel7.Location = new System.Drawing.Point(24, 11);
+            this.wrapLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wrapLabel7.Name = "wrapLabel7";
-            this.wrapLabel7.Size = new System.Drawing.Size(149, 48);
+            this.wrapLabel7.Size = new System.Drawing.Size(199, 32);
             this.wrapLabel7.TabIndex = 3;
             this.wrapLabel7.Text = "Data Scientist";
             this.wrapLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -451,10 +459,10 @@
             this.roundedButton7.FlatAppearance.BorderSize = 0;
             this.roundedButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton7.ForeColor = System.Drawing.Color.White;
-            this.roundedButton7.Location = new System.Drawing.Point(33, 176);
-            this.roundedButton7.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButton7.Location = new System.Drawing.Point(44, 217);
+            this.roundedButton7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedButton7.Name = "roundedButton7";
-            this.roundedButton7.Size = new System.Drawing.Size(115, 32);
+            this.roundedButton7.Size = new System.Drawing.Size(153, 39);
             this.roundedButton7.TabIndex = 2;
             this.roundedButton7.Text = "Έναρξη";
             this.roundedButton7.UseVisualStyleBackColor = false;
@@ -462,10 +470,10 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Educational_Software.Properties.Resources.course2;
-            this.pictureBox7.Location = new System.Drawing.Point(33, 65);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Location = new System.Drawing.Point(44, 80);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(115, 95);
+            this.pictureBox7.Size = new System.Drawing.Size(153, 117);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 1;
             this.pictureBox7.TabStop = false;
@@ -478,20 +486,21 @@
             this.shadowPanel8.Controls.Add(this.wrapLabel8);
             this.shadowPanel8.Controls.Add(this.roundedButton8);
             this.shadowPanel8.Controls.Add(this.pictureBox8);
-            this.shadowPanel8.Location = new System.Drawing.Point(31, 291);
-            this.shadowPanel8.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
+            this.shadowPanel8.Location = new System.Drawing.Point(41, 358);
+            this.shadowPanel8.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
             this.shadowPanel8.Name = "shadowPanel8";
             this.shadowPanel8.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.shadowPanel8.Size = new System.Drawing.Size(184, 231);
+            this.shadowPanel8.Size = new System.Drawing.Size(245, 284);
             this.shadowPanel8.TabIndex = 20;
             // 
             // wrapLabel8
             // 
             this.wrapLabel8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrapLabel8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.wrapLabel8.Location = new System.Drawing.Point(18, 9);
+            this.wrapLabel8.Location = new System.Drawing.Point(24, 11);
+            this.wrapLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wrapLabel8.Name = "wrapLabel8";
-            this.wrapLabel8.Size = new System.Drawing.Size(149, 48);
+            this.wrapLabel8.Size = new System.Drawing.Size(199, 64);
             this.wrapLabel8.TabIndex = 3;
             this.wrapLabel8.Text = "Full-Stack Developer";
             this.wrapLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -507,10 +516,10 @@
             this.roundedButton8.FlatAppearance.BorderSize = 0;
             this.roundedButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton8.ForeColor = System.Drawing.Color.White;
-            this.roundedButton8.Location = new System.Drawing.Point(33, 176);
-            this.roundedButton8.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButton8.Location = new System.Drawing.Point(44, 217);
+            this.roundedButton8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedButton8.Name = "roundedButton8";
-            this.roundedButton8.Size = new System.Drawing.Size(115, 32);
+            this.roundedButton8.Size = new System.Drawing.Size(153, 39);
             this.roundedButton8.TabIndex = 2;
             this.roundedButton8.Text = "Έναρξη";
             this.roundedButton8.UseVisualStyleBackColor = false;
@@ -518,20 +527,20 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Educational_Software.Properties.Resources.course1;
-            this.pictureBox8.Location = new System.Drawing.Point(33, 65);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox8.Location = new System.Drawing.Point(44, 80);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(115, 97);
+            this.pictureBox8.Size = new System.Drawing.Size(153, 119);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 1;
             this.pictureBox8.TabStop = false;
             // 
             // FormCareers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.ClientSize = new System.Drawing.Size(857, 556);
+            this.ClientSize = new System.Drawing.Size(1143, 684);
             this.Controls.Add(this.shadowPanel5);
             this.Controls.Add(this.shadowPanel4);
             this.Controls.Add(this.shadowPanel6);
@@ -541,6 +550,7 @@
             this.Controls.Add(this.shadowPanel8);
             this.Controls.Add(this.shadowPanel1);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormCareers";
             this.Text = "FormCareers";
             this.shadowPanel4.ResumeLayout(false);

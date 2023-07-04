@@ -22,6 +22,10 @@ namespace Educational_Software
         private Form1 form1;
         private int lessonId = 1;
 
+        private int professionId;
+        private bool isProfession = false;
+        private Profession profession;
+
         public FormCourseStudy(int courseId, Form1 form1, Image courseImage, string courseName)
         {
             InitializeComponent();
@@ -29,6 +33,15 @@ namespace Educational_Software
             this.form1 = form1;
             this.courseImage = courseImage;
             this.courseName = courseName;
+        }
+
+        public FormCourseStudy(int professionId, Form1 form1, Image courseImage)
+        {
+            InitializeComponent();
+            this.professionId = professionId;
+            this.form1 = form1;
+            this.courseImage = courseImage;
+            this.isProfession = true;
         }
 
         private void loadLesson()
@@ -48,9 +61,14 @@ namespace Educational_Software
 
                 labelTitle.Text = lesson.Name;
 
-                Label[] labels = { label1, label2, label3, label4, label5};
-                PictureBox[] pictureBoxes = {pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5};
+                Label[] labels = { label1, label2, label3, label4};
+                PictureBox[] pictureBoxes = {pictureBox1, pictureBox2, pictureBox3, pictureBox4};
                 Panel[] panels = { panelBody1, panelBody2, panelBody3, panelBody4 };
+
+                foreach (Panel panel in panels)
+                {
+                    panel.Visible = false;
+                }
 
                 // label5/panel5 is for the Goals
                 panelBody5.Show();
@@ -65,13 +83,16 @@ namespace Educational_Software
                 }
                 label5.Text = sb.ToString();
 
-                foreach(Panel panel in panels)
+                for (int i= panels.Length-1; i>=0; i--)
                 {
-                    panel.Visible = false;
-                }
+                    Console.WriteLine(i);
+                    if (i >= lesson.Paragraphs.Count)
+                    {
+                        panels[i].Visible = false;
+                        Console.WriteLine("skip");
+                        continue;
+                    }
 
-                for (int i= lesson.Paragraphs.Count-1; i>=0; i--)
-                {
                     panels[i].Show();
                     labels[i].Text = lesson.Paragraphs[i].Text;
                     if (!lesson.Paragraphs[i].ImageName.Equals(""))
@@ -84,6 +105,8 @@ namespace Educational_Software
                         pictureBoxes[i].Hide();
                     }                   
                 }
+
+                Console.WriteLine(label4.Text.ToString());
 
                 labelDesc.Text = lesson.Description;
                 panelBodyDesc.Show();
@@ -109,10 +132,96 @@ namespace Educational_Software
             }
         }
 
+        private void loadProfession()
+        {
+            using (StreamReader cour = new StreamReader("CourseMaterial/profession" + professionId + ".json"))
+            {
+                string jsonc = cour.ReadToEnd();
+                profession = JsonConvert.DeserializeObject<Profession>(jsonc);
+            }
+        }
+
+        private void showProfession()
+        {
+            panelBodyDesc.Hide();
+            Label[] labels = { label1, label2, label3, label4, label5 };
+            PictureBox[] pictureBoxes = { pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5 };
+            Panel[] panels = { panelBody1, panelBody2, panelBody3, panelBody4, panelBody5 };
+
+            foreach (Panel panel in panels)
+            {
+                panel.Visible = false;
+            }
+
+            panelButtons.Visible = false;
+
+            switch (lessonId)
+            {
+                case 1:
+                    labelTitle.Text = profession.Name + " Κοινωνικές Δεξιότητες (Soft Skills)";
+                    for (int i= panels.Length-1; i>=0; i--)
+                    {
+                        panels[i].Visible = true;
+                        labels[i].Text = profession.SoftSkills[i].Text;
+                    }
+                    panelBody1.Select();
+                    break;
+
+                case 2:
+                    labelTitle.Text = profession.Name + " Τεχνικές δεξιότητες (Hard Skills)";
+                    for (int i = panels.Length - 1; i >= 0; i--)
+                    {
+                        panels[i].Visible = true;
+                        labels[i].Text = profession.HardSkills[i].Text;
+                    }
+                    panelBody1.Select();
+                    break;
+
+                case 3:
+                    labelTitle.Text = profession.Name + " Βασικά Στοιχεία";
+                    for (int i = panels.Length - 1; i >= 0; i--)
+                    {
+                        panels[i].Visible = true;
+                        labels[i].Text = profession.Paragraphs[i].Text;
+                    }
+                    panelBody1.Select();
+                    break;
+
+                case 4:
+                    labelTitle.Text = profession.Name + " Απαραίτητα Μαθήματα";
+                    panelBody1.Show();
+                    StringBuilder sb = new StringBuilder();
+                    //sb.Append("Από τα μαθήματα που περιγράφηκαν, τα παρακάτω είναι απαραίτητα για την καριέρα ενός "+ profession.Name + "+:\n");
+                    sb.Append('\n');
+                    foreach (Paragraph paragraph in profession.Requirements)
+                    {
+                        sb.Append(" > \t ");
+                        sb.Append(paragraph.Text);
+                        sb.Append('\n');
+                    }
+                    label1.Text = sb.ToString();
+                    panelBody1.Select();
+                    break;
+            }
+        }
 
         private void Prev_Click(object sender, EventArgs e)
         {
-            if(lessonId==1)
+            if (isProfession && lessonId == 1)
+            {
+                form1.openChildForm(form1.formCareers);
+                return;
+            }
+
+            if (isProfession)
+            {
+                lessonId -= 1;
+                showProfession();
+                return;
+            }
+
+
+            if (lessonId==1)
                 form1.openChildForm(new FormCourseOverview(courseId, form1, courseImage));
             else
             {
@@ -123,12 +232,27 @@ namespace Educational_Software
 
         private void FormCourseStudy_Load(object sender, EventArgs e)
         {
+            if (isProfession)
+            {
+                loadProfession();
+                showProfession();
+
+
+                return;
+            }
             loadLesson();
         }
 
         private void Next_Click(object sender, EventArgs e)
         {
             lessonId += 1;
+
+            if (isProfession)
+            {
+                showProfession();
+                return;
+            }
+
             loadLesson();
         }
 

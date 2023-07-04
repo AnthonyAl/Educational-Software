@@ -23,7 +23,7 @@ namespace Educational_Software
 
         // loaded forms
         private FormCourses formCourses = null;
-        private FormCareers formCareers = null;
+        public FormCareers formCareers = null;
 
 
         public Form1()

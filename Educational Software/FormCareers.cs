@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Educational_Software.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,12 @@ namespace Educational_Software
         {
             InitializeComponent();
             this.form1 = form1;
+        }
+
+        private void roundedButton4_Click(object sender, EventArgs e)
+        {
+
+            form1.openChildForm(new FormCourseStudy(4, form1, pictureBox1.Image));
         }
     }
 }
