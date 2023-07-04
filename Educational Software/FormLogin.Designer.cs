@@ -35,14 +35,14 @@
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.labelPassword = new System.Windows.Forms.Label();
             this.shadowPanelBody = new ShadowPanel.ShadowUpperPanel();
+            this.roundedButtonCreateAccount = new Rounded.RoundedButton();
             this.shadowPanelLoginButton = new ShadowPanel.ShadowPanel();
+            this.roundedButtonLogin = new Rounded.RoundedButton();
             this.labelForgotPassword = new System.Windows.Forms.Label();
             this.labelLoginTitle = new System.Windows.Forms.Label();
             this.labelUnderline1 = new System.Windows.Forms.Label();
             this.labelUnderline2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.roundedButtonCreateAccount = new Rounded.RoundedButton();
-            this.roundedButtonLogin = new Rounded.RoundedButton();
             this.panelContent.SuspendLayout();
             this.shadowPanelBody.SuspendLayout();
             this.shadowPanelLoginButton.SuspendLayout();
@@ -143,6 +143,27 @@
             this.shadowPanelBody.Size = new System.Drawing.Size(641, 382);
             this.shadowPanelBody.TabIndex = 4;
             // 
+            // roundedButtonCreateAccount
+            // 
+            this.roundedButtonCreateAccount.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedButtonCreateAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.roundedButtonCreateAccount.BorderColor = System.Drawing.Color.Black;
+            this.roundedButtonCreateAccount.BorderRadius = 4;
+            this.roundedButtonCreateAccount.BorderSize = 0;
+            this.roundedButtonCreateAccount.FlatAppearance.BorderSize = 0;
+            this.roundedButtonCreateAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButtonCreateAccount.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButtonCreateAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(81)))), ((int)(((byte)(84)))));
+            this.roundedButtonCreateAccount.Location = new System.Drawing.Point(44, 319);
+            this.roundedButtonCreateAccount.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButtonCreateAccount.Name = "roundedButtonCreateAccount";
+            this.roundedButtonCreateAccount.Size = new System.Drawing.Size(553, 42);
+            this.roundedButtonCreateAccount.TabIndex = 7;
+            this.roundedButtonCreateAccount.Text = "Νέος στην εφαρμογή μας;   Δημιούργησε λογαριασμό";
+            this.roundedButtonCreateAccount.UseVisualStyleBackColor = false;
+            this.roundedButtonCreateAccount.Click += new System.EventHandler(this.roundedButtonCreateAccount_Click);
+            // 
             // shadowPanelLoginButton
             // 
             this.shadowPanelLoginButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -154,6 +175,26 @@
             this.shadowPanelLoginButton.PanelColor = System.Drawing.Color.Empty;
             this.shadowPanelLoginButton.Size = new System.Drawing.Size(117, 48);
             this.shadowPanelLoginButton.TabIndex = 6;
+            // 
+            // roundedButtonLogin
+            // 
+            this.roundedButtonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(166)))), ((int)(((byte)(154)))));
+            this.roundedButtonLogin.BorderColor = System.Drawing.Color.Black;
+            this.roundedButtonLogin.BorderRadius = 4;
+            this.roundedButtonLogin.BorderSize = 0;
+            this.roundedButtonLogin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roundedButtonLogin.FlatAppearance.BorderSize = 0;
+            this.roundedButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButtonLogin.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButtonLogin.ForeColor = System.Drawing.Color.White;
+            this.roundedButtonLogin.Location = new System.Drawing.Point(0, 0);
+            this.roundedButtonLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButtonLogin.Name = "roundedButtonLogin";
+            this.roundedButtonLogin.Size = new System.Drawing.Size(111, 42);
+            this.roundedButtonLogin.TabIndex = 3;
+            this.roundedButtonLogin.Text = "ΣΥΝΔΕΣΗ";
+            this.roundedButtonLogin.UseVisualStyleBackColor = false;
+            this.roundedButtonLogin.Click += new System.EventHandler(this.roundedButtonLogin_Click);
             // 
             // labelForgotPassword
             // 
@@ -212,47 +253,6 @@
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // roundedButtonCreateAccount
-            // 
-            this.roundedButtonCreateAccount.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedButtonCreateAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.roundedButtonCreateAccount.BorderColor = System.Drawing.Color.Black;
-            this.roundedButtonCreateAccount.BorderRadius = 4;
-            this.roundedButtonCreateAccount.BorderSize = 0;
-            this.roundedButtonCreateAccount.FlatAppearance.BorderSize = 0;
-            this.roundedButtonCreateAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButtonCreateAccount.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButtonCreateAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(81)))), ((int)(((byte)(84)))));
-            this.roundedButtonCreateAccount.Location = new System.Drawing.Point(44, 319);
-            this.roundedButtonCreateAccount.Margin = new System.Windows.Forms.Padding(2);
-            this.roundedButtonCreateAccount.Name = "roundedButtonCreateAccount";
-            this.roundedButtonCreateAccount.Size = new System.Drawing.Size(553, 42);
-            this.roundedButtonCreateAccount.TabIndex = 7;
-            this.roundedButtonCreateAccount.Text = "Νέος στην εφαρμογή μας;   Δημιούργησε λογαριασμό";
-            this.roundedButtonCreateAccount.UseVisualStyleBackColor = false;
-            this.roundedButtonCreateAccount.Click += new System.EventHandler(this.roundedButtonCreateAccount_Click);
-            // 
-            // roundedButtonLogin
-            // 
-            this.roundedButtonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(166)))), ((int)(((byte)(154)))));
-            this.roundedButtonLogin.BorderColor = System.Drawing.Color.Black;
-            this.roundedButtonLogin.BorderRadius = 4;
-            this.roundedButtonLogin.BorderSize = 0;
-            this.roundedButtonLogin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.roundedButtonLogin.FlatAppearance.BorderSize = 0;
-            this.roundedButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButtonLogin.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButtonLogin.ForeColor = System.Drawing.Color.White;
-            this.roundedButtonLogin.Location = new System.Drawing.Point(0, 0);
-            this.roundedButtonLogin.Margin = new System.Windows.Forms.Padding(2);
-            this.roundedButtonLogin.Name = "roundedButtonLogin";
-            this.roundedButtonLogin.Size = new System.Drawing.Size(111, 42);
-            this.roundedButtonLogin.TabIndex = 3;
-            this.roundedButtonLogin.Text = "ΣΥΝΔΕΣΗ";
-            this.roundedButtonLogin.UseVisualStyleBackColor = false;
-            this.roundedButtonLogin.Click += new System.EventHandler(this.roundedButtonLogin_Click);
-            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -260,6 +260,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(721, 485);
             this.DeleteOnClose = true;
+            this.Main = true;
             this.MinimumSize = new System.Drawing.Size(721, 485);
             this.Name = "FormLogin";
             this.Text = "FormLogin";

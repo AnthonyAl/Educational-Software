@@ -137,5 +137,10 @@ namespace Educational_Software
             new FormLogin().Show();
             this.Hide();
         }
+
+        private void comboBox1_DisplayMemberChanged(object sender, EventArgs e)
+        {
+            labelSubjects.Focus();
+        }
     }
 }

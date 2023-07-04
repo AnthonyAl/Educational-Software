@@ -354,8 +354,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnProfile;
         private System.Windows.Forms.Button btnAbout;
@@ -370,6 +368,7 @@
         private System.Windows.Forms.Label label1;
         private Rounded.RoundedToggleButton roundedToggleButton1;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Panel panelSideMenu;
     }
 }
 

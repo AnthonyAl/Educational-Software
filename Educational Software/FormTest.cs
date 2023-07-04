@@ -323,5 +323,67 @@ namespace Educational_Software
             check = !check;
             roundedButton1.Text = "Επιβεβαίωση";
         }
+
+        private void comboBoxMatch5_DropDownClosed(object sender, EventArgs e)
+        {
+            labelSentence.Focus();
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelradio1_VisibleChanged(object sender, EventArgs e)
+        {
+            string name = ((Label)sender).Name;
+            switch (name[name.Length - 1])
+            {
+                case '1':
+                    shadowRadioPanel1.PanelColor = ((Label)sender).ForeColor;
+                    break;
+                case '2':
+                    shadowRadioPanel2.PanelColor = ((Label)sender).ForeColor;
+                    break;
+                case '3':
+                    shadowRadioPanel3.PanelColor = ((Label)sender).ForeColor;
+                    break;
+                case '4':
+                    shadowRadioPanel4.PanelColor = ((Label)sender).ForeColor;
+                    break;
+                case '5':
+                    shadowRadioPanel5.PanelColor = ((Label)sender).ForeColor;
+                    break;
+                case '6':
+                    shadowRadioPanel6.PanelColor = ((Label)sender).ForeColor;
+                    break;
+            }
+            
+        }
     }
 }

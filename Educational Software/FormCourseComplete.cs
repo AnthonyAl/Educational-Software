@@ -50,6 +50,7 @@ namespace Educational_Software
                 string jsonc = cour.ReadToEnd();
                 allQuestions1 = JsonConvert.DeserializeObject<List<Question>>(jsonc);
             }
+            form1.panelSideMenu.Visible = false;
             form1.openChildForm(new FormTest(allQuestions1));
             return;
 
