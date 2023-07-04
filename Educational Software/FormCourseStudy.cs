@@ -50,18 +50,25 @@ namespace Educational_Software
 
                 Label[] labels = { label1, label2, label3, label4, label5};
                 PictureBox[] pictureBoxes = {pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5};
-                Panel[] panels = { panelBody1, panelBody2, panelBody3, panelBody4, panelBody5 };
+                Panel[] panels = { panelBody1, panelBody2, panelBody3, panelBody4 };
 
                 // label5/panel5 is for the Goals
                 panelBody5.Show();
                 StringBuilder sb = new StringBuilder();
                 sb.Append("Μαθησιακά Αποτελέσματα του μαθήματος:\n");
-                foreach(Goal goal in lesson.Goals) {
-                    sb.Append(" > ");
+                sb.Append('\n');
+                foreach (Goal goal in lesson.Goals) {
+                    sb.Append(" > \t ");
                     sb.Append(goal.Text);
+                    sb.Append('\n');
                     sb.Append('\n');
                 }
                 label5.Text = sb.ToString();
+
+                foreach(Panel panel in panels)
+                {
+                    panel.Visible = false;
+                }
 
                 for (int i= lesson.Paragraphs.Count-1; i>=0; i--)
                 {
@@ -79,9 +86,26 @@ namespace Educational_Software
                 }
 
                 labelDesc.Text = lesson.Description;
-                panelBodyDesc.Visible = true;
+                panelBodyDesc.Show();
 
                 panelBodyDesc.Select();
+
+                // extra links
+                if (lesson.Extras != null)
+                {
+                    if(lesson.Extras.Count > 0)
+                    {
+                        Label[] labelLinks = { labelLink1, labelLink2, labelLink3 };
+                        Button[] btnLinks = { roundedButtonLink1, roundedButtonLink2, roundedButtonLink3 };
+
+                        for(int i= 0; i< lesson.Extras.Count; i++)
+                        {
+                            labelLinks[i].Text = lesson.Extras[i].Title;
+                            btnLinks[i].Tag = lesson.Extras[i].Url;
+                        }
+                    }
+                }
+
             }
         }
 
@@ -118,6 +142,24 @@ namespace Educational_Software
         {
             ((RoundedButton)sender).BorderColor = Color.FromArgb(90, 116, 176);
             ((RoundedButton)sender).ForeColor = Color.FromArgb(90, 116, 176);
+        }
+
+        private void roundedButtonLink1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(((Control)sender).Tag.ToString());
+            //MessageBox.Show(((Control)sender).Tag.ToString());
+        }
+
+        private void roundedButtonLink2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(((Control)sender).Tag.ToString());
+            //MessageBox.Show(((Control)sender).Tag.ToString());
+        }
+
+        private void roundedButtonLink3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(((Control)sender).Tag.ToString());
+            //MessageBox.Show(((Control)sender).Tag.ToString());
         }
     }
 }

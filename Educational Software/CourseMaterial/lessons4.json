@@ -31,6 +31,20 @@
       {
         "text": "Συνδυασμός γνώσεων από την αναγνώριση προτύπων για την επίλυση προβλημάτων Υπολογιστικής Όρασης."
       }
+    ],
+    "extras": [
+      {
+        "title": "Βίντεο Image Dithering in Python 3",
+        "url": "https://youtu.be/Ld_cz1JwRHk"
+      },
+      {
+        "title": "Άρθρο Tensorflow Image classification",
+        "url": "https://www.tensorflow.org/tutorials/images/classification"
+      },
+      {
+        "title": "Βίντεο Playing Card Detection Using OpenCV-Python",
+        "url": "https://youtu.be/m-QPjO-2IkA"
+      }
     ]
   },
   {
@@ -66,6 +80,20 @@
       {
         "text": "Εξοικείωση με πιο μοντέρνες τεχνικές επεξεργασίας φυσικής γλώσσας."
       }
+    ],
+    "extras": [
+      {
+        "title": "Industrial-Strength Natural Language Processing",
+        "url": "https://spacy.io/usage/spacy-101"
+      },
+      {
+        "title": "Python's NLTK Package",
+        "url": "https://www.nltk.org/"
+      },
+      {
+        "title": "Guide to Build AI Chatbot with NLP in Python",
+        "url": "https://www.analyticsvidhya.com/blog/2021/10/complete-guide-to-build-your-ai-chatbot-with-nlp-in-python/"
+      }
     ]
   },
   {
@@ -98,6 +126,20 @@
       },
       {
         "text": "Χρήση του προγραμματιστικού Περιβάλλοντος Matlab και Python για υλοποίηση συστημάτων επεξεργασίας ήχου."
+      }
+    ],
+    "extras": [
+      {
+        "title": "Python librosa examples",
+        "url": "https://librosa.org/doc/latest/advanced.html"
+      },
+      {
+        "title": "Introduction to Audio Analysis - A MATLAB Approach",
+        "url": "https://www.sciencedirect.com/book/9780080993881/introduction-to-audio-analysis"
+      },
+      {
+        "title": "Introduction to Digital Speech Processing",
+        "url": "https://research.iaun.ac.ir/pd/mahmoodian/pdfs/UploadFile_2643.pdf"
       }
     ]
   }

@@ -15,5 +15,7 @@ namespace Educational_Software.Model
 
         public List<Paragraph> Paragraphs { get; set; }
         public List<Goal> Goals { get; set; }
+
+        public List<Extra> Extras { get; set; }
     }
 }
