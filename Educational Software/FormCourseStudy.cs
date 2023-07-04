@@ -53,7 +53,7 @@ namespace Educational_Software
 
                 if((lessons.Count) < lessonId)
                 {
-                    form1.openChildForm(new FormCourseComplete(courseImage, courseName, form1));
+                    form1.openChildForm(new FormCourseComplete(courseImage, courseName, form1, false,courseId));
                     return;
                 }
 
@@ -210,7 +210,7 @@ namespace Educational_Software
                     break;
 
                  case 5:
-                    form1.openChildForm(new FormCourseComplete(courseImage, profession.Name, form1, true));
+                    form1.openChildForm(new FormCourseComplete(courseImage, profession.Name, form1, true,professionId));
                     return;
             }
         }

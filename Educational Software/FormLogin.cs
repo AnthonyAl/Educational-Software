@@ -98,7 +98,7 @@ namespace Educational_Software
         private void roundedButtonCreateAccount_Click(object sender, EventArgs e)
         {
             new FormRegister().Show();
-            this.Hide();
+            this.Close();
         }
 
         private void roundedButtonLogin_Click(object sender, EventArgs e)

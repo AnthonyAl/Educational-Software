@@ -25,14 +25,23 @@ namespace Educational_Software
         Image courseImage;
         string courseTitle;
         Form1 form1;
+        private int courseId;
+        private bool isProfession;
 
-        public FormTest(List<Question> questions, Image courseImage, string courseTitle, Form1 form1)
+        private int total;
+        private int corrents = 0;
+
+        public FormTest(List<Question> questions, Image courseImage, string courseTitle, Form1 form1, int courseId, bool isProfession)
         {
             InitializeComponent();
             this.questions = questions;
             this.courseImage = courseImage;
             this.courseTitle = courseTitle;
             this.form1 = form1;
+
+            this.total = questions.Count;
+            this.courseId = courseId;
+            this.isProfession = isProfession;
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
@@ -189,12 +198,20 @@ namespace Educational_Software
                             
                         }
 
-                        if (radioButtons[i].Text.Equals(answer))
+                        if (!radioButtons[i].Checked && radioButtons[i].Text.Equals(answer))
+                        {
+                            //radioButtons[i].ForeColor = Color.Green;
+                            labelradios[i].Text = "ΛΑΘΟΣ! ->";
+                            labelradios[i].ForeColor = Color.Red;
+
+                        }
+
+                        if (radioButtons[i].Checked && radioButtons[i].Text.Equals(answer))
                         {
                             //radioButtons[i].ForeColor = Color.Green;
                             labelradios[i].Text = "ΣΩΣΤΟ! ->";
                             labelradios[i].ForeColor = Color.Green;
-
+                            corrents += 1;
                         }
 
                         radioButtons[i].Enabled = false;
@@ -215,7 +232,9 @@ namespace Educational_Software
 
                     List<string> ans = new List<string>();
                     foreach(Paragraph paragraph in questions[index].Corrects)
-                        ans.Add(paragraph.Text);    
+                        ans.Add(paragraph.Text);
+
+                    bool check = true;
 
                     for (int i = 0; i < questions[index].Choices.Count; i++)
                     {
@@ -223,14 +242,21 @@ namespace Educational_Software
                         {
                             labelchecks[i].Text = "ΛΑΘΟΣ! ->";
                             labelchecks[i].ForeColor = Color.Red;
-
+                            check = false;
                         }
 
-                        if (ans.Contains(checkBoxes[i].Text))
+                        if (checkBoxes[i].Checked && ans.Contains(checkBoxes[i].Text))
                         {
                             labelchecks[i].Text = "ΣΩΣΤΟ! ->";
                             labelchecks[i].ForeColor = Color.Green;
 
+                        }
+
+                        if (!checkBoxes[i].Checked && ans.Contains(checkBoxes[i].Text))
+                        {
+                            labelchecks[i].Text = "ΛΑΘΟΣ! ->";
+                            labelchecks[i].ForeColor = Color.Red;
+                            check = false;
                         }
 
                         checkBoxes[i].Enabled = false;
@@ -238,6 +264,7 @@ namespace Educational_Software
 
                     }
 
+                    if (check) corrents += 1;
 
                     break;
 
@@ -249,10 +276,11 @@ namespace Educational_Software
                     {
                         labelImageChoose.Text = " ΣΩΣΤΟ!";
                         labelImageChoose.ForeColor = Color.Green;
+                        corrents += 1;
                     }
                     else
                     {
-                        labelImageChoose.Text = " ΛΑΘΟΣ!";
+                        labelImageChoose.Text = " ΛΑΘΟΣ! ("+ answerImage+")";
                         labelImageChoose.ForeColor = Color.Red;
                     }
 
@@ -269,6 +297,8 @@ namespace Educational_Software
 
                     Label[] labelmatchshows = { labelmatchshow1, labelmatchshow2, labelmatchshow3, labelmatchshow4, labelmatchshow5, labelmatchshow6 };
 
+                    bool check2 = true;
+
                     for(int i = 0; i < questions[index].Corrects.Count; i++)
                     {
                         if (comboBoxes[i].Text.Equals(questions[index].Corrects[i].Text))
@@ -278,12 +308,15 @@ namespace Educational_Software
                         }
                         else
                         {
-                            labelmatchshows[i].Text = " ΛΑΘΟΣ!";
+                            labelmatchshows[i].Text = " ΛΑΘΟΣ! (" + questions[index].Corrects[i].Text+")";
                             labelmatchshows[i].ForeColor = Color.Red;
+                            check2 = false;
                         }
 
                         comboBoxes[i].Enabled = false;
                     }
+
+                    if (check2) corrents += 1;
 
                     break;
             }
@@ -316,6 +349,13 @@ namespace Educational_Software
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
+            if(index == questions.Count - 1)
+            {
+                form1.openChildForm(new FormTestComplete(courseImage, courseTitle, form1, corrents, total, courseId, isProfession));
+                return;
+            }
+
+
             if (check)
             {
                 checkAnswer();

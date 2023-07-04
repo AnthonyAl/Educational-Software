@@ -135,7 +135,10 @@ namespace Educational_Software
         private void btnStart_Click(object sender, EventArgs e)
         {
             ActivateButton((Button)sender, Color.FromArgb(242, 139, 29), "5");
-            Application.Exit();
+            //Application.Exit();
+
+            new FormLogin().Show();
+            this.Close();
         }
 
         private void btnCourses_MouseEnter(object sender, EventArgs e)

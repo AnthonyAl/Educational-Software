@@ -19,24 +19,18 @@ namespace Educational_Software
         string courseTitle;
         Form1 form1;
         private bool isProfession = false;
+        int courseId;
 
         private Random random = new Random();
 
-        public FormCourseComplete(Image courseImage, string courseTitle, Form1 form1)
-        {
-            InitializeComponent();
-            this.courseImage = courseImage;
-            this.courseTitle = courseTitle;
-            this.form1 = form1;
-        }
-
-        public FormCourseComplete(Image courseImage, string courseTitle, Form1 form1, bool isProfession)
+        public FormCourseComplete(Image courseImage, string courseTitle, Form1 form1, bool isProfession, int courseId)
         {
             InitializeComponent();
             this.courseImage = courseImage;
             this.courseTitle = courseTitle;
             this.form1 = form1;
             this.isProfession = isProfession;
+            this.courseId = courseId;   
         }
 
         private void roundedButton3_Click(object sender, EventArgs e)
@@ -72,7 +66,7 @@ namespace Educational_Software
                 allQuestions1 = JsonConvert.DeserializeObject<List<Question>>(jsonc);
             }
             form1.panelSideMenu.Visible = false;
-            form1.openChildForm(new FormTest(allQuestions1, courseImage, courseTitle, form1));
+            form1.openChildForm(new FormTest(allQuestions1, courseImage, courseTitle, form1, courseId, isProfession));
             return;
 
             // create a quiz
@@ -114,7 +108,7 @@ namespace Educational_Software
             // suffle all questions
             questions = questions.OrderBy(q => random.Next()).ToList();
 
-            form1.openChildForm(new FormTest(questions, courseImage, courseTitle, form1));
+            form1.openChildForm(new FormTest(questions, courseImage, courseTitle, form1, courseId, isProfession));
         }
     }
 }
