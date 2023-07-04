@@ -130,54 +130,54 @@
             this.panelButtons.Controls.Add(this.shadowPanelLink2);
             this.panelButtons.Controls.Add(this.shadowPanelLink1);
             this.panelButtons.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelButtons.Location = new System.Drawing.Point(0, 1284);
+            this.panelButtons.Location = new System.Drawing.Point(0, 1564);
             this.panelButtons.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.panelButtons.Name = "panelButtons";
             this.panelButtons.Padding = new System.Windows.Forms.Padding(0, 0, 32, 24);
-            this.panelButtons.Size = new System.Drawing.Size(1042, 159);
+            this.panelButtons.Size = new System.Drawing.Size(1046, 159);
             this.panelButtons.TabIndex = 19;
             // 
             // labelLink3
             // 
             this.labelLink3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelLink3.AutoSize = true;
             this.labelLink3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.labelLink3.Location = new System.Drawing.Point(664, 62);
+            this.labelLink3.Location = new System.Drawing.Point(659, 59);
             this.labelLink3.Name = "labelLink3";
-            this.labelLink3.Size = new System.Drawing.Size(296, 17);
+            this.labelLink3.Size = new System.Drawing.Size(260, 18);
             this.labelLink3.TabIndex = 32;
             this.labelLink3.Text = "Επισκεψθείτε και τους παρακάτω ιστότοπους:";
+            this.labelLink3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelLink2
             // 
             this.labelLink2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelLink2.AutoSize = true;
             this.labelLink2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.labelLink2.Location = new System.Drawing.Point(402, 60);
+            this.labelLink2.Location = new System.Drawing.Point(393, 58);
             this.labelLink2.Name = "labelLink2";
-            this.labelLink2.Size = new System.Drawing.Size(296, 17);
+            this.labelLink2.Size = new System.Drawing.Size(260, 18);
             this.labelLink2.TabIndex = 31;
             this.labelLink2.Text = "Επισκεψθείτε και τους παρακάτω ιστότοπους:";
+            this.labelLink2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelLink1
             // 
             this.labelLink1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelLink1.AutoSize = true;
             this.labelLink1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.labelLink1.Location = new System.Drawing.Point(140, 61);
+            this.labelLink1.Location = new System.Drawing.Point(127, 59);
             this.labelLink1.Name = "labelLink1";
-            this.labelLink1.Size = new System.Drawing.Size(296, 17);
+            this.labelLink1.Size = new System.Drawing.Size(260, 18);
             this.labelLink1.TabIndex = 30;
             this.labelLink1.Text = "Επισκεψθείτε και τους παρακάτω ιστότοπους:";
+            this.labelLink1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelLinks
             // 
             this.labelLinks.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelLinks.AutoSize = true;
             this.labelLinks.Font = new System.Drawing.Font("Onyx", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLinks.Location = new System.Drawing.Point(284, 17);
+            this.labelLinks.Location = new System.Drawing.Point(286, 17);
             this.labelLinks.Name = "labelLinks";
-            this.labelLinks.Size = new System.Drawing.Size(490, 30);
+            this.labelLinks.Size = new System.Drawing.Size(475, 25);
             this.labelLinks.TabIndex = 29;
             this.labelLinks.Text = "Επισκεψθείτε και τους παρακάτω ιστότοπους:";
             // 
@@ -186,7 +186,7 @@
             this.shadowPanelLink3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.shadowPanelLink3.BorderColor = System.Drawing.Color.Empty;
             this.shadowPanelLink3.Controls.Add(this.roundedButtonLink3);
-            this.shadowPanelLink3.Location = new System.Drawing.Point(696, 80);
+            this.shadowPanelLink3.Location = new System.Drawing.Point(698, 80);
             this.shadowPanelLink3.Name = "shadowPanelLink3";
             this.shadowPanelLink3.Padding = new System.Windows.Forms.Padding(0, 0, 6, 6);
             this.shadowPanelLink3.PanelColor = System.Drawing.Color.Empty;
@@ -218,7 +218,7 @@
             this.shadowPanelLink2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.shadowPanelLink2.BorderColor = System.Drawing.Color.Empty;
             this.shadowPanelLink2.Controls.Add(this.roundedButtonLink2);
-            this.shadowPanelLink2.Location = new System.Drawing.Point(431, 80);
+            this.shadowPanelLink2.Location = new System.Drawing.Point(433, 80);
             this.shadowPanelLink2.Name = "shadowPanelLink2";
             this.shadowPanelLink2.Padding = new System.Windows.Forms.Padding(0, 0, 6, 6);
             this.shadowPanelLink2.PanelColor = System.Drawing.Color.Empty;
@@ -250,7 +250,7 @@
             this.shadowPanelLink1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.shadowPanelLink1.BorderColor = System.Drawing.Color.Empty;
             this.shadowPanelLink1.Controls.Add(this.roundedButtonLink1);
-            this.shadowPanelLink1.Location = new System.Drawing.Point(166, 80);
+            this.shadowPanelLink1.Location = new System.Drawing.Point(168, 80);
             this.shadowPanelLink1.Name = "shadowPanelLink1";
             this.shadowPanelLink1.Padding = new System.Windows.Forms.Padding(0, 0, 6, 6);
             this.shadowPanelLink1.PanelColor = System.Drawing.Color.Empty;
@@ -283,12 +283,12 @@
             this.panelBodyDesc.Controls.Add(this.panelLabelDesc);
             this.panelBodyDesc.Controls.Add(this.pictureBoxDesc);
             this.panelBodyDesc.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBodyDesc.Location = new System.Drawing.Point(0, 1070);
+            this.panelBodyDesc.Location = new System.Drawing.Point(0, 1320);
             this.panelBodyDesc.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.panelBodyDesc.Name = "panelBodyDesc";
             this.panelBodyDesc.Padding = new System.Windows.Forms.Padding(0, 0, 32, 24);
             this.panelBodyDesc.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.panelBodyDesc.Size = new System.Drawing.Size(1042, 214);
+            this.panelBodyDesc.Size = new System.Drawing.Size(1046, 244);
             this.panelBodyDesc.TabIndex = 18;
             this.panelBodyDesc.Visible = false;
             // 
@@ -298,19 +298,19 @@
             this.panelLabelDesc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLabelDesc.Location = new System.Drawing.Point(0, 0);
             this.panelLabelDesc.Name = "panelLabelDesc";
-            this.panelLabelDesc.Size = new System.Drawing.Size(687, 190);
+            this.panelLabelDesc.Size = new System.Drawing.Size(691, 220);
             this.panelLabelDesc.TabIndex = 6;
             // 
             // labelDesc
             // 
             this.labelDesc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.labelDesc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelDesc.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDesc.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDesc.Location = new System.Drawing.Point(0, 0);
             this.labelDesc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDesc.Name = "labelDesc";
             this.labelDesc.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
-            this.labelDesc.Size = new System.Drawing.Size(687, 190);
+            this.labelDesc.Size = new System.Drawing.Size(691, 220);
             this.labelDesc.TabIndex = 1;
             this.labelDesc.Text = "Description\r\n";
             // 
@@ -318,9 +318,9 @@
             // 
             this.pictureBoxDesc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.pictureBoxDesc.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBoxDesc.Location = new System.Drawing.Point(687, 0);
+            this.pictureBoxDesc.Location = new System.Drawing.Point(691, 0);
             this.pictureBoxDesc.Name = "pictureBoxDesc";
-            this.pictureBoxDesc.Size = new System.Drawing.Size(323, 190);
+            this.pictureBoxDesc.Size = new System.Drawing.Size(323, 220);
             this.pictureBoxDesc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxDesc.TabIndex = 7;
             this.pictureBoxDesc.TabStop = false;
@@ -331,11 +331,11 @@
             this.panelBody5.Controls.Add(this.panelLabel5);
             this.panelBody5.Controls.Add(this.pictureBox5);
             this.panelBody5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBody5.Location = new System.Drawing.Point(0, 856);
+            this.panelBody5.Location = new System.Drawing.Point(0, 976);
             this.panelBody5.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.panelBody5.Name = "panelBody5";
             this.panelBody5.Padding = new System.Windows.Forms.Padding(0, 0, 32, 24);
-            this.panelBody5.Size = new System.Drawing.Size(1042, 214);
+            this.panelBody5.Size = new System.Drawing.Size(1046, 344);
             this.panelBody5.TabIndex = 17;
             this.panelBody5.Visible = false;
             // 
@@ -345,27 +345,27 @@
             this.panelLabel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLabel5.Location = new System.Drawing.Point(0, 0);
             this.panelLabel5.Name = "panelLabel5";
-            this.panelLabel5.Size = new System.Drawing.Size(687, 190);
+            this.panelLabel5.Size = new System.Drawing.Size(691, 320);
             this.panelLabel5.TabIndex = 6;
             // 
             // label5
             // 
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
-            this.label5.Size = new System.Drawing.Size(687, 190);
+            this.label5.Size = new System.Drawing.Size(691, 320);
             this.label5.TabIndex = 1;
             this.label5.Text = "label\r\n";
             // 
             // pictureBox5
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox5.Location = new System.Drawing.Point(687, 0);
+            this.pictureBox5.Location = new System.Drawing.Point(691, 0);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(323, 190);
+            this.pictureBox5.Size = new System.Drawing.Size(323, 320);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 7;
             this.pictureBox5.TabStop = false;
@@ -376,12 +376,12 @@
             this.panelBody4.Controls.Add(this.panelLabel4);
             this.panelBody4.Controls.Add(this.pictureBox4);
             this.panelBody4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBody4.Location = new System.Drawing.Point(0, 642);
+            this.panelBody4.Location = new System.Drawing.Point(0, 732);
             this.panelBody4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.panelBody4.Name = "panelBody4";
             this.panelBody4.Padding = new System.Windows.Forms.Padding(0, 0, 32, 24);
             this.panelBody4.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.panelBody4.Size = new System.Drawing.Size(1042, 214);
+            this.panelBody4.Size = new System.Drawing.Size(1046, 244);
             this.panelBody4.TabIndex = 16;
             this.panelBody4.Visible = false;
             // 
@@ -391,19 +391,19 @@
             this.panelLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLabel4.Location = new System.Drawing.Point(0, 0);
             this.panelLabel4.Name = "panelLabel4";
-            this.panelLabel4.Size = new System.Drawing.Size(687, 190);
+            this.panelLabel4.Size = new System.Drawing.Size(691, 220);
             this.panelLabel4.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
-            this.label4.Size = new System.Drawing.Size(687, 190);
+            this.label4.Size = new System.Drawing.Size(691, 220);
             this.label4.TabIndex = 1;
             this.label4.Text = "label\r\n";
             // 
@@ -411,9 +411,9 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox4.Location = new System.Drawing.Point(687, 0);
+            this.pictureBox4.Location = new System.Drawing.Point(691, 0);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(323, 190);
+            this.pictureBox4.Size = new System.Drawing.Size(323, 220);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
@@ -423,11 +423,11 @@
             this.panelBody3.Controls.Add(this.panelLabel3);
             this.panelBody3.Controls.Add(this.pictureBox3);
             this.panelBody3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBody3.Location = new System.Drawing.Point(0, 428);
+            this.panelBody3.Location = new System.Drawing.Point(0, 488);
             this.panelBody3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.panelBody3.Name = "panelBody3";
             this.panelBody3.Padding = new System.Windows.Forms.Padding(0, 0, 32, 24);
-            this.panelBody3.Size = new System.Drawing.Size(1042, 214);
+            this.panelBody3.Size = new System.Drawing.Size(1046, 244);
             this.panelBody3.TabIndex = 15;
             this.panelBody3.Visible = false;
             // 
@@ -437,27 +437,27 @@
             this.panelLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLabel3.Location = new System.Drawing.Point(0, 0);
             this.panelLabel3.Name = "panelLabel3";
-            this.panelLabel3.Size = new System.Drawing.Size(687, 190);
+            this.panelLabel3.Size = new System.Drawing.Size(691, 220);
             this.panelLabel3.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
-            this.label3.Size = new System.Drawing.Size(687, 190);
+            this.label3.Size = new System.Drawing.Size(691, 220);
             this.label3.TabIndex = 1;
             this.label3.Text = "label\r\n";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox3.Location = new System.Drawing.Point(687, 0);
+            this.pictureBox3.Location = new System.Drawing.Point(691, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(323, 190);
+            this.pictureBox3.Size = new System.Drawing.Size(323, 220);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
@@ -468,12 +468,12 @@
             this.panelBody2.Controls.Add(this.panelLabel2);
             this.panelBody2.Controls.Add(this.pictureBox2);
             this.panelBody2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBody2.Location = new System.Drawing.Point(0, 214);
+            this.panelBody2.Location = new System.Drawing.Point(0, 244);
             this.panelBody2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.panelBody2.Name = "panelBody2";
             this.panelBody2.Padding = new System.Windows.Forms.Padding(0, 0, 32, 24);
             this.panelBody2.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.panelBody2.Size = new System.Drawing.Size(1042, 214);
+            this.panelBody2.Size = new System.Drawing.Size(1046, 244);
             this.panelBody2.TabIndex = 14;
             this.panelBody2.Visible = false;
             // 
@@ -483,19 +483,19 @@
             this.panelLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLabel2.Location = new System.Drawing.Point(0, 0);
             this.panelLabel2.Name = "panelLabel2";
-            this.panelLabel2.Size = new System.Drawing.Size(687, 190);
+            this.panelLabel2.Size = new System.Drawing.Size(691, 220);
             this.panelLabel2.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(687, 190);
+            this.label2.Size = new System.Drawing.Size(691, 220);
             this.label2.TabIndex = 1;
             this.label2.Text = "label\r\n";
             // 
@@ -503,9 +503,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox2.Location = new System.Drawing.Point(687, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(691, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(323, 190);
+            this.pictureBox2.Size = new System.Drawing.Size(323, 220);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
@@ -519,7 +519,7 @@
             this.panelBody1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.panelBody1.Name = "panelBody1";
             this.panelBody1.Padding = new System.Windows.Forms.Padding(0, 0, 32, 24);
-            this.panelBody1.Size = new System.Drawing.Size(1042, 214);
+            this.panelBody1.Size = new System.Drawing.Size(1046, 244);
             this.panelBody1.TabIndex = 13;
             this.panelBody1.Visible = false;
             // 
@@ -529,27 +529,27 @@
             this.panelLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLabel1.Location = new System.Drawing.Point(0, 0);
             this.panelLabel1.Name = "panelLabel1";
-            this.panelLabel1.Size = new System.Drawing.Size(687, 190);
+            this.panelLabel1.Size = new System.Drawing.Size(691, 220);
             this.panelLabel1.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(96, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(687, 190);
+            this.label1.Size = new System.Drawing.Size(691, 220);
             this.label1.TabIndex = 1;
             this.label1.Text = "label\r\n";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Location = new System.Drawing.Point(687, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(691, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(323, 190);
+            this.pictureBox1.Size = new System.Drawing.Size(323, 220);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -559,11 +559,11 @@
             this.panelFooter.Controls.Add(this.shadowPanel1);
             this.panelFooter.Controls.Add(this.shadowPanelNext);
             this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelFooter.Location = new System.Drawing.Point(0, 1443);
+            this.panelFooter.Location = new System.Drawing.Point(0, 1723);
             this.panelFooter.Margin = new System.Windows.Forms.Padding(2);
             this.panelFooter.Name = "panelFooter";
             this.panelFooter.Padding = new System.Windows.Forms.Padding(64, 0, 64, 0);
-            this.panelFooter.Size = new System.Drawing.Size(1042, 53);
+            this.panelFooter.Size = new System.Drawing.Size(1046, 53);
             this.panelFooter.TabIndex = 6;
             // 
             // shadowPanel1
@@ -606,7 +606,7 @@
             this.shadowPanelNext.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.shadowPanelNext.BorderColor = System.Drawing.Color.Empty;
             this.shadowPanelNext.Controls.Add(this.Next);
-            this.shadowPanelNext.Location = new System.Drawing.Point(911, 4);
+            this.shadowPanelNext.Location = new System.Drawing.Point(915, 4);
             this.shadowPanelNext.Name = "shadowPanelNext";
             this.shadowPanelNext.PanelColor = System.Drawing.Color.Empty;
             this.shadowPanelNext.Size = new System.Drawing.Size(128, 38);
@@ -654,7 +654,7 @@
             this.labelTitle.Location = new System.Drawing.Point(58, 9);
             this.labelTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(129, 45);
+            this.labelTitle.Size = new System.Drawing.Size(104, 36);
             this.labelTitle.TabIndex = 0;
             this.labelTitle.Text = "Τίτλος";
             // 

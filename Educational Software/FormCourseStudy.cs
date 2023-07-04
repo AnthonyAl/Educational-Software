@@ -106,10 +106,17 @@ namespace Educational_Software
                     }                   
                 }
 
+                int body_index = panelBody.Controls.GetChildIndex(panelBody5);
+                foreach (Panel panel in panels.Reverse())
+                {
+                    panelBody.Controls.SetChildIndex(panel, ++body_index);
+                }
+
                 Console.WriteLine(label4.Text.ToString());
 
                 labelDesc.Text = lesson.Description;
                 panelBodyDesc.Show();
+                panelBody.Controls.SetChildIndex(panelBodyDesc, ++body_index);
 
                 panelBodyDesc.Select();
 
