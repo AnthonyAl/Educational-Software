@@ -18,6 +18,7 @@ namespace Educational_Software
         Image courseImage;
         string courseTitle;
         Form1 form1;
+        private bool isProfession = false;
 
         private Random random = new Random();
 
@@ -29,8 +30,23 @@ namespace Educational_Software
             this.form1 = form1;
         }
 
+        public FormCourseComplete(Image courseImage, string courseTitle, Form1 form1, bool isProfession)
+        {
+            InitializeComponent();
+            this.courseImage = courseImage;
+            this.courseTitle = courseTitle;
+            this.form1 = form1;
+            this.isProfession = isProfession;
+        }
+
         private void roundedButton3_Click(object sender, EventArgs e)
         {
+            if (isProfession)
+            {
+                form1.openChildForm(form1.formCareers);
+                return;
+            }
+
             form1.openChildForm(new FormCourses(form1));
         }
 
@@ -39,6 +55,11 @@ namespace Educational_Software
             labelDesc.Text = courseTitle + "!\n" + "\nΤώρα μπορείτε να συνεχίσεται στις επόμενες ενότητες, ή να ξεκινήσετε " +
                 "τη διαδικασία εκτίμησης καριέρας.";
             pictureBoxDesc.Image = courseImage;
+
+            if (isProfession)
+            {
+                roundedButton3.Text = "Πίσω στις καριέρες";
+            }
         }
 
         private void roundedButton1_Click(object sender, EventArgs e)

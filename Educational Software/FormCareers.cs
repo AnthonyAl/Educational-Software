@@ -24,7 +24,7 @@ namespace Educational_Software
         private void roundedButton4_Click(object sender, EventArgs e)
         {
 
-            form1.openChildForm(new FormCourseStudy(4, form1, pictureBox1.Image));
+            form1.openChildForm(new FormCourseStudy(4, form1, pictureBox4.Image));
         }
     }
 }

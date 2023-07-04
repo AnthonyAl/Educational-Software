@@ -189,9 +189,8 @@ namespace Educational_Software
 
                 case 4:
                     labelTitle.Text = profession.Name + " Απαραίτητα Μαθήματα";
-                    panelBody1.Show();
+
                     StringBuilder sb = new StringBuilder();
-                    //sb.Append("Από τα μαθήματα που περιγράφηκαν, τα παρακάτω είναι απαραίτητα για την καριέρα ενός "+ profession.Name + "+:\n");
                     sb.Append('\n');
                     foreach (Paragraph paragraph in profession.Requirements)
                     {
@@ -199,9 +198,20 @@ namespace Educational_Software
                         sb.Append(paragraph.Text);
                         sb.Append('\n');
                     }
-                    label1.Text = sb.ToString();
+                    label2.Text = sb.ToString();
+                    
+                    panelBody2.Show();
+                    
+                    panelBody1.Show();
+                    label1.Text = "Από τα μαθήματα που περιγράφηκαν, τα παρακάτω είναι απαραίτητα για την καριέρα ενός " + profession.Name;
+
                     panelBody1.Select();
+
                     break;
+
+                 case 5:
+                    form1.openChildForm(new FormCourseComplete(courseImage, profession.Name, form1, true));
+                    return;
             }
         }
 
