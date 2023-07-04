@@ -41,12 +41,24 @@ namespace Educational_Software
             labelDesc.Text = "Score: " + corrects.ToString() + "/" + total.ToString();
             pictureBoxDesc.Image = courseImage;
 
+            if (isProfession)
+            {
+                roundedButton3.Text = "Πίσω στις καριέρες";
+            }
+
             Console.WriteLine(courseId);
             Console.WriteLine(isProfession);
         }
 
         private void roundedButton3_Click(object sender, EventArgs e)
         {
+            form1.panelSideMenu.Visible = true;
+
+            if (isProfession)
+            {
+                form1.openChildForm(form1.formCareers);
+                return;
+            }
             form1.openChildForm(new FormCourses(form1));
         }
     }
