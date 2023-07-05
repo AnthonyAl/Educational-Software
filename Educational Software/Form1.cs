@@ -1,4 +1,5 @@
 ﻿using Educational_Software.Properties;
+using Org.BouncyCastle.Bcpg;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace Educational_Software
 {
     public partial class Form1 : FormFlat
     {
+        public int userId;
+
         private Panel leftBorderBtn;
         private string currentSelectedId = null;
         private Button currentSelected = null;
@@ -26,9 +29,10 @@ namespace Educational_Software
         public FormCareers formCareers = null;
 
 
-        public Form1()
+        public Form1(int userId)
         {
             InitializeComponent();
+            this.userId = userId;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -239,6 +243,11 @@ namespace Educational_Software
         {
             if (currentSelectedId != "6")
                 ((Button)sender).Image = (Image)rm.GetObject("_24_gray" + "6");
+        }
+
+        private void panelHeader_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

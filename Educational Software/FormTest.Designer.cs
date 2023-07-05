@@ -134,11 +134,11 @@
             this.shadowPanel1.Controls.Add(this.panelImageOption);
             this.shadowPanel1.Controls.Add(this.pictureBoxQuestion);
             this.shadowPanel1.Controls.Add(this.panelSentence);
-            this.shadowPanel1.Location = new System.Drawing.Point(80, 10);
-            this.shadowPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.shadowPanel1.Location = new System.Drawing.Point(107, 12);
+            this.shadowPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.shadowPanel1.Name = "shadowPanel1";
             this.shadowPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.shadowPanel1.Size = new System.Drawing.Size(631, 403);
+            this.shadowPanel1.Size = new System.Drawing.Size(841, 496);
             this.shadowPanel1.TabIndex = 0;
             // 
             // panelComboBoxes
@@ -151,10 +151,10 @@
             this.panelComboBoxes.Controls.Add(this.panel3);
             this.panelComboBoxes.Controls.Add(this.panel2);
             this.panelComboBoxes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelComboBoxes.Location = new System.Drawing.Point(0, 556);
-            this.panelComboBoxes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelComboBoxes.Location = new System.Drawing.Point(0, 684);
+            this.panelComboBoxes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelComboBoxes.Name = "panelComboBoxes";
-            this.panelComboBoxes.Size = new System.Drawing.Size(614, 327);
+            this.panelComboBoxes.Size = new System.Drawing.Size(820, 402);
             this.panelComboBoxes.TabIndex = 26;
             // 
             // panel1
@@ -164,22 +164,21 @@
             this.panel1.Controls.Add(this.comboBoxMatch6);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 220);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 270);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.panel1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.panel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.panel1.Size = new System.Drawing.Size(614, 44);
+            this.panel1.Size = new System.Drawing.Size(820, 54);
             this.panel1.TabIndex = 5;
             // 
             // labelmatchshow6
             // 
             this.labelmatchshow6.Dock = System.Windows.Forms.DockStyle.Right;
             this.labelmatchshow6.Font = new System.Drawing.Font("Onyx", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmatchshow6.Location = new System.Drawing.Point(186, 8);
-            this.labelmatchshow6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelmatchshow6.Location = new System.Drawing.Point(250, 10);
             this.labelmatchshow6.Name = "labelmatchshow6";
-            this.labelmatchshow6.Size = new System.Drawing.Size(203, 36);
+            this.labelmatchshow6.Size = new System.Drawing.Size(271, 44);
             this.labelmatchshow6.TabIndex = 3;
             this.labelmatchshow6.Text = "label13";
             this.labelmatchshow6.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -193,10 +192,10 @@
             this.comboBoxMatch6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.comboBoxMatch6.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBoxMatch6.FormattingEnabled = true;
-            this.comboBoxMatch6.Location = new System.Drawing.Point(389, 8);
-            this.comboBoxMatch6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMatch6.Location = new System.Drawing.Point(521, 10);
+            this.comboBoxMatch6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxMatch6.Name = "comboBoxMatch6";
-            this.comboBoxMatch6.Size = new System.Drawing.Size(225, 26);
+            this.comboBoxMatch6.Size = new System.Drawing.Size(299, 32);
             this.comboBoxMatch6.TabIndex = 1;
             this.comboBoxMatch6.DropDownClosed += new System.EventHandler(this.comboBoxMatch5_DropDownClosed);
             // 
@@ -205,11 +204,10 @@
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Left;
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(0, 8);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(0, 10);
             this.label7.Name = "label7";
-            this.label7.Padding = new System.Windows.Forms.Padding(34, 0, 34, 0);
-            this.label7.Size = new System.Drawing.Size(124, 18);
+            this.label7.Padding = new System.Windows.Forms.Padding(45, 0, 45, 0);
+            this.label7.Size = new System.Drawing.Size(159, 23);
             this.label7.TabIndex = 0;
             this.label7.Text = "label7";
             // 
@@ -220,22 +218,21 @@
             this.panel6.Controls.Add(this.comboBoxMatch5);
             this.panel6.Controls.Add(this.label6);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 176);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Location = new System.Drawing.Point(0, 216);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.panel6.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.panel6.PanelColor = System.Drawing.Color.Empty;
-            this.panel6.Size = new System.Drawing.Size(614, 44);
+            this.panel6.Size = new System.Drawing.Size(820, 54);
             this.panel6.TabIndex = 4;
             // 
             // labelmatchshow5
             // 
             this.labelmatchshow5.Dock = System.Windows.Forms.DockStyle.Right;
             this.labelmatchshow5.Font = new System.Drawing.Font("Onyx", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmatchshow5.Location = new System.Drawing.Point(186, 8);
-            this.labelmatchshow5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelmatchshow5.Location = new System.Drawing.Point(250, 10);
             this.labelmatchshow5.Name = "labelmatchshow5";
-            this.labelmatchshow5.Size = new System.Drawing.Size(203, 36);
+            this.labelmatchshow5.Size = new System.Drawing.Size(271, 44);
             this.labelmatchshow5.TabIndex = 3;
             this.labelmatchshow5.Text = "label12";
             this.labelmatchshow5.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -249,10 +246,10 @@
             this.comboBoxMatch5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.comboBoxMatch5.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBoxMatch5.FormattingEnabled = true;
-            this.comboBoxMatch5.Location = new System.Drawing.Point(389, 8);
-            this.comboBoxMatch5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMatch5.Location = new System.Drawing.Point(521, 10);
+            this.comboBoxMatch5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxMatch5.Name = "comboBoxMatch5";
-            this.comboBoxMatch5.Size = new System.Drawing.Size(225, 26);
+            this.comboBoxMatch5.Size = new System.Drawing.Size(299, 32);
             this.comboBoxMatch5.TabIndex = 1;
             this.comboBoxMatch5.DropDownClosed += new System.EventHandler(this.comboBoxMatch5_DropDownClosed);
             // 
@@ -261,11 +258,10 @@
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Left;
             this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(0, 8);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(0, 10);
             this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(34, 0, 34, 0);
-            this.label6.Size = new System.Drawing.Size(124, 18);
+            this.label6.Padding = new System.Windows.Forms.Padding(45, 0, 45, 0);
+            this.label6.Size = new System.Drawing.Size(159, 23);
             this.label6.TabIndex = 0;
             this.label6.Text = "label6";
             // 
@@ -276,22 +272,21 @@
             this.panel5.Controls.Add(this.comboBoxMatch4);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 132);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Location = new System.Drawing.Point(0, 162);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.panel5.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.panel5.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.panel5.Size = new System.Drawing.Size(614, 44);
+            this.panel5.Size = new System.Drawing.Size(820, 54);
             this.panel5.TabIndex = 3;
             // 
             // labelmatchshow4
             // 
             this.labelmatchshow4.Dock = System.Windows.Forms.DockStyle.Right;
             this.labelmatchshow4.Font = new System.Drawing.Font("Onyx", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmatchshow4.Location = new System.Drawing.Point(186, 8);
-            this.labelmatchshow4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelmatchshow4.Location = new System.Drawing.Point(250, 10);
             this.labelmatchshow4.Name = "labelmatchshow4";
-            this.labelmatchshow4.Size = new System.Drawing.Size(203, 36);
+            this.labelmatchshow4.Size = new System.Drawing.Size(271, 44);
             this.labelmatchshow4.TabIndex = 3;
             this.labelmatchshow4.Text = "label11";
             this.labelmatchshow4.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -305,10 +300,10 @@
             this.comboBoxMatch4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.comboBoxMatch4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBoxMatch4.FormattingEnabled = true;
-            this.comboBoxMatch4.Location = new System.Drawing.Point(389, 8);
-            this.comboBoxMatch4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMatch4.Location = new System.Drawing.Point(521, 10);
+            this.comboBoxMatch4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxMatch4.Name = "comboBoxMatch4";
-            this.comboBoxMatch4.Size = new System.Drawing.Size(225, 26);
+            this.comboBoxMatch4.Size = new System.Drawing.Size(299, 32);
             this.comboBoxMatch4.TabIndex = 1;
             this.comboBoxMatch4.DropDownClosed += new System.EventHandler(this.comboBoxMatch5_DropDownClosed);
             // 
@@ -317,11 +312,10 @@
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Left;
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(0, 8);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(0, 10);
             this.label5.Name = "label5";
-            this.label5.Padding = new System.Windows.Forms.Padding(34, 0, 34, 0);
-            this.label5.Size = new System.Drawing.Size(124, 18);
+            this.label5.Padding = new System.Windows.Forms.Padding(45, 0, 45, 0);
+            this.label5.Size = new System.Drawing.Size(159, 23);
             this.label5.TabIndex = 0;
             this.label5.Text = "label5";
             // 
@@ -332,22 +326,21 @@
             this.panel4.Controls.Add(this.comboBoxMatch3);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 88);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Location = new System.Drawing.Point(0, 108);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.panel4.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.panel4.PanelColor = System.Drawing.Color.Empty;
-            this.panel4.Size = new System.Drawing.Size(614, 44);
+            this.panel4.Size = new System.Drawing.Size(820, 54);
             this.panel4.TabIndex = 2;
             // 
             // labelmatchshow3
             // 
             this.labelmatchshow3.Dock = System.Windows.Forms.DockStyle.Right;
             this.labelmatchshow3.Font = new System.Drawing.Font("Onyx", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmatchshow3.Location = new System.Drawing.Point(186, 8);
-            this.labelmatchshow3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelmatchshow3.Location = new System.Drawing.Point(250, 10);
             this.labelmatchshow3.Name = "labelmatchshow3";
-            this.labelmatchshow3.Size = new System.Drawing.Size(203, 36);
+            this.labelmatchshow3.Size = new System.Drawing.Size(271, 44);
             this.labelmatchshow3.TabIndex = 3;
             this.labelmatchshow3.Text = "label10";
             this.labelmatchshow3.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -361,10 +354,10 @@
             this.comboBoxMatch3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.comboBoxMatch3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBoxMatch3.FormattingEnabled = true;
-            this.comboBoxMatch3.Location = new System.Drawing.Point(389, 8);
-            this.comboBoxMatch3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMatch3.Location = new System.Drawing.Point(521, 10);
+            this.comboBoxMatch3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxMatch3.Name = "comboBoxMatch3";
-            this.comboBoxMatch3.Size = new System.Drawing.Size(225, 26);
+            this.comboBoxMatch3.Size = new System.Drawing.Size(299, 32);
             this.comboBoxMatch3.TabIndex = 1;
             this.comboBoxMatch3.DropDownClosed += new System.EventHandler(this.comboBoxMatch5_DropDownClosed);
             // 
@@ -373,11 +366,10 @@
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Left;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(0, 8);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(0, 10);
             this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(34, 0, 34, 0);
-            this.label4.Size = new System.Drawing.Size(124, 18);
+            this.label4.Padding = new System.Windows.Forms.Padding(45, 0, 45, 0);
+            this.label4.Size = new System.Drawing.Size(159, 23);
             this.label4.TabIndex = 0;
             this.label4.Text = "label4";
             // 
@@ -388,22 +380,21 @@
             this.panel3.Controls.Add(this.comboBoxMatch2);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 44);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(0, 54);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.panel3.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.panel3.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.panel3.Size = new System.Drawing.Size(614, 44);
+            this.panel3.Size = new System.Drawing.Size(820, 54);
             this.panel3.TabIndex = 1;
             // 
             // labelmatchshow2
             // 
             this.labelmatchshow2.Dock = System.Windows.Forms.DockStyle.Right;
             this.labelmatchshow2.Font = new System.Drawing.Font("Onyx", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmatchshow2.Location = new System.Drawing.Point(194, 8);
-            this.labelmatchshow2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelmatchshow2.Location = new System.Drawing.Point(261, 10);
             this.labelmatchshow2.Name = "labelmatchshow2";
-            this.labelmatchshow2.Size = new System.Drawing.Size(195, 36);
+            this.labelmatchshow2.Size = new System.Drawing.Size(260, 44);
             this.labelmatchshow2.TabIndex = 3;
             this.labelmatchshow2.Text = "label9";
             this.labelmatchshow2.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -417,10 +408,10 @@
             this.comboBoxMatch2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.comboBoxMatch2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBoxMatch2.FormattingEnabled = true;
-            this.comboBoxMatch2.Location = new System.Drawing.Point(389, 8);
-            this.comboBoxMatch2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMatch2.Location = new System.Drawing.Point(521, 10);
+            this.comboBoxMatch2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxMatch2.Name = "comboBoxMatch2";
-            this.comboBoxMatch2.Size = new System.Drawing.Size(225, 26);
+            this.comboBoxMatch2.Size = new System.Drawing.Size(299, 32);
             this.comboBoxMatch2.TabIndex = 1;
             this.comboBoxMatch2.DropDownClosed += new System.EventHandler(this.comboBoxMatch5_DropDownClosed);
             // 
@@ -429,11 +420,10 @@
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Left;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(0, 8);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(0, 10);
             this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(34, 0, 34, 0);
-            this.label3.Size = new System.Drawing.Size(124, 18);
+            this.label3.Padding = new System.Windows.Forms.Padding(45, 0, 45, 0);
+            this.label3.Size = new System.Drawing.Size(159, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "label3";
             // 
@@ -445,21 +435,20 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.panel2.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.panel2.PanelColor = System.Drawing.Color.Empty;
-            this.panel2.Size = new System.Drawing.Size(614, 44);
+            this.panel2.Size = new System.Drawing.Size(820, 54);
             this.panel2.TabIndex = 0;
             // 
             // labelmatchshow1
             // 
             this.labelmatchshow1.Dock = System.Windows.Forms.DockStyle.Right;
             this.labelmatchshow1.Font = new System.Drawing.Font("Onyx", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmatchshow1.Location = new System.Drawing.Point(194, 8);
-            this.labelmatchshow1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelmatchshow1.Location = new System.Drawing.Point(261, 10);
             this.labelmatchshow1.Name = "labelmatchshow1";
-            this.labelmatchshow1.Size = new System.Drawing.Size(195, 36);
+            this.labelmatchshow1.Size = new System.Drawing.Size(260, 44);
             this.labelmatchshow1.TabIndex = 2;
             this.labelmatchshow1.Text = "label8";
             this.labelmatchshow1.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -473,10 +462,10 @@
             this.comboBoxMatch1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.comboBoxMatch1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBoxMatch1.FormattingEnabled = true;
-            this.comboBoxMatch1.Location = new System.Drawing.Point(389, 8);
-            this.comboBoxMatch1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMatch1.Location = new System.Drawing.Point(521, 10);
+            this.comboBoxMatch1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxMatch1.Name = "comboBoxMatch1";
-            this.comboBoxMatch1.Size = new System.Drawing.Size(225, 26);
+            this.comboBoxMatch1.Size = new System.Drawing.Size(299, 32);
             this.comboBoxMatch1.TabIndex = 1;
             this.comboBoxMatch1.DropDownClosed += new System.EventHandler(this.comboBoxMatch5_DropDownClosed);
             // 
@@ -485,11 +474,10 @@
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Left;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(0, 8);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(0, 10);
             this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(34, 0, 34, 0);
-            this.label2.Size = new System.Drawing.Size(124, 18);
+            this.label2.Padding = new System.Windows.Forms.Padding(45, 0, 45, 0);
+            this.label2.Size = new System.Drawing.Size(159, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "label2";
             // 
@@ -498,11 +486,11 @@
             this.panelCheckBoxes.BackColor = System.Drawing.Color.Transparent;
             this.panelCheckBoxes.Controls.Add(this.panel7);
             this.panelCheckBoxes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelCheckBoxes.Location = new System.Drawing.Point(0, 260);
-            this.panelCheckBoxes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelCheckBoxes.Location = new System.Drawing.Point(0, 320);
+            this.panelCheckBoxes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelCheckBoxes.Name = "panelCheckBoxes";
-            this.panelCheckBoxes.Padding = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.panelCheckBoxes.Size = new System.Drawing.Size(614, 296);
+            this.panelCheckBoxes.Padding = new System.Windows.Forms.Padding(13, 12, 13, 0);
+            this.panelCheckBoxes.Size = new System.Drawing.Size(820, 364);
             this.panelCheckBoxes.TabIndex = 26;
             // 
             // panel7
@@ -515,10 +503,10 @@
             this.panel7.Controls.Add(this.shadowCheckPanel1);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.panel7.Location = new System.Drawing.Point(10, 10);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Location = new System.Drawing.Point(13, 12);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(594, 286);
+            this.panel7.Size = new System.Drawing.Size(794, 352);
             this.panel7.TabIndex = 26;
             // 
             // shadowCheckPanel6
@@ -526,20 +514,21 @@
             this.shadowCheckPanel6.BorderColor = System.Drawing.Color.Empty;
             this.shadowCheckPanel6.Controls.Add(this.checkBox6);
             this.shadowCheckPanel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowCheckPanel6.Location = new System.Drawing.Point(0, 220);
+            this.shadowCheckPanel6.Location = new System.Drawing.Point(0, 270);
+            this.shadowCheckPanel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.shadowCheckPanel6.Name = "shadowCheckPanel6";
             this.shadowCheckPanel6.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.shadowCheckPanel6.Size = new System.Drawing.Size(594, 44);
+            this.shadowCheckPanel6.Size = new System.Drawing.Size(794, 54);
             this.shadowCheckPanel6.TabIndex = 7;
             // 
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
             this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.checkBox6.Location = new System.Drawing.Point(13, 11);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox6.Location = new System.Drawing.Point(17, 14);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(101, 22);
+            this.checkBox6.Size = new System.Drawing.Size(126, 28);
             this.checkBox6.TabIndex = 5;
             this.checkBox6.Text = "checkBox6";
             this.checkBox6.UseVisualStyleBackColor = true;
@@ -549,20 +538,21 @@
             this.shadowCheckPanel5.BorderColor = System.Drawing.Color.Empty;
             this.shadowCheckPanel5.Controls.Add(this.checkBox5);
             this.shadowCheckPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowCheckPanel5.Location = new System.Drawing.Point(0, 176);
+            this.shadowCheckPanel5.Location = new System.Drawing.Point(0, 216);
+            this.shadowCheckPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.shadowCheckPanel5.Name = "shadowCheckPanel5";
             this.shadowCheckPanel5.PanelColor = System.Drawing.Color.Empty;
-            this.shadowCheckPanel5.Size = new System.Drawing.Size(594, 44);
+            this.shadowCheckPanel5.Size = new System.Drawing.Size(794, 54);
             this.shadowCheckPanel5.TabIndex = 7;
             // 
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
             this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.checkBox5.Location = new System.Drawing.Point(13, 11);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox5.Location = new System.Drawing.Point(17, 14);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(101, 22);
+            this.checkBox5.Size = new System.Drawing.Size(126, 28);
             this.checkBox5.TabIndex = 4;
             this.checkBox5.Text = "checkBox5";
             this.checkBox5.UseVisualStyleBackColor = true;
@@ -572,20 +562,21 @@
             this.shadowCheckPanel4.BorderColor = System.Drawing.Color.Empty;
             this.shadowCheckPanel4.Controls.Add(this.checkBox4);
             this.shadowCheckPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowCheckPanel4.Location = new System.Drawing.Point(0, 132);
+            this.shadowCheckPanel4.Location = new System.Drawing.Point(0, 162);
+            this.shadowCheckPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.shadowCheckPanel4.Name = "shadowCheckPanel4";
             this.shadowCheckPanel4.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.shadowCheckPanel4.Size = new System.Drawing.Size(594, 44);
+            this.shadowCheckPanel4.Size = new System.Drawing.Size(794, 54);
             this.shadowCheckPanel4.TabIndex = 7;
             // 
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.checkBox4.Location = new System.Drawing.Point(13, 11);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox4.Location = new System.Drawing.Point(17, 14);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(101, 22);
+            this.checkBox4.Size = new System.Drawing.Size(126, 28);
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "checkBox4";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -595,20 +586,21 @@
             this.shadowCheckPanel3.BorderColor = System.Drawing.Color.Empty;
             this.shadowCheckPanel3.Controls.Add(this.checkBox3);
             this.shadowCheckPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowCheckPanel3.Location = new System.Drawing.Point(0, 88);
+            this.shadowCheckPanel3.Location = new System.Drawing.Point(0, 108);
+            this.shadowCheckPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.shadowCheckPanel3.Name = "shadowCheckPanel3";
             this.shadowCheckPanel3.PanelColor = System.Drawing.Color.Empty;
-            this.shadowCheckPanel3.Size = new System.Drawing.Size(594, 44);
+            this.shadowCheckPanel3.Size = new System.Drawing.Size(794, 54);
             this.shadowCheckPanel3.TabIndex = 7;
             // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.checkBox3.Location = new System.Drawing.Point(13, 11);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox3.Location = new System.Drawing.Point(17, 14);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(101, 22);
+            this.checkBox3.Size = new System.Drawing.Size(126, 28);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "checkBox3";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -619,20 +611,21 @@
             this.shadowCheckPanel2.BorderColor = System.Drawing.Color.Empty;
             this.shadowCheckPanel2.Controls.Add(this.checkBox2);
             this.shadowCheckPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowCheckPanel2.Location = new System.Drawing.Point(0, 44);
+            this.shadowCheckPanel2.Location = new System.Drawing.Point(0, 54);
+            this.shadowCheckPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.shadowCheckPanel2.Name = "shadowCheckPanel2";
             this.shadowCheckPanel2.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.shadowCheckPanel2.Size = new System.Drawing.Size(594, 44);
+            this.shadowCheckPanel2.Size = new System.Drawing.Size(794, 54);
             this.shadowCheckPanel2.TabIndex = 7;
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.checkBox2.Location = new System.Drawing.Point(13, 11);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox2.Location = new System.Drawing.Point(17, 14);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(101, 22);
+            this.checkBox2.Size = new System.Drawing.Size(126, 28);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "checkBox2";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -643,19 +636,20 @@
             this.shadowCheckPanel1.Controls.Add(this.checkBox1);
             this.shadowCheckPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.shadowCheckPanel1.Location = new System.Drawing.Point(0, 0);
+            this.shadowCheckPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.shadowCheckPanel1.Name = "shadowCheckPanel1";
             this.shadowCheckPanel1.PanelColor = System.Drawing.Color.Empty;
-            this.shadowCheckPanel1.Size = new System.Drawing.Size(594, 44);
+            this.shadowCheckPanel1.Size = new System.Drawing.Size(794, 54);
             this.shadowCheckPanel1.TabIndex = 6;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.checkBox1.Location = new System.Drawing.Point(13, 11);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox1.Location = new System.Drawing.Point(17, 14);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(101, 22);
+            this.checkBox1.Size = new System.Drawing.Size(126, 28);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "checkBox1";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -665,10 +659,10 @@
             this.panelRadioButtons.BackColor = System.Drawing.Color.Transparent;
             this.panelRadioButtons.Controls.Add(this.panel10);
             this.panelRadioButtons.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelRadioButtons.Location = new System.Drawing.Point(0, 54);
-            this.panelRadioButtons.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelRadioButtons.Location = new System.Drawing.Point(0, 66);
+            this.panelRadioButtons.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelRadioButtons.Name = "panelRadioButtons";
-            this.panelRadioButtons.Size = new System.Drawing.Size(614, 206);
+            this.panelRadioButtons.Size = new System.Drawing.Size(820, 254);
             this.panelRadioButtons.TabIndex = 25;
             // 
             // panel10
@@ -681,10 +675,10 @@
             this.panel10.Controls.Add(this.shadowRadioPanel1);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel10.Name = "panel10";
-            this.panel10.Padding = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.panel10.Size = new System.Drawing.Size(614, 206);
+            this.panel10.Padding = new System.Windows.Forms.Padding(13, 12, 13, 0);
+            this.panel10.Size = new System.Drawing.Size(820, 254);
             this.panel10.TabIndex = 27;
             // 
             // shadowRadioPanel6
@@ -692,21 +686,21 @@
             this.shadowRadioPanel6.BorderColor = System.Drawing.Color.Empty;
             this.shadowRadioPanel6.Controls.Add(this.radioButton6);
             this.shadowRadioPanel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowRadioPanel6.Location = new System.Drawing.Point(10, 230);
-            this.shadowRadioPanel6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.shadowRadioPanel6.Location = new System.Drawing.Point(13, 282);
+            this.shadowRadioPanel6.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.shadowRadioPanel6.Name = "shadowRadioPanel6";
             this.shadowRadioPanel6.PanelColor = System.Drawing.Color.Transparent;
-            this.shadowRadioPanel6.Size = new System.Drawing.Size(594, 44);
+            this.shadowRadioPanel6.Size = new System.Drawing.Size(794, 54);
             this.shadowRadioPanel6.TabIndex = 8;
             // 
             // radioButton6
             // 
             this.radioButton6.AutoSize = true;
             this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.radioButton6.Location = new System.Drawing.Point(13, 5);
-            this.radioButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton6.Location = new System.Drawing.Point(17, 6);
+            this.radioButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(110, 22);
+            this.radioButton6.Size = new System.Drawing.Size(136, 28);
             this.radioButton6.TabIndex = 5;
             this.radioButton6.TabStop = true;
             this.radioButton6.Text = "radioButton6";
@@ -718,21 +712,21 @@
             this.shadowRadioPanel5.BorderColor = System.Drawing.Color.Empty;
             this.shadowRadioPanel5.Controls.Add(this.radioButton5);
             this.shadowRadioPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowRadioPanel5.Location = new System.Drawing.Point(10, 186);
-            this.shadowRadioPanel5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.shadowRadioPanel5.Location = new System.Drawing.Point(13, 228);
+            this.shadowRadioPanel5.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.shadowRadioPanel5.Name = "shadowRadioPanel5";
             this.shadowRadioPanel5.PanelColor = System.Drawing.Color.Empty;
-            this.shadowRadioPanel5.Size = new System.Drawing.Size(594, 44);
+            this.shadowRadioPanel5.Size = new System.Drawing.Size(794, 54);
             this.shadowRadioPanel5.TabIndex = 8;
             // 
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
             this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.radioButton5.Location = new System.Drawing.Point(13, 5);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton5.Location = new System.Drawing.Point(17, 6);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(110, 22);
+            this.radioButton5.Size = new System.Drawing.Size(136, 28);
             this.radioButton5.TabIndex = 4;
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "radioButton5";
@@ -744,21 +738,21 @@
             this.shadowRadioPanel4.BorderColor = System.Drawing.Color.Empty;
             this.shadowRadioPanel4.Controls.Add(this.radioButton4);
             this.shadowRadioPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowRadioPanel4.Location = new System.Drawing.Point(10, 142);
-            this.shadowRadioPanel4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.shadowRadioPanel4.Location = new System.Drawing.Point(13, 174);
+            this.shadowRadioPanel4.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.shadowRadioPanel4.Name = "shadowRadioPanel4";
             this.shadowRadioPanel4.PanelColor = System.Drawing.Color.Transparent;
-            this.shadowRadioPanel4.Size = new System.Drawing.Size(594, 44);
+            this.shadowRadioPanel4.Size = new System.Drawing.Size(794, 54);
             this.shadowRadioPanel4.TabIndex = 8;
             // 
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.radioButton4.Location = new System.Drawing.Point(13, 5);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton4.Location = new System.Drawing.Point(17, 6);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(110, 22);
+            this.radioButton4.Size = new System.Drawing.Size(136, 28);
             this.radioButton4.TabIndex = 3;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "radioButton4";
@@ -770,21 +764,21 @@
             this.shadowRadioPanel3.BorderColor = System.Drawing.Color.Empty;
             this.shadowRadioPanel3.Controls.Add(this.radioButton3);
             this.shadowRadioPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowRadioPanel3.Location = new System.Drawing.Point(10, 98);
-            this.shadowRadioPanel3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.shadowRadioPanel3.Location = new System.Drawing.Point(13, 120);
+            this.shadowRadioPanel3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.shadowRadioPanel3.Name = "shadowRadioPanel3";
             this.shadowRadioPanel3.PanelColor = System.Drawing.Color.Empty;
-            this.shadowRadioPanel3.Size = new System.Drawing.Size(594, 44);
+            this.shadowRadioPanel3.Size = new System.Drawing.Size(794, 54);
             this.shadowRadioPanel3.TabIndex = 8;
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.radioButton3.Location = new System.Drawing.Point(13, 5);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton3.Location = new System.Drawing.Point(17, 6);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(110, 22);
+            this.radioButton3.Size = new System.Drawing.Size(136, 28);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "radioButton3";
@@ -796,21 +790,21 @@
             this.shadowRadioPanel2.BorderColor = System.Drawing.Color.Empty;
             this.shadowRadioPanel2.Controls.Add(this.radioButton2);
             this.shadowRadioPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowRadioPanel2.Location = new System.Drawing.Point(10, 54);
-            this.shadowRadioPanel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.shadowRadioPanel2.Location = new System.Drawing.Point(13, 66);
+            this.shadowRadioPanel2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.shadowRadioPanel2.Name = "shadowRadioPanel2";
             this.shadowRadioPanel2.PanelColor = System.Drawing.Color.Transparent;
-            this.shadowRadioPanel2.Size = new System.Drawing.Size(594, 44);
+            this.shadowRadioPanel2.Size = new System.Drawing.Size(794, 54);
             this.shadowRadioPanel2.TabIndex = 7;
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.radioButton2.Location = new System.Drawing.Point(13, 5);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton2.Location = new System.Drawing.Point(17, 6);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(110, 22);
+            this.radioButton2.Size = new System.Drawing.Size(136, 28);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "radioButton2";
@@ -822,21 +816,21 @@
             this.shadowRadioPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.shadowRadioPanel1.Controls.Add(this.radioButton1);
             this.shadowRadioPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowRadioPanel1.Location = new System.Drawing.Point(10, 10);
-            this.shadowRadioPanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.shadowRadioPanel1.Location = new System.Drawing.Point(13, 12);
+            this.shadowRadioPanel1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.shadowRadioPanel1.Name = "shadowRadioPanel1";
             this.shadowRadioPanel1.PanelColor = System.Drawing.Color.Empty;
-            this.shadowRadioPanel1.Size = new System.Drawing.Size(594, 44);
+            this.shadowRadioPanel1.Size = new System.Drawing.Size(794, 54);
             this.shadowRadioPanel1.TabIndex = 6;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.radioButton1.Location = new System.Drawing.Point(13, 4);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton1.Location = new System.Drawing.Point(17, 5);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(110, 22);
+            this.radioButton1.Size = new System.Drawing.Size(136, 28);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "radioButton1";
@@ -851,21 +845,20 @@
             this.panelImageOption.Controls.Add(this.comboBoxImage);
             this.panelImageOption.Controls.Add(this.label1);
             this.panelImageOption.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelImageOption.Location = new System.Drawing.Point(0, 883);
-            this.panelImageOption.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelImageOption.Location = new System.Drawing.Point(0, 1086);
+            this.panelImageOption.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelImageOption.Name = "panelImageOption";
             this.panelImageOption.PanelColor = System.Drawing.Color.Empty;
-            this.panelImageOption.Size = new System.Drawing.Size(614, 50);
+            this.panelImageOption.Size = new System.Drawing.Size(820, 62);
             this.panelImageOption.TabIndex = 24;
             // 
             // labelImageChoose
             // 
             this.labelImageChoose.Dock = System.Windows.Forms.DockStyle.Right;
             this.labelImageChoose.Font = new System.Drawing.Font("Onyx", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelImageChoose.Location = new System.Drawing.Point(195, 0);
-            this.labelImageChoose.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelImageChoose.Location = new System.Drawing.Point(263, 0);
             this.labelImageChoose.Name = "labelImageChoose";
-            this.labelImageChoose.Size = new System.Drawing.Size(195, 50);
+            this.labelImageChoose.Size = new System.Drawing.Size(260, 62);
             this.labelImageChoose.TabIndex = 25;
             this.labelImageChoose.Text = "label8";
             this.labelImageChoose.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -879,10 +872,10 @@
             this.comboBoxImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.comboBoxImage.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBoxImage.FormattingEnabled = true;
-            this.comboBoxImage.Location = new System.Drawing.Point(390, 0);
-            this.comboBoxImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxImage.Location = new System.Drawing.Point(523, 0);
+            this.comboBoxImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxImage.Name = "comboBoxImage";
-            this.comboBoxImage.Size = new System.Drawing.Size(224, 26);
+            this.comboBoxImage.Size = new System.Drawing.Size(297, 32);
             this.comboBoxImage.TabIndex = 24;
             this.comboBoxImage.DropDownClosed += new System.EventHandler(this.comboBoxMatch5_DropDownClosed);
             // 
@@ -893,19 +886,18 @@
             this.label1.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(323, 50);
+            this.label1.Size = new System.Drawing.Size(431, 62);
             this.label1.TabIndex = 23;
             this.label1.Text = "Επιλέξτε μάθημα\r\n";
             // 
             // pictureBoxQuestion
             // 
             this.pictureBoxQuestion.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBoxQuestion.Location = new System.Drawing.Point(165, 68);
-            this.pictureBoxQuestion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxQuestion.Location = new System.Drawing.Point(220, 84);
+            this.pictureBoxQuestion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxQuestion.Name = "pictureBoxQuestion";
-            this.pictureBoxQuestion.Size = new System.Drawing.Size(285, 232);
+            this.pictureBoxQuestion.Size = new System.Drawing.Size(380, 286);
             this.pictureBoxQuestion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxQuestion.TabIndex = 23;
             this.pictureBoxQuestion.TabStop = false;
@@ -915,9 +907,9 @@
             this.panelSentence.Controls.Add(this.labelSentence);
             this.panelSentence.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSentence.Location = new System.Drawing.Point(0, 0);
-            this.panelSentence.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelSentence.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelSentence.Name = "panelSentence";
-            this.panelSentence.Size = new System.Drawing.Size(614, 54);
+            this.panelSentence.Size = new System.Drawing.Size(820, 66);
             this.panelSentence.TabIndex = 27;
             // 
             // labelSentence
@@ -927,9 +919,8 @@
             this.labelSentence.Font = new System.Drawing.Font("Onyx", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSentence.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.labelSentence.Location = new System.Drawing.Point(0, 0);
-            this.labelSentence.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelSentence.Name = "labelSentence";
-            this.labelSentence.Size = new System.Drawing.Size(614, 54);
+            this.labelSentence.Size = new System.Drawing.Size(820, 66);
             this.labelSentence.TabIndex = 22;
             this.labelSentence.Text = "Σε ποιο μάθημα συμπεριλαμβάνεται αυτή η εικόνα;\r\n";
             // 
@@ -938,11 +929,12 @@
             this.shadowPanel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.shadowPanel2.BorderColor = System.Drawing.Color.Empty;
             this.shadowPanel2.Controls.Add(this.roundedButton1);
-            this.shadowPanel2.Location = new System.Drawing.Point(312, 487);
+            this.shadowPanel2.Location = new System.Drawing.Point(416, 599);
+            this.shadowPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.shadowPanel2.Name = "shadowPanel2";
-            this.shadowPanel2.Padding = new System.Windows.Forms.Padding(0, 0, 6, 6);
+            this.shadowPanel2.Padding = new System.Windows.Forms.Padding(0, 0, 8, 7);
             this.shadowPanel2.PanelColor = System.Drawing.Color.Empty;
-            this.shadowPanel2.Size = new System.Drawing.Size(180, 44);
+            this.shadowPanel2.Size = new System.Drawing.Size(240, 54);
             this.shadowPanel2.TabIndex = 25;
             // 
             // roundedButton1
@@ -957,9 +949,9 @@
             this.roundedButton1.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
             this.roundedButton1.Location = new System.Drawing.Point(0, 0);
-            this.roundedButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(174, 38);
+            this.roundedButton1.Size = new System.Drawing.Size(232, 47);
             this.roundedButton1.TabIndex = 3;
             this.roundedButton1.Text = "Επιβεβαίωση";
             this.roundedButton1.UseVisualStyleBackColor = false;
@@ -969,9 +961,10 @@
             // 
             this.labelResult.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelResult.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelResult.Location = new System.Drawing.Point(250, 458);
+            this.labelResult.Location = new System.Drawing.Point(333, 564);
+            this.labelResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelResult.Name = "labelResult";
-            this.labelResult.Size = new System.Drawing.Size(305, 23);
+            this.labelResult.Size = new System.Drawing.Size(407, 28);
             this.labelResult.TabIndex = 26;
             this.labelResult.Text = "Απάντησες";
             this.labelResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -979,15 +972,15 @@
             // 
             // FormTest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.ClientSize = new System.Drawing.Size(805, 546);
+            this.ClientSize = new System.Drawing.Size(1073, 672);
             this.Controls.Add(this.labelResult);
             this.Controls.Add(this.shadowPanel2);
             this.Controls.Add(this.shadowPanel1);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormTest";
             this.Text = "FormTest";
             this.Load += new System.EventHandler(this.FormTest_Load);

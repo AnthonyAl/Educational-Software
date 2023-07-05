@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Educational_Software.Dao;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,8 @@ namespace Educational_Software
 {
     public partial class FormLogin : FormFlat
     {
+        private UserDao dao = new UserDao();
+
         public FormLogin()
         {
             InitializeComponent();
@@ -98,13 +101,25 @@ namespace Educational_Software
         private void roundedButtonCreateAccount_Click(object sender, EventArgs e)
         {
             new FormRegister().Show();
-            this.Close();
+            this.Hide();
         }
 
         private void roundedButtonLogin_Click(object sender, EventArgs e)
         {
-            new Form1().Show();
-            this.Hide();
+
+            int id = dao.login(textBoxUsername.Text, textBoxPassword.Text);
+
+            if (id > 0)
+            {
+                new Form1(id).Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Wrong username or password");
+            }
+
+
         }
     }
 }

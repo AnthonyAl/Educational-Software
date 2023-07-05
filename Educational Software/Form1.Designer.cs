@@ -43,9 +43,9 @@
             this.btnCareerTest = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.roundedToggleButton1 = new Rounded.RoundedToggleButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.roundedToggleButton1 = new Rounded.RoundedToggleButton();
             this.panelContent.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -60,6 +60,7 @@
             this.panelHeader.IMaximize = global::Educational_Software.Properties.Resources._24_gray10;
             this.panelHeader.IMinimize = global::Educational_Software.Properties.Resources._24_gray11;
             this.panelHeader.Size = new System.Drawing.Size(1094, 46);
+            this.panelHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHeader_Paint);
             // 
             // panelContent
             // 
@@ -115,6 +116,7 @@
             this.btnProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProfile.UseVisualStyleBackColor = true;
+            this.btnProfile.Visible = false;
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             this.btnProfile.MouseEnter += new System.EventHandler(this.btnProfile_MouseEnter);
             this.btnProfile.MouseLeave += new System.EventHandler(this.btnProfile_MouseLeave);
@@ -207,6 +209,7 @@
             this.btnForum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnForum.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnForum.UseVisualStyleBackColor = true;
+            this.btnForum.Visible = false;
             this.btnForum.Click += new System.EventHandler(this.btnForum_Click);
             this.btnForum.MouseEnter += new System.EventHandler(this.btnForum_MouseEnter);
             this.btnForum.MouseLeave += new System.EventHandler(this.btnForum_MouseLeave);
@@ -321,6 +324,28 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "ΕΚΠΑΙΔΕΥΤΙΚΟ  ΛΟΓΙΣΜΙΚΟ";
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label1.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
+            this.label1.Location = new System.Drawing.Point(487, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 22);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ΕΠΙΠΕΔΟ";
+            this.label1.Visible = false;
+            // 
+            // panelChildForm
+            // 
+            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.panelChildForm.Controls.Add(this.panelSideMenu);
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Location = new System.Drawing.Point(0, 45);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(1094, 540);
+            this.panelChildForm.TabIndex = 10;
+            // 
             // roundedToggleButton1
             // 
             this.roundedToggleButton1.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -337,31 +362,11 @@
             this.roundedToggleButton1.TabIndex = 9;
             this.roundedToggleButton1.Text = "roundedToggleButton1";
             this.roundedToggleButton1.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label1.Font = new System.Drawing.Font("Onyx", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
-            this.label1.Location = new System.Drawing.Point(487, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ΕΠΙΠΕΔΟ";
-            // 
-            // panelChildForm
-            // 
-            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.panelChildForm.Controls.Add(this.panelSideMenu);
-            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForm.Location = new System.Drawing.Point(0, 45);
-            this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(1094, 540);
-            this.panelChildForm.TabIndex = 10;
+            this.roundedToggleButton1.Visible = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 637);
             this.Main = true;

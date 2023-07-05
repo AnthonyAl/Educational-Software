@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Educational_Software.Dao;
+using Org.BouncyCastle.Tls.Crypto;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +15,8 @@ namespace Educational_Software
 {
     public partial class FormRegister : FormFlat
     {
+        private UserDao dao =new UserDao();
+
         public FormRegister()
         {
             InitializeComponent();
@@ -134,8 +138,27 @@ namespace Educational_Software
 
         private void roundedButtonSubmit_Click(object sender, EventArgs e)
         {
-            new FormLogin().Show();
-            this.Hide();
+            Console.WriteLine(comboBox1.SelectedIndex.ToString());
+
+
+            if (!textBoxConfirmPassword.Text.Equals(textBoxPassword.Text))
+            {
+                MessageBox.Show("Passwords do not match");
+                return;
+            }
+
+            if (dao.register(textBoxUsername.Text, textBoxPassword.Text))
+            {
+                new Form1(dao.login(textBoxUsername.Text, textBoxPassword.Text)).Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Username already in database");
+            }
+
+
+
         }
 
         private void comboBox1_DisplayMemberChanged(object sender, EventArgs e)

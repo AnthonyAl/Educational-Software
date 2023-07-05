@@ -60,7 +60,7 @@ namespace Educational_Software
         {
             //test
             List<Question> allQuestions1;
-            using (StreamReader cour = new StreamReader("CourseMaterial/questionsDEMO.json"))
+            using (StreamReader cour = new StreamReader("CourseMaterial/questions3.json"))
             {
                 string jsonc = cour.ReadToEnd();
                 allQuestions1 = JsonConvert.DeserializeObject<List<Question>>(jsonc);
