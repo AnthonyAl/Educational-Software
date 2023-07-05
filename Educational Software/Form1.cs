@@ -139,7 +139,8 @@ namespace Educational_Software
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            ActivateButton((Button)sender, Color.FromArgb(242, 139, 29), "12");
+            //ActivateButton((Button)sender, Color.FromArgb(242, 139, 29), "12");
+            MessageBox.Show("Η λειτουργία αυτή δεν έχει υλοποιηθεί ακόμη");
         }
 
         private void btnStart_Click(object sender, EventArgs e)

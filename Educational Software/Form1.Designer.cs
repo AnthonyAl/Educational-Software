@@ -115,7 +115,6 @@
             this.btnProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProfile.UseVisualStyleBackColor = true;
-            this.btnProfile.Visible = false;
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             this.btnProfile.MouseEnter += new System.EventHandler(this.btnProfile_MouseEnter);
             this.btnProfile.MouseLeave += new System.EventHandler(this.btnProfile_MouseLeave);
@@ -364,7 +363,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 637);
             this.Main = true;
