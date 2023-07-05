@@ -125,6 +125,7 @@ namespace Educational_Software
         private void btnCareerTest_Click(object sender, EventArgs e)
         {
             ActivateButton((Button)sender, Color.FromArgb(242, 139, 29), "");
+            openChildForm(new FormTestCareer());
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
