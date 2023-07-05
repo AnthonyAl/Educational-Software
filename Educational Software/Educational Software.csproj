@@ -191,7 +191,28 @@
     <None Include="CourseMaterial\lessons4.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="CourseMaterial\profession1.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CourseMaterial\profession2.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CourseMaterial\profession3.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="CourseMaterial\profession4.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CourseMaterial\profession5.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CourseMaterial\profession6.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CourseMaterial\profession7.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CourseMaterial\profession8.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="CourseMaterial\questions4rev.json">
@@ -641,6 +662,14 @@
     <Content Include="CourseMaterial\images\uml2.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\frontend.PNG" />
+    <None Include="Resources\backend.PNG" />
+    <None Include="Resources\datascient.png" />
+    <None Include="Resources\fulls.PNG" />
+    <None Include="Resources\mlenginerr.PNG" />
+    <None Include="Resources\softeng.PNG" />
+    <None Include="Resources\ux.jpeg" />
+    <None Include="Resources\game.PNG" />
     <None Include="Resources\quiz\50-gray.png" />
     <None Include="Resources\quiz\50-gold.png" />
     <None Include="Resources\quiz\50.png" />

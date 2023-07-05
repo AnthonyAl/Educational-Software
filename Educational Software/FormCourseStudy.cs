@@ -188,6 +188,9 @@ namespace Educational_Software
                     labelTitle.Text = profession.Name + " Βασικά Στοιχεία";
                     for (int i = panels.Length - 1; i >= 0; i--)
                     {
+                        if (i > profession.Paragraphs.Count-1)
+                            continue;
+
                         panels[i].Visible = true;
                         labels[i].Text = profession.Paragraphs[i].Text;
                     }
