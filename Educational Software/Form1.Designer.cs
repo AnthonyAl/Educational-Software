@@ -43,9 +43,9 @@
             this.btnCareerTest = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.roundedToggleButton1 = new Rounded.RoundedToggleButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.roundedToggleButton1 = new Rounded.RoundedToggleButton();
             this.panelContent.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -60,7 +60,6 @@
             this.panelHeader.IMaximize = global::Educational_Software.Properties.Resources._24_gray10;
             this.panelHeader.IMinimize = global::Educational_Software.Properties.Resources._24_gray11;
             this.panelHeader.Size = new System.Drawing.Size(1094, 46);
-            this.panelHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHeader_Paint);
             // 
             // panelContent
             // 
@@ -324,6 +323,24 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "ΕΚΠΑΙΔΕΥΤΙΚΟ  ΛΟΓΙΣΜΙΚΟ";
             // 
+            // roundedToggleButton1
+            // 
+            this.roundedToggleButton1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.roundedToggleButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.roundedToggleButton1.Fill = true;
+            this.roundedToggleButton1.Location = new System.Drawing.Point(575, 12);
+            this.roundedToggleButton1.MinimumSize = new System.Drawing.Size(45, 22);
+            this.roundedToggleButton1.Name = "roundedToggleButton1";
+            this.roundedToggleButton1.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.roundedToggleButton1.OffToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
+            this.roundedToggleButton1.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
+            this.roundedToggleButton1.OnToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
+            this.roundedToggleButton1.Size = new System.Drawing.Size(504, 22);
+            this.roundedToggleButton1.TabIndex = 9;
+            this.roundedToggleButton1.Text = "roundedToggleButton1";
+            this.roundedToggleButton1.UseVisualStyleBackColor = false;
+            this.roundedToggleButton1.Visible = false;
+            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -346,27 +363,9 @@
             this.panelChildForm.Size = new System.Drawing.Size(1094, 540);
             this.panelChildForm.TabIndex = 10;
             // 
-            // roundedToggleButton1
-            // 
-            this.roundedToggleButton1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.roundedToggleButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.roundedToggleButton1.Fill = true;
-            this.roundedToggleButton1.Location = new System.Drawing.Point(575, 12);
-            this.roundedToggleButton1.MinimumSize = new System.Drawing.Size(45, 22);
-            this.roundedToggleButton1.Name = "roundedToggleButton1";
-            this.roundedToggleButton1.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.roundedToggleButton1.OffToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
-            this.roundedToggleButton1.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
-            this.roundedToggleButton1.OnToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(139)))), ((int)(((byte)(29)))));
-            this.roundedToggleButton1.Size = new System.Drawing.Size(504, 22);
-            this.roundedToggleButton1.TabIndex = 9;
-            this.roundedToggleButton1.Text = "roundedToggleButton1";
-            this.roundedToggleButton1.UseVisualStyleBackColor = false;
-            this.roundedToggleButton1.Visible = false;
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 637);
             this.Main = true;

@@ -1,5 +1,6 @@
 ﻿using Educational_Software.Properties;
 using Org.BouncyCastle.Bcpg;
+using Org.BouncyCastle.Tls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -45,7 +46,9 @@ namespace Educational_Software
             formCareers = new FormCareers(this);
 
             btnCourses.PerformClick();
+            
         }
+
 
         private void ActivateButton(Button senderBtn, Color color, string id)
         {
