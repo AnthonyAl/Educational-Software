@@ -1,5 +1,7 @@
 ﻿using Educational_Software.Model;
+using ShadowPanel;
 using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +32,9 @@ namespace Educational_Software
 
         private int total;
         private int corrents = 0;
+        private List<RadioButton> _radioButtonGroup;
+        private string correct = "Απάντησες Σωστά την ερώτηση";
+        private string incorrect = "Απάντησες Λάθος την ερώτηση";
 
         public FormTest(List<Question> questions, Image courseImage, string courseTitle, Form1 form1, int courseId, bool isProfession)
         {
@@ -42,11 +47,29 @@ namespace Educational_Software
             this.total = questions.Count;
             this.courseId = courseId;
             this.isProfession = isProfession;
+            this._radioButtonGroup =
+                new List<RadioButton>(new RadioButton[] { radioButton1, radioButton2, radioButton3, radioButton4, radioButton5, radioButton6 });
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void radioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton rb = (RadioButton)sender;
+            if (rb.Checked && rb.Visible)
+            {
+                foreach (RadioButton other in _radioButtonGroup)
+                {
+                    if (other == rb)
+                    {
+                        continue;
+                    }
+                    other.Checked = false;
+                }
+            }
         }
 
         private void hideAll()
@@ -69,17 +92,18 @@ namespace Educational_Software
                     panelRadioButtons.Show();
 
                     RadioButton[] radioButtons = { radioButton1, radioButton2, radioButton3, radioButton4, radioButton5, radioButton6 };
-                    Label[] labelradios = { labelradio1, labelradio2, labelradio3, labelradio4, labelradio5, labelradio6 };
-
+                    ShadowUpperPanel[] shadowRadioPanels = { shadowRadioPanel1, shadowRadioPanel2, shadowRadioPanel3, shadowRadioPanel4, shadowRadioPanel5, shadowRadioPanel6 };
+                    
                     for (int i = 0; i < radioButtons.Length; i++)
                     {
                         radioButtons[i].Checked = false;
                         radioButtons[i].Hide();
-                        labelradios[i].Text = "";
+                        shadowRadioPanels[i].Hide();
 
                         if (i < questions[index].Choices.Count)
                         {
                             radioButtons[i].Text = questions[index].Choices[i].Text;
+                            shadowRadioPanels[i].Show();
                             radioButtons[i].Show();
                             radioButtons[i].Enabled = true;
                         }
@@ -94,17 +118,18 @@ namespace Educational_Software
                     panelCheckBoxes.Show();
 
                     CheckBox[] checkBoxes = { checkBox1, checkBox2, checkBox3, checkBox4, checkBox5, checkBox6 };
-                    Label[] labelchecks = { labelcheck1, labelcheck2, labelcheck3, labelcheck4, labelcheck5, labelcheck6 };
-
+                    ShadowUpperPanel[] shadowCheckPanels = { shadowCheckPanel1, shadowCheckPanel2, shadowCheckPanel3, shadowCheckPanel4, shadowCheckPanel5, shadowCheckPanel6 };
+                    
                     for (int i = 0; i < checkBoxes.Length; i++)
                     {
                         checkBoxes[i].Checked = false;
                         checkBoxes[i].Hide();
-                        labelchecks[i].Text = "";
-
+                        shadowCheckPanels[i].Hide();
+                        
                         if (i < questions[index].Choices.Count)
                         {
                             checkBoxes[i].Text = questions[index].Choices[i].Text;
+                            shadowCheckPanels[i].Show();
                             checkBoxes[i].Show();
                             checkBoxes[i].Enabled = true;
                         }
@@ -173,8 +198,10 @@ namespace Educational_Software
         }
 
         private void FormTest_Load(object sender, EventArgs e)
-        {       
+        {
+            resetPanelColors();
             loadQuestion();
+            pictureBoxQuestion.Location = new Point(165, 68);
         }
 
         private void checkAnswer()
@@ -185,32 +212,25 @@ namespace Educational_Software
 
                     // highlight
                     RadioButton[] radioButtons = { radioButton1, radioButton2, radioButton3, radioButton4, radioButton5, radioButton6 };
-                    Label[] labelradios = { labelradio1, labelradio2, labelradio3, labelradio4, labelradio5, labelradio6 };
+                    ShadowUpperPanel[] shadowRadioPanels = { shadowRadioPanel1, shadowRadioPanel2, shadowRadioPanel3, shadowRadioPanel4, shadowRadioPanel5, shadowRadioPanel6 };
                     String answer = questions[index].Corrects[0].Text;
 
                     for (int i = 0; i < questions[index].Choices.Count; i++)
                     {
-                        if(radioButtons[i].Checked && !radioButtons[i].Text.Equals(answer))
-                        {
-                            //radioButtons[i].ForeColor = Color.Green;
-                            labelradios[i].Text = "ΛΑΘΟΣ! ->";
-                            labelradios[i].ForeColor = Color.Red;
-                            
-                        }
-
                         if (!radioButtons[i].Checked && radioButtons[i].Text.Equals(answer))
                         {
-                            //radioButtons[i].ForeColor = Color.Green;
-                            labelradios[i].Text = "ΛΑΘΟΣ! ->";
-                            labelradios[i].ForeColor = Color.Red;
+                            labelResult.Text = incorrect;
+                            labelResult.ForeColor = Color.Red;
+                            labelResult.Show();
+                            shadowRadioPanels[i].BorderColor = Color.Green;
+                            shadowRadioPanels[i].BorderStyle = BorderStyle.FixedSingle;
 
                         }
-
                         if (radioButtons[i].Checked && radioButtons[i].Text.Equals(answer))
                         {
-                            //radioButtons[i].ForeColor = Color.Green;
-                            labelradios[i].Text = "ΣΩΣΤΟ! ->";
-                            labelradios[i].ForeColor = Color.Green;
+                            labelResult.Text = correct;
+                            labelResult.ForeColor = Color.Green;
+                            labelResult.Show();
                             corrents += 1;
                         }
 
@@ -228,7 +248,7 @@ namespace Educational_Software
                     panelCheckBoxes.Show();
 
                     CheckBox[] checkBoxes = { checkBox1, checkBox2, checkBox3, checkBox4, checkBox5, checkBox6 };
-                    Label[] labelchecks = { labelcheck1, labelcheck2, labelcheck3, labelcheck4, labelcheck5, labelcheck6 };
+                    ShadowUpperPanel[] shadowCheckPanels = { shadowCheckPanel1, shadowCheckPanel2, shadowCheckPanel3, shadowCheckPanel4, shadowCheckPanel5, shadowCheckPanel6 };
 
                     List<string> ans = new List<string>();
                     foreach(Paragraph paragraph in questions[index].Corrects)
@@ -240,22 +260,11 @@ namespace Educational_Software
                     {
                         if (checkBoxes[i].Checked && !ans.Contains(checkBoxes[i].Text))
                         {
-                            labelchecks[i].Text = "ΛΑΘΟΣ! ->";
-                            labelchecks[i].ForeColor = Color.Red;
                             check = false;
-                        }
-
-                        if (checkBoxes[i].Checked && ans.Contains(checkBoxes[i].Text))
-                        {
-                            labelchecks[i].Text = "ΣΩΣΤΟ! ->";
-                            labelchecks[i].ForeColor = Color.Green;
-
                         }
 
                         if (!checkBoxes[i].Checked && ans.Contains(checkBoxes[i].Text))
                         {
-                            labelchecks[i].Text = "ΛΑΘΟΣ! ->";
-                            labelchecks[i].ForeColor = Color.Red;
                             check = false;
                         }
 
@@ -264,7 +273,28 @@ namespace Educational_Software
 
                     }
 
-                    if (check) corrents += 1;
+                    if (!check)
+                    {
+                        labelResult.Text = incorrect;
+                        labelResult.ForeColor = Color.Red;
+                        labelResult.Show();
+
+                        for (int i = 0; i < questions[index].Choices.Count; i++)
+                        {
+                            if (ans.Contains(checkBoxes[i].Text))
+                            {
+                                shadowCheckPanels[i].BorderColor = Color.Green;
+                                shadowCheckPanels[i].BorderStyle = BorderStyle.FixedSingle;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        labelResult.Text = correct;
+                        labelResult.ForeColor = Color.Green;
+                        labelResult.Show();
+                        corrents += 1;
+                    }
 
                     break;
 
@@ -274,14 +304,19 @@ namespace Educational_Software
 
                     if (comboBoxImage.Text.Equals(answerImage))
                     {
-                        labelImageChoose.Text = " ΣΩΣΤΟ!";
-                        labelImageChoose.ForeColor = Color.Green;
+                        labelResult.Text = correct;
+                        labelResult.ForeColor = Color.Green;
+                        labelResult.Show();
                         corrents += 1;
                     }
                     else
                     {
-                        labelImageChoose.Text = " ΛΑΘΟΣ! ("+ answerImage+")";
-                        labelImageChoose.ForeColor = Color.Red;
+                        labelResult.Text = incorrect;
+                        labelResult.ForeColor = Color.Red;
+                        labelResult.Show();
+                        labelImageChoose.Text = " Η σωστή απάντηση είναι: ";
+                        labelImageChoose.ForeColor = Color.Green;
+                        comboBoxImage.SelectedItem = answerImage;
                     }
 
                     comboBoxImage.Enabled = false;
@@ -301,22 +336,37 @@ namespace Educational_Software
 
                     for(int i = 0; i < questions[index].Corrects.Count; i++)
                     {
-                        if (comboBoxes[i].Text.Equals(questions[index].Corrects[i].Text))
+                        if (!comboBoxes[i].Text.Equals(questions[index].Corrects[i].Text))
                         {
-                            labelmatchshows[i].Text = " ΣΩΣΤΟ!";
-                            labelmatchshows[i].ForeColor = Color.Green;
-                        }
-                        else
-                        {
-                            labelmatchshows[i].Text = " ΛΑΘΟΣ! (" + questions[index].Corrects[i].Text+")";
-                            labelmatchshows[i].ForeColor = Color.Red;
                             check2 = false;
                         }
 
                         comboBoxes[i].Enabled = false;
                     }
 
-                    if (check2) corrents += 1;
+                    if (!check2)
+                    {
+                        labelResult.Text = incorrect;
+                        labelResult.ForeColor = Color.Red;
+                        labelResult.Show();
+
+                        for (int i = 0; i < questions[index].Corrects.Count; i++)
+                        {
+                            if (!comboBoxes[i].Text.Equals(questions[index].Corrects[i].Text))
+                            {
+                                labelmatchshows[i].Text = " Η σωστή απάντηση: ";
+                                labelmatchshows[i].ForeColor = Color.Green;
+                                comboBoxes[i].SelectedItem = questions[index].Corrects[i].Text;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        labelResult.Text = correct;
+                        labelResult.ForeColor = Color.Green;
+                        labelResult.Show();
+                        corrents += 1;
+                    }
 
                     break;
             }
@@ -349,18 +399,19 @@ namespace Educational_Software
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            if(index == questions.Count - 1)
-            {
-                form1.openChildForm(new FormTestComplete(courseImage, courseTitle, form1, corrents, total, courseId, isProfession));
-                return;
-            }
-
-
+            resetPanelColors();
+            labelResult.Hide();
             if (check)
             {
                 checkAnswer();
                 roundedButton1.Text = "Επόμενη Ερώτηση";
                 check = !check;
+                return;
+            }
+
+            if (index == questions.Count - 1)
+            {
+                form1.openChildForm(new FormTestComplete(courseImage, courseTitle, form1, corrents, total, courseId, isProfession));
                 return;
             }
 
@@ -406,31 +457,37 @@ namespace Educational_Software
 
         }
 
+        private void resetPanelColors()
+        {
+            shadowRadioPanel1.BorderStyle = BorderStyle.None;
+            shadowRadioPanel2.BorderStyle = BorderStyle.None;
+            shadowRadioPanel3.BorderStyle = BorderStyle.None;
+            shadowRadioPanel4.BorderStyle = BorderStyle.None;
+            shadowRadioPanel5.BorderStyle = BorderStyle.None;
+            shadowRadioPanel6.BorderStyle = BorderStyle.None;
+            shadowCheckPanel1.BorderStyle = BorderStyle.None;
+            shadowCheckPanel2.BorderStyle = BorderStyle.None;
+            shadowCheckPanel3.BorderStyle = BorderStyle.None;
+            shadowCheckPanel4.BorderStyle = BorderStyle.None;
+            shadowCheckPanel5.BorderStyle = BorderStyle.None;
+            shadowCheckPanel6.BorderStyle = BorderStyle.None;
+            shadowRadioPanel1.BorderColor = Color.Transparent;
+            shadowRadioPanel2.BorderColor = Color.Transparent;
+            shadowRadioPanel3.BorderColor = Color.Transparent;
+            shadowRadioPanel4.BorderColor = Color.Transparent;
+            shadowRadioPanel5.BorderColor = Color.Transparent;
+            shadowRadioPanel6.BorderColor = Color.Transparent;
+            shadowCheckPanel1.BorderColor = Color.Transparent;
+            shadowCheckPanel2.BorderColor = Color.Transparent;
+            shadowCheckPanel3.BorderColor = Color.Transparent;
+            shadowCheckPanel4.BorderColor = Color.Transparent;
+            shadowCheckPanel5.BorderColor = Color.Transparent;
+            shadowCheckPanel6.BorderColor = Color.Transparent;
+        }
+
         private void labelradio1_VisibleChanged(object sender, EventArgs e)
         {
-            string name = ((Label)sender).Name;
-            switch (name[name.Length - 1])
-            {
-                case '1':
-                    shadowRadioPanel1.PanelColor = ((Label)sender).ForeColor;
-                    break;
-                case '2':
-                    shadowRadioPanel2.PanelColor = ((Label)sender).ForeColor;
-                    break;
-                case '3':
-                    shadowRadioPanel3.PanelColor = ((Label)sender).ForeColor;
-                    break;
-                case '4':
-                    shadowRadioPanel4.PanelColor = ((Label)sender).ForeColor;
-                    break;
-                case '5':
-                    shadowRadioPanel5.PanelColor = ((Label)sender).ForeColor;
-                    break;
-                case '6':
-                    shadowRadioPanel6.PanelColor = ((Label)sender).ForeColor;
-                    break;
-            }
-            
+
         }
     }
 }
