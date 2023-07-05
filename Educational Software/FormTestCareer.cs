@@ -13,7 +13,7 @@ namespace Educational_Software
 {
     public partial class FormTestCareer : Form
     {
-
+        private Form1 form1;
         private RadioButton[] btns;
         private string[] careers = { "Game Developer", "UX Designer", "Software Engineer", "Machine Learning Engineer",
             "Full-Stack Developer", "Data Scientist", "Back-end Developer", "Front-end Developer" };
@@ -49,13 +49,14 @@ namespace Educational_Software
             new int[] { 0, 0, 0, 0, 0, 0, 0, 0 }  // 11
         };
 
-        public FormTestCareer()
+        public FormTestCareer(Form1 form1)
         {
             InitializeComponent();
             btns = new RadioButton[] {
                 b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
                 b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24, b25, b26
             };
+            this.form1 = form1;
         }
 
         private void Next_Click(object sender, EventArgs e)
@@ -67,7 +68,7 @@ namespace Educational_Software
                         points[j] += btn_points[i][j];
                 }
             }
-            MessageBox.Show(string.Join(", ", points));
+            form1.openChildForm(new FormTestCareerComplete(form1, points));
         }
     }
 }

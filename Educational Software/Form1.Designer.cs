@@ -40,12 +40,12 @@
             this.btnScore = new System.Windows.Forms.Button();
             this.btnCourses = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.btnCareerTest = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.roundedToggleButton1 = new Rounded.RoundedToggleButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.btnCareerTest = new System.Windows.Forms.Button();
             this.panelContent.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -275,6 +275,29 @@
             this.panelSideMenu.Size = new System.Drawing.Size(250, 540);
             this.panelSideMenu.TabIndex = 8;
             // 
+            // btnCareerTest
+            // 
+            this.btnCareerTest.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCareerTest.FlatAppearance.BorderSize = 0;
+            this.btnCareerTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCareerTest.Font = new System.Drawing.Font("Onyx", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCareerTest.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnCareerTest.Image = global::Educational_Software.Properties.Resources._24_gray;
+            this.btnCareerTest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCareerTest.Location = new System.Drawing.Point(0, 225);
+            this.btnCareerTest.Name = "btnCareerTest";
+            this.btnCareerTest.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnCareerTest.Size = new System.Drawing.Size(250, 45);
+            this.btnCareerTest.TabIndex = 18;
+            this.btnCareerTest.Tag = "ΤΕΣΤ ΚΑΡΙΕΡΑΣ";
+            this.btnCareerTest.Text = "ΤΕΣΤ ΚΑΡΙΕΡΑΣ";
+            this.btnCareerTest.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCareerTest.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCareerTest.UseVisualStyleBackColor = true;
+            this.btnCareerTest.Click += new System.EventHandler(this.btnCareerTest_Click);
+            this.btnCareerTest.MouseEnter += new System.EventHandler(this.btnCareerTest_MouseEnter);
+            this.btnCareerTest.MouseLeave += new System.EventHandler(this.btnCareerTest_MouseLeave);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
@@ -336,29 +359,6 @@
             this.panelChildForm.Size = new System.Drawing.Size(1094, 540);
             this.panelChildForm.TabIndex = 10;
             // 
-            // btnCareerTest
-            // 
-            this.btnCareerTest.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCareerTest.FlatAppearance.BorderSize = 0;
-            this.btnCareerTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCareerTest.Font = new System.Drawing.Font("Onyx", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCareerTest.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCareerTest.Image = global::Educational_Software.Properties.Resources._24_gray;
-            this.btnCareerTest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCareerTest.Location = new System.Drawing.Point(0, 225);
-            this.btnCareerTest.Name = "btnCareerTest";
-            this.btnCareerTest.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnCareerTest.Size = new System.Drawing.Size(250, 45);
-            this.btnCareerTest.TabIndex = 18;
-            this.btnCareerTest.Tag = "ΤΕΣΤ ΚΑΡΙΕΡΑΣ";
-            this.btnCareerTest.Text = "ΤΕΣΤ ΚΑΡΙΕΡΑΣ";
-            this.btnCareerTest.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCareerTest.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCareerTest.UseVisualStyleBackColor = true;
-            this.btnCareerTest.Click += new System.EventHandler(this.btnCareerTest_Click);
-            this.btnCareerTest.MouseEnter += new System.EventHandler(this.btnCareerTest_MouseEnter);
-            this.btnCareerTest.MouseLeave += new System.EventHandler(this.btnCareerTest_MouseLeave);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -381,7 +381,6 @@
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnProfile;
         private System.Windows.Forms.Button btnAbout;
-        private System.Windows.Forms.Button btnCareers;
         private System.Windows.Forms.Button btnFAQ;
         private System.Windows.Forms.Button btnForum;
         private System.Windows.Forms.Button btnScore;
@@ -394,6 +393,7 @@
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Button btnCareerTest;
+        public System.Windows.Forms.Button btnCareers;
     }
 }
 

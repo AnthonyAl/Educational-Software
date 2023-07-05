@@ -119,6 +119,18 @@
     <Compile Include="FormTestCareer.Designer.cs">
       <DependentUpon>FormTestCareer.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTestCareerComplete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTestCareerComplete.Designer.cs">
+      <DependentUpon>FormTestCareerComplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTestCareerIntro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTestCareerIntro.Designer.cs">
+      <DependentUpon>FormTestCareerIntro.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTestComplete.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +177,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTestCareer.resx">
       <DependentUpon>FormTestCareer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTestCareerComplete.resx">
+      <DependentUpon>FormTestCareerComplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTestCareerIntro.resx">
+      <DependentUpon>FormTestCareerIntro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTestComplete.resx">
       <DependentUpon>FormTestComplete.cs</DependentUpon>
