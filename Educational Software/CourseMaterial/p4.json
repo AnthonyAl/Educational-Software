@@ -1,0 +1,74 @@
+[
+  {
+    "type": "radio",
+    "sentence": "Ο Machine Learning Engineer ασχολείται αποκλειστικά με μαθηματικά.",
+    "choices": [
+      {
+        "text": "Σωστό"
+      },
+      {
+        "text": "Λάθος"
+      }
+    ],
+    "image": "",
+    "corrects": [
+      {
+        "text": "Λάθος"
+      }
+    ]
+  },
+  {
+    "type": "check",
+    "sentence": "Ποια από τα παρακάτω μαθήματα είναια απαραίτητα για έναν Machine Learning Engineer;",
+    "choices": [
+		{
+		  "text": "Αναγνώριση Προτύπων"
+		},
+		{
+		  "text": "Ανάλυση Εικόνας"
+		},
+		{
+		  "text": "Κρυπτογραφία"
+		},
+		{
+		  "text": "Εισαγωγή  στη C/C++ και Python"
+		},
+		{
+		  "text": "Μαθηματικά στην Πληροφορική"
+		}
+    ],
+    "image": "",
+    "corrects": [
+		{
+		  "text": "Αναγνώριση Προτύπων"
+		},
+		{
+		  "text": "Ανάλυση Εικόνας"
+		},
+		{
+		  "text": "Εισαγωγή  στη C/C++ και Python"
+		},
+		{
+		  "text": "Μαθηματικά στην Πληροφορική"
+		}
+    ]
+  },
+  {
+    "type": "radio",
+    "sentence": " Ποιο από τα παρακάτω ισχύει για το επάγγελμα του Machine Learning Engineer;",
+    "choices": [
+      {
+        "text": "Ο Machine Learning Engineer ασχολείται με δύσκολα και καινοτόμα ζητήματα"
+      },
+      {
+        "text": "Ο Machine Learning Engineer ασχολείται με MVC web development"
+      }
+    ],
+    "image": "",
+    "corrects": [
+      {
+        "text": "Ο Machine Learning Engineer ασχολείται με δύσκολα και καινοτόμα ζητήματα"
+      }
+    ]
+  }
+]

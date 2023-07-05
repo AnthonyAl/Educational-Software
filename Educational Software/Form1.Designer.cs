@@ -208,7 +208,6 @@
             this.btnForum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnForum.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnForum.UseVisualStyleBackColor = true;
-            this.btnForum.Visible = false;
             this.btnForum.Click += new System.EventHandler(this.btnForum_Click);
             this.btnForum.MouseEnter += new System.EventHandler(this.btnForum_MouseEnter);
             this.btnForum.MouseLeave += new System.EventHandler(this.btnForum_MouseLeave);
@@ -365,7 +364,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 637);
             this.Main = true;

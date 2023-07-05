@@ -59,17 +59,35 @@ namespace Educational_Software
         private void roundedButton1_Click(object sender, EventArgs e)
         {
             //test
-            List<Question> allQuestions1;
-            using (StreamReader cour = new StreamReader("CourseMaterial/questions3.json"))
+            //List<Question> allQuestions1;
+            //using (StreamReader cour = new StreamReader("CourseMaterial/p1.json"))
+            //{
+            //    string jsonc = cour.ReadToEnd();
+            //    allQuestions1 = JsonConvert.DeserializeObject<List<Question>>(jsonc);
+            //}
+            //form1.panelSideMenu.Visible = false;
+            //form1.openChildForm(new FormTest(allQuestions1, courseImage, courseTitle, form1, courseId, isProfession));
+            //return;
+
+            if (isProfession)
             {
-                string jsonc = cour.ReadToEnd();
-                allQuestions1 = JsonConvert.DeserializeObject<List<Question>>(jsonc);
+                List<Question> allQuestions1;
+                using (StreamReader cour = new StreamReader("CourseMaterial/p"+ courseId + ".json"))
+                {
+                    string jsonc = cour.ReadToEnd();
+                    allQuestions1 = JsonConvert.DeserializeObject<List<Question>>(jsonc);
+                }
+                form1.panelSideMenu.Visible = false;
+                form1.openChildForm(new FormTest(allQuestions1, courseImage, courseTitle, form1, courseId, isProfession));
+                return;
             }
-            form1.panelSideMenu.Visible = false;
-            form1.openChildForm(new FormTest(allQuestions1, courseImage, courseTitle, form1, courseId, isProfession));
-            return;
+
+
 
             // create a quiz
+
+
+
 
             // create question list
             List<Question> questions = new List<Question>();
@@ -77,16 +95,25 @@ namespace Educational_Software
             List<Question> allQuestions;
             List<Question> selectedQuestions;
 
-            using (StreamReader cour = new StreamReader("CourseMaterial/questions4.json"))
+            using (StreamReader cour = new StreamReader("CourseMaterial/questions"+courseId+".json"))
             {
                 string jsonc = cour.ReadToEnd();
                 allQuestions = JsonConvert.DeserializeObject<List<Question>>(jsonc);             
             }
 
 
-            int numberOfLessons = 3;
+            int numberOfLessons=1;
 
-            for(int i= 1; i <= numberOfLessons; i++)
+            if (courseId == 1)
+                numberOfLessons = 7;
+            if (courseId == 2)
+                numberOfLessons = 4;
+            if (courseId == 3)
+                numberOfLessons = 4;
+            if (courseId == 4)
+                numberOfLessons = 3;
+
+            for (int i= 1; i <= numberOfLessons; i++)
             {
                 selectedQuestions = allQuestions.Where(q => q.LessonCode == i).ToList();
                 selectedQuestions = selectedQuestions.OrderBy(q => random.Next()).ToList(); // source: https://stackoverflow.com/questions/273313/randomize-a-listt
@@ -94,15 +121,16 @@ namespace Educational_Software
                 questions = questions.Concat(selectedQuestions).ToList();
             }
 
-
-            // load rev questions
-            using (StreamReader cour = new StreamReader("CourseMaterial/questions4rev.json"))
+            if (courseId == 4)
             {
-                string jsonc = cour.ReadToEnd();
-                List<Question>  revQuestions = JsonConvert.DeserializeObject<List<Question>>(jsonc);
-                questions = questions.Concat(revQuestions).ToList();
+                // load rev questions
+                using (StreamReader cour = new StreamReader("CourseMaterial/questions4rev.json"))
+                {
+                    string jsonc = cour.ReadToEnd();
+                    List<Question> revQuestions = JsonConvert.DeserializeObject<List<Question>>(jsonc);
+                    questions = questions.Concat(revQuestions).ToList();
+                }
             }
-
 
 
             // suffle all questions

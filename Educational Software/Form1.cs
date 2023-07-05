@@ -116,7 +116,8 @@ namespace Educational_Software
 
         private void btnForum_Click(object sender, EventArgs e)
         {
-            ActivateButton((Button)sender, Color.FromArgb(242, 139, 29), "13");
+            //ActivateButton((Button)sender, Color.FromArgb(242, 139, 29), "13");
+            MessageBox.Show("Η λειτουργία αυτή δεν έχει υλοποιηθεί ακόμη");
         }
 
         private void btnFAQ_Click(object sender, EventArgs e)
