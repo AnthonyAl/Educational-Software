@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -164,6 +165,13 @@ namespace Educational_Software
         private void comboBox1_DisplayMemberChanged(object sender, EventArgs e)
         {
             labelSubjects.Focus();
+        }
+
+
+
+        private void panelHeader_ButtonHelpClick(object sender, EventArgs e)
+        {
+            Process.Start("CourseMaterial\\User_Manual_Edu.pdf");
         }
     }
 }

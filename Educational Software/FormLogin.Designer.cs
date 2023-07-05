@@ -56,6 +56,7 @@
             this.panelHeader.IMaximize = global::Educational_Software.Properties.Resources._24_gray10;
             this.panelHeader.IMinimize = global::Educational_Software.Properties.Resources._24_gray11;
             this.panelHeader.Size = new System.Drawing.Size(715, 46);
+            this.panelHeader.ButtonHelpClick += new System.EventHandler(this.panelHeader_ButtonHelpClick);
             // 
             // panelContent
             // 
@@ -72,7 +73,7 @@
             this.labelUsername.ForeColor = System.Drawing.Color.Gainsboro;
             this.labelUsername.Location = new System.Drawing.Point(40, 97);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(74, 15);
+            this.labelUsername.Size = new System.Drawing.Size(93, 20);
             this.labelUsername.TabIndex = 0;
             this.labelUsername.Text = "Username";
             this.labelUsername.Click += new System.EventHandler(this.labelUsername_Click);
@@ -88,7 +89,7 @@
             this.textBoxUsername.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.textBoxUsername.Location = new System.Drawing.Point(44, 97);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(553, 16);
+            this.textBoxUsername.Size = new System.Drawing.Size(553, 19);
             this.textBoxUsername.TabIndex = 1;
             this.textBoxUsername.Click += new System.EventHandler(this.textBoxUsername_Click);
             this.textBoxUsername.Leave += new System.EventHandler(this.textBoxUsername_Leave);
@@ -103,7 +104,7 @@
             this.textBoxPassword.ForeColor = System.Drawing.Color.Gainsboro;
             this.textBoxPassword.Location = new System.Drawing.Point(44, 169);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(553, 16);
+            this.textBoxPassword.Size = new System.Drawing.Size(553, 19);
             this.textBoxPassword.TabIndex = 3;
             this.textBoxPassword.Click += new System.EventHandler(this.textBoxPassword_Click);
             this.textBoxPassword.Leave += new System.EventHandler(this.textBoxPassword_Leave);
@@ -117,7 +118,7 @@
             this.labelPassword.ForeColor = System.Drawing.Color.Gainsboro;
             this.labelPassword.Location = new System.Drawing.Point(40, 169);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(71, 15);
+            this.labelPassword.Size = new System.Drawing.Size(90, 20);
             this.labelPassword.TabIndex = 2;
             this.labelPassword.Text = "Password";
             this.labelPassword.Click += new System.EventHandler(this.labelPassword_Click);
@@ -204,7 +205,7 @@
             this.labelForgotPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(81)))), ((int)(((byte)(84)))));
             this.labelForgotPassword.Location = new System.Drawing.Point(41, 220);
             this.labelForgotPassword.Name = "labelForgotPassword";
-            this.labelForgotPassword.Size = new System.Drawing.Size(134, 17);
+            this.labelForgotPassword.Size = new System.Drawing.Size(163, 20);
             this.labelForgotPassword.TabIndex = 5;
             this.labelForgotPassword.Text = "Ξεχάστηκε ο κωδικός;";
             // 
@@ -217,7 +218,7 @@
             this.labelLoginTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(81)))), ((int)(((byte)(84)))));
             this.labelLoginTitle.Location = new System.Drawing.Point(37, 23);
             this.labelLoginTitle.Name = "labelLoginTitle";
-            this.labelLoginTitle.Size = new System.Drawing.Size(153, 36);
+            this.labelLoginTitle.Size = new System.Drawing.Size(189, 45);
             this.labelLoginTitle.TabIndex = 4;
             this.labelLoginTitle.Text = "ΣΥΝΔΕΣΗ";
             // 
@@ -255,7 +256,7 @@
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(721, 485);

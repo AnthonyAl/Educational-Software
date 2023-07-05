@@ -60,6 +60,7 @@
             this.panelHeader.IMaximize = global::Educational_Software.Properties.Resources._24_gray10;
             this.panelHeader.IMinimize = global::Educational_Software.Properties.Resources._24_gray11;
             this.panelHeader.Size = new System.Drawing.Size(1094, 46);
+            this.panelHeader.ButtonHelpClick += new System.EventHandler(this.panelHeader_ButtonHelpClick);
             // 
             // panelContent
             // 

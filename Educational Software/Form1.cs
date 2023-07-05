@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Resources;
@@ -253,6 +254,11 @@ namespace Educational_Software
         private void panelHeader_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void panelHeader_ButtonHelpClick(object sender, EventArgs e)
+        {
+            Process.Start("CourseMaterial\\User_Manual_Edu.pdf");//C:\Users\telis\source\repos\Educational-Software\Educational Software\CourseMaterial\User_Manual_Edu.pdf
         }
     }
 }
