@@ -111,6 +111,8 @@ namespace Educational_Software
 
             if (id > 0)
             {
+                dao.userlog(id);
+
                 new Form1(id).Show();
                 this.Hide();
             }

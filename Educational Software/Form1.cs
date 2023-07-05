@@ -108,6 +108,7 @@ namespace Educational_Software
         private void btnScore_Click(object sender, EventArgs e)
         {
             ActivateButton((Button)sender, Color.FromArgb(242, 139, 29), "7");
+            openChildForm(new FormDetails(userId));
         }
 
         private void btnForum_Click(object sender, EventArgs e)

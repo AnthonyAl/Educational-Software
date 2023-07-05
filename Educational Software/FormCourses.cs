@@ -1,4 +1,5 @@
 ﻿using Educational_Software.CustomControls;
+using Educational_Software.Dao;
 using Rounded;
 using System;
 using System.Collections.Generic;
@@ -11,10 +12,19 @@ namespace Educational_Software
     {
         private Form1 form1;
 
+        UserDao dao = new UserDao();
+
         public FormCourses(Form1 form1)
         {
             InitializeComponent();
             this.form1 = form1;
+
+
+
+            label1.Text = dao.getMaxCourseGrade(form1.userId, 1).ToString() + "%";
+            label2.Text = dao.getMaxCourseGrade(form1.userId, 2).ToString() + "%";
+            label3.Text = dao.getMaxCourseGrade(form1.userId, 3).ToString() + "%";
+            label4.Text = dao.getMaxCourseGrade(form1.userId, 4).ToString() + "%";
         }
 
         private void FormCourses_Load(object sender, EventArgs e)

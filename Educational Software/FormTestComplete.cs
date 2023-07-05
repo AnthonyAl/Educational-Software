@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Educational_Software.Dao;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace Educational_Software
 {
     public partial class FormTestComplete : Form
     {
+
+        UserDao dao = new UserDao();
 
         Image courseImage;
         string courseTitle;
@@ -38,7 +41,7 @@ namespace Educational_Software
         {
             labelOverview.Text = "Ολοκληρώσατε το Τεστ της Ενότητας " + courseTitle;
 
-            labelDesc.Text = "Score: " + corrects.ToString() + "/" + total.ToString();
+            labelDesc.Text = "Score: " + corrects.ToString() + "/" + total.ToString() +" ή " + (corrects * 100) / total + "%";
             pictureBoxDesc.Image = courseImage;
 
             if (isProfession)
@@ -48,6 +51,17 @@ namespace Educational_Software
 
             Console.WriteLine(courseId);
             Console.WriteLine(isProfession);
+
+
+
+            if (!isProfession)
+            {
+                dao.addcoursegrade(form1.userId, courseId, (corrects * 100) / total);
+            }
+            else
+            {
+                dao.addprofessiongrade(form1.userId, courseId, (corrects * 100) / total);
+            }
         }
 
         private void roundedButton3_Click(object sender, EventArgs e)
