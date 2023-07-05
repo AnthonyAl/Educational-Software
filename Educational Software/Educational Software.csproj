@@ -233,6 +233,9 @@
     <None Include="CourseMaterial\profession8.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="CourseMaterial\questions1.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="CourseMaterial\questions2.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
