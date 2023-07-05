@@ -136,6 +136,7 @@ namespace Educational_Software
             // suffle all questions
             questions = questions.OrderBy(q => random.Next()).ToList();
 
+            form1.panelSideMenu.Visible = false;
             form1.openChildForm(new FormTest(questions, courseImage, courseTitle, form1, courseId, isProfession));
         }
     }
